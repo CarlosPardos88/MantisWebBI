@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelTD2StoreContainer" CdmEntityContainer="TDEntities">
+    <EntitySetMapping Name="TP_Parametros_BI">
+      <EntityTypeMapping TypeName="ModelTD2.TP_Parametros_BI">
+        <MappingFragment StoreEntitySet="TP_Parametros_BI">
+          <ScalarProperty Name="Id_Parametro" ColumnName="Id_Parametro" />
+          <ScalarProperty Name="NombreGrupoParametro" ColumnName="NombreGrupoParametro" />
+          <ScalarProperty Name="NombreParametro" ColumnName="NombreParametro" />
+          <ScalarProperty Name="ValorParametro" ColumnName="ValorParametro" />
+          <ScalarProperty Name="DescripcionParametro" ColumnName="DescripcionParametro" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

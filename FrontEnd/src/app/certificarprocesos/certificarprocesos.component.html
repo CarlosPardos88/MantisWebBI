@@ -1,0 +1,125 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+    <button mat-icon-button td-menu-button tdLayoutToggle>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <div td-toolbar-content layout="row" layout-align="center center" flex>
+        <span style="color: white;">Certificación de procesos</span>
+        <span flex></span>
+        <app-notificaciones></app-notificaciones>
+    </div>
+
+    <mat-progress-spinner [mode]="'indeterminate'" *ngIf="isLoading" style="margin: auto;">
+    </mat-progress-spinner>
+    <mat-card class="push-bottom-xxl" tdMediaToggle="gt-xs" [mediaClasses]="['push']">
+        <div class="pad" *ngIf="!isLoading && filteredCertificar?.length === 0" layout="row"
+            layout-align="center center">
+            <h3>No existen ejecuciones por certificar.</h3>
+        </div>
+        <div [hidden]="isLoading">
+            <div class="example-container mat-elevation-z8">
+                <mat-table matTableFilter [exampleEntity]="filterEntity" [filterType]="filterType"
+                    [dataSource]="dataSource" matSort matSort (matSortChange)="sortData($event)">
+                    <ng-container matColumnDef="Nombre_Proceso">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Nombre Proceso"
+                                        [(ngModel)]="filterEntity.Nombre_Proceso">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Nombre_Proceso}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Area">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Área de Negocio"
+                                        [(ngModel)]="filterEntity.Nombre_AreaNegocio">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Nombre_AreaNegocio}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Estado">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Ejecución Proceso"
+                                        [(ngModel)]="filterEntity.Nombre_EstadoEjecucionInformatica">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Nombre_EstadoEjecucionInformatica}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Fecha">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Fecha Ejecución" [(ngModel)]="filterEntity.Fecha">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                     <mat-cell *matCellDef="let row" flex="20"> {{row.Fecha | date:'yyyy-MM-dd'}} </mat-cell>
+                    <!--<mat-cell *matCellDef="let row" flex="20"> {{row.Fecha}} </mat-cell>-->
+                    </ng-container>
+
+                    <ng-container matColumnDef="Hora">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Hora Ejecución"
+                                        [(ngModel)]="filterEntity.Hora_EjecucionProgramada">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Hora_EjecucionProgramada}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="EstadoOperador">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="15"> <b>Estado
+                                Operador</b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="15">
+                            {{row.Nombre_EstadoOperadorEjecucionProceso !==null ? row.Nombre_EstadoOperadorEjecucionProceso : 'Sin Certificar' }}
+                        </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="EstadoUsuario">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="15"> <b>Estado
+                                Usuario</b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="15">
+                            {{row.Nombre_EstadoUsuarioEjecucionProceso !== null ? row.Nombre_EstadoUsuarioEjecucionProceso : 'Sin Certificar' }}
+                        </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Logs">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="5">
+                            <b>Certificar</b> </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="5">
+
+                            <button mat-icon-button color="blue"
+                                (click)="certifica(row.Id_ResultadoEjecucionProgramada, row.Nombre_EstadoEjecucionInformatica)">
+                                <mat-icon class="mat-18">check_circle</mat-icon>
+                            </button>
+                        </mat-cell>
+                    </ng-container>
+
+
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;">
+                    </mat-row>
+                </mat-table>
+            </div>
+        </div>
+        <div [hidden]="isLoading">
+            <mat-paginator [pageSizeOptions]="[10, 20, 30, 50]">
+            </mat-paginator>
+        </div>
+    </mat-card>
+    <!-- </ng-template> -->
+</td-layout-nav>

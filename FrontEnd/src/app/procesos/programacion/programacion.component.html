@@ -1,0 +1,87 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+  <button mat-icon-button td-menu-button tdLayoutToggle>
+      <mat-icon>menu</mat-icon>
+  </button>
+  <div td-toolbar-content layout="row" layout-align="center center" flex>
+      <span style="color: white;">Programación de proceso {{NombreProceso}}</span>
+      <span flex></span>
+  </div>
+
+  <mat-progress-spinner [mode]="'indeterminate'" *ngIf="isLoading" style="margin: auto;">
+  </mat-progress-spinner>
+  <mat-card class="push-bottom-xxl" tdMediaToggle="gt-xs" [mediaClasses]="['push']">
+    <div class="pad" *ngIf="!isLoading && filteredProgramacionProceso?.length === 0" layout="row"
+          layout-align="center center">
+        <h3>El proceso {{NombreProceso}} No cuenta con programaciones asociadas.</h3>
+        </div>
+        <div [hidden]="isLoading">
+          <mat-table matTableFilter [exampleEntity]="filterEntity" [filterType]="filterType" [dataSource]="dataSource" matSort>
+
+              <ng-container matColumnDef="Nombre_Periodicidad">
+                  <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="40">
+                    <b>
+                        <mat-form-field>
+                            <input matInput placeholder="Periodicidad" [(ngModel)]="filterEntity.Nombre_Periodicidad">
+                        </mat-form-field>
+                    </b> 
+                </mat-header-cell>
+                 <mat-cell *matCellDef="let row" flex="40"> {{row.Nombre_Periodicidad}} </mat-cell>
+              </ng-container>
+
+              <ng-container matColumnDef="Hora_Ejecucion">
+                  <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex> 
+                    <b>
+                        <mat-form-field>
+                            <input matInput placeholder="Hora Ejecución" [(ngModel)]="filterEntity.Hora_Ejecucion">
+                        </mat-form-field>
+                    </b>
+                  </mat-header-cell>
+                  <mat-cell *matCellDef="let row" flex> {{row.Hora_Ejecucion}} </mat-cell>
+              </ng-container>
+
+              <ng-container matColumnDef="Cb_Activo">
+                  <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex> 
+                    <b>
+                        Activo
+                    </b> 
+                </mat-header-cell>
+                <mat-cell *matCellDef="let row" flex> {{row.Cb_Activo}} </mat-cell>
+              </ng-container>
+
+              <ng-container matColumnDef="Editar">
+                  <mat-header-cell *matHeaderCellDef  style="color: black;" flex><b>Editar</b> </mat-header-cell>
+                  <mat-cell *matCellDef="let row" flex>
+                      <button mat-icon-button color="blue" [routerLink]="[row.Id_ProgramacionPeriodica,Id_Proceso,NombreProceso,'edit']">
+                          <mat-icon class="mat-18">edit</mat-icon>
+                      </button>
+                  </mat-cell>
+              </ng-container>
+
+              <ng-container matColumnDef="Eliminar">
+                  <mat-header-cell *matHeaderCellDef  style="color: black;" flex><b>Eliminar</b> </mat-header-cell>
+                  <mat-cell *matCellDef="let row" flex>
+                      <button mat-icon-button color="blue" (click)="delete(row.Id_ProgramacionPeriodica, row)">
+                          <mat-icon class="mat-18">delete</mat-icon>
+                      </button>
+                  </mat-cell>
+              </ng-container>
+
+              <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+              <mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="{'highlight': (row.Cb_Activo == 'Inactivo')}">
+              </mat-row>
+          </mat-table>
+      </div>
+      <div [hidden]="isLoading">
+          <mat-paginator [pageSizeOptions]="[10, 20, 30, 50]">
+          </mat-paginator>
+      </div>
+      <mat-card-actions>
+        <button mat-button color="primary" (click)="goBack()" >Cancelar</button>
+      </mat-card-actions>
+     
+  </mat-card>
+ 
+</td-layout-nav>
+<a mat-fab color="accent" [disabled]="Id_Periodicidad==9" class="mat-fab-bottom-right fixed z-3" [routerLink]="[Id_Proceso, NombreProceso,'add']">
+  <mat-icon>add</mat-icon>
+</a>

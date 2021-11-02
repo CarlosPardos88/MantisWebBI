@@ -1,0 +1,87 @@
+{
+  "menu": {
+    "Childs": [
+      {
+        "Childs": [],
+        "Name": "Aprobaciones Demanda",
+        "Order": 1,
+        "Path": "aprobacionesdemanda",
+        "Text": "details",
+        "Filter": null
+      },
+      {
+        "Childs": [],
+        "Name": "Aprobaciones Programado",
+        "Order": 2,
+        "Path": "aprobacionesprogramado",
+        "Text": "details",
+        "Filter": null
+      },
+      {
+        "Childs": [],
+        "Name": "Areas",
+        "Order": 3,
+        "Path": "areas",
+        "Text": "details",
+        "Filter": null
+      },
+      {
+        "Childs": [],
+        "Name": "Fuentes",
+        "Order": 4,
+        "Path": "fuentes",
+        "Text": "details",
+        "Filter": null
+      },
+      {
+        "Childs": [],
+        "Name": "Procesos",
+        "Order": 5,
+        "Path": "procesos",
+        "Text": "details",
+        "Filter": null
+      },
+      {
+        "Childs": [],
+        "Name": "Consultar Ejecución",
+        "Order": 6,
+        "Path": "ejecuciones",
+        "Text": "details",
+        "Filter": null
+      },
+      {
+        "Childs": [],
+        "Name": "Configurar Parámetro",
+        "Order": 7,
+        "Path": "parametros",
+        "Text": "build",
+        "Filter": null
+      },
+      {
+        "Childs": [],
+        "Name": "Solicitar Proceso",
+        "Order": 8,
+        "Path": "solicitudesdemanda",
+        "Text": "assignment_late",
+        "Filter": null
+      },
+      {
+        "Childs": [],
+        "Name": "Certificar Proceso",
+        "Order": 9,
+        "Path": "certificarprocesos",
+        "Text": "done_all",
+        "Filter": null
+      }
+    ],
+    "Name": "Inicio",
+    "Order": 1,
+    "Path": "",
+    "Text": "Inicio",
+    "Filter": null
+  },
+  "perfil": "Administrador",
+  "area": [
+    
+  ]
+}

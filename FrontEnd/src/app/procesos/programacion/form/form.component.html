@@ -1,0 +1,200 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+    <button mat-icon-button td-menu-button tdLayoutToggle>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div td-toolbar-content layout="row" layout-align="center center" flex>
+      <span>Programación de Proceso</span>
+      <span flex></span>
+    </div>
+    <td-layout-card-over cardTitle="Programación de Proceso" cardSubtitle="Llene el formulario para agregar Programación de Proceso">
+      <ng-template tdLoading="programacion.form">
+        <mat-card-content class="push-bottom-none">
+          <form #programacionForm="ngForm">
+            <div layout="row">
+                <mat-form-field flex>
+                    <mat-label>Periodicidad</mat-label>
+                      <mat-select [(ngModel)]="Id_Periodicidad" name="Id_Periodicidad"
+                      (ngModelChange)="agregarPeriodicidad(Id_Periodicidad)"
+                      required>
+                        <mat-option *ngFor="let periodicidad of periodicidades" [value]="periodicidad.Id_Periodicidad"
+                          [disabled]="Cb_Demanda==false && periodicidad.Id_Periodicidad==9"
+                        >
+                          {{periodicidad.Nombre_Periodicidad}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>  
+            </div>
+            
+            <div layout="row"  class="push-top" *ngIf="show4567">
+                <mat-slide-toggle
+                  #cb_DiaEspecificoElement
+                  #cb_DiaEspecificoControl
+                  [(ngModel)]="cb_DiaEspecifico"
+                  name="cb_DiaEspecifico"
+                  disable="disableS1"
+                  (change)="showDiaEspe(cb_DiaEspecifico)"
+                >
+                  Seleccionar día específico
+                </mat-slide-toggle>
+            </div>
+
+            <div layout="row"  class="push-top" *ngIf="show4567">
+                <mat-slide-toggle
+                  #cb_SemanaEspecificaElement
+                  #cb_SemanaEspecificaControl
+                  [(ngModel)]="cb_SemanaEspecifica"
+                  name="cb_SemanaEspecifica"
+                  disable="disableS2"
+                  (change)="showSemEspe(cb_SemanaEspecifica)"
+                >
+                  Seleccionar semana y día de la semana
+                </mat-slide-toggle>
+            </div>
+
+            <div layout-gt-sm="column2">
+                <div layout="row" *ngIf="showMes">
+                    <mat-form-field flex> 
+                      <input matInput
+                              #Num_MesPeriodoElement
+                              #Num_MesPeriodoControl="ngModel"
+                              type="number" 
+                              placeholder="Mes" 
+                              [(ngModel)]="Num_MesPeriodo" 
+                              name="Num_MesPeriodo" 
+                              [max]="maxMes"
+                              min="1"
+                              [disabled]="Id_Periodicidad==4"
+                              onKeyPress="if(this.value.length==1) return false; return event.charCode >= 48 && event.charCode <=57;"
+                              (blur)="validarCero(Num_MesPeriodo, Num_MesPeriodoControl); validarMesPeriodo(0);"
+                              (ngModelChange)="cbCambiaPeriodicidad=true;"
+                              required>
+                      <mat-hint align="start">
+                        <span [hidden]="Num_MesPeriodoControl.pristine" class="tc-red-600">
+                          <span [hidden]="!Num_MesPeriodoControl.hasError('Required')">Requerido</span>
+                          <span *ngIf="!Num_MesPeriodoControl.hasError('minlength')">Valor mínimo: 1 </span>
+                          <span *ngIf="!Num_MesPeriodoControl.hasError('maxlength')">Valor máximo: {{maxMes}}</span>
+                        </span>
+                      </mat-hint>
+                    </mat-form-field>
+                </div>
+                <div layout="row" *ngIf="showMesList">
+                  <mat-form-field flex>
+                    <mat-label>Meses</mat-label>
+                    <mat-select [(ngModel)]="Num_MesPeriodo2"
+                      name="mes_id"
+                      #diaSemanaSelect="ngModel"
+                      (ngModelChange)="cbCambiaPeriodicidad=true;"
+                      required>
+                      <mat-option *ngFor="let mes of mesesList" [value]="mes.Num_MesPeriodo">{{mes.mes_nombre}}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div layout="row" *ngIf="cb_DiaEspecifico">
+                  <mat-form-field flex> 
+                    <input matInput
+                            #Num_DiaMesElement
+                            #Num_DiaMesControl="ngModel"
+                            type="number" 
+                            placeholder="Día" 
+                            [(ngModel)]="Num_DiaMes" 
+                            name="Num_DiaMes"
+                            onKeyPress="if(this.value.length==2) return false; return event.charCode >= 48 && event.charCode <=57; validarDiaMes();"
+                            (blur)="validarCero(Num_DiaMes, Num_DiaMesControl); validarNumDiaMes(0);"
+                            (ngModelChange)="cbCambiaPeriodicidad=true;"
+                            max="31" 
+                            min="1"
+                            required>
+                    <mat-hint align="start">
+                      <span [hidden]="Num_DiaMesControl.pristine" class="tc-red-600">
+                        <span [hidden]="!Num_DiaMesControl.hasError('Required')">Requerido</span>
+                        <span *ngIf="!Num_DiaMesControl.hasError('minlength')">Valor mínimo: 1 </span>
+                        <span *ngIf="!Num_DiaMesControl.hasError('maxlength')">Valor máximo: 31</span>
+                      </span>
+                    </mat-hint>
+                  </mat-form-field>
+                </div>
+                <div layout="row" *ngIf="cb_SemanaEspecifica">
+                  <mat-form-field flex> 
+                    <input matInput
+                            #Num_SemanaElement
+                            #Num_SemanaControl="ngModel"
+                            type="number" 
+                            placeholder="Semana" 
+                            [(ngModel)]="Num_Semana" 
+                            name="Num_Semana" 
+                            max="4" 
+                            min="1"
+                            onKeyPress="if(this.value.length==1) return false; return event.charCode >= 48 && event.charCode <=57;"
+                            (blur)="validarCero(Num_Semana, Num_SemanaControl); validarNumSemana(0);"
+                            (ngModelChange)="cbCambiaPeriodicidad=true;"
+                            required>
+                    <mat-hint align="start">
+                      <span [hidden]="Num_SemanaControl.pristine" class="tc-red-600">
+                        <span [hidden]="!Num_SemanaControl.hasError('Required')">Requerido</span>
+                        <span *ngIf="!Num_SemanaControl.hasError('min')">Valor mínimo: 1 </span>
+                        <span *ngIf="!Num_SemanaControl.hasError('max')">Valor máximo: 4</span>
+                      </span>
+                    </mat-hint>
+                  </mat-form-field>
+                </div>
+            </div>
+
+            <div layout="row" *ngIf="showP3">
+                <mat-form-field flex>
+                  <mat-label>Días de la Semana</mat-label>
+                  <mat-select [(ngModel)]="Id_DiaSemana"
+                    name="Id_DiaSemana"
+                    (ngModelChange)="cambiaDiaSelected(Id_DiaSemana)"
+                    required>
+                    <mat-option *ngFor="let diasemana of diasSemana" [value]="diasemana.Id_DiaSemana">{{diasemana.Nombre_DiaSemana}}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div layout="row" *ngIf="showMes2">
+                <mat-form-field flex>
+                  <mat-label>Días de la Semana</mat-label>
+                  <mat-select
+                    name="selectedDiaSemana"
+                    multiple
+                    required
+                    [(ngModel)]="selectedDiaSemana">
+                    <mat-option *ngFor="let diasemana of diasSemana" [value]="diasemana.Id_DiaSemana">{{diasemana.Nombre_DiaSemana}}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div layout="row" *ngIf="showdemand">
+                <mat-form-field flex>
+                  <input matInput
+                    #Hora_EjecucionElement
+                    #Hora_EjecucionControl="ngModel"
+                    type="time" 
+                    placeholder="Hora de Ejecución" 
+                    [(ngModel)]="Hora_Ejecucion" 
+                    name="Hora_Ejecucion"
+                    [min]= "HoraIniFueCom"
+                    [max]= "HoraFinFueCom"
+                    (blur)="validarHoraEje(); validaHorarioProgramacion();"
+                    required>
+                  <mat-hint align="start">
+                    <span [hidden]="Hora_EjecucionControl.pristine" class="tc-red-600">
+                      <span [hidden]="!Hora_EjecucionControl.hasError('required')">Requerido</span>
+                      <span *ngIf="!Hora_EjecucionControl.hasError('min')">Valor mínimo: {{ HoraIniFueCom }} </span>
+                      <span *ngIf="!Hora_EjecucionControl.hasError('max')">Valor máximo: {{ HoraFinFueCom }} </span>
+                    </span>
+                  </mat-hint>
+                </mat-form-field>
+            </div>
+
+          </form>
+        </mat-card-content>
+        <mat-divider></mat-divider>
+        <mat-card-actions>
+          <button mat-button [disabled]="!programacionForm.form.valid" color="primary" (click)="validarHoraEje();validaHorarioProgramacion();save()">Guardar</button>
+          <button mat-button (click)="goBack(Id_Proceso,Nombre_Proceso)">Cancelar</button>
+        </mat-card-actions>
+      </ng-template>
+    </td-layout-card-over>
+  </td-layout-nav>
+  

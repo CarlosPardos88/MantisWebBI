@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BI_OPERACIONModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="OPE_AprobacionProgramacionPeriodicaProceso">
+    <Key>
+      <PropertyRef Name="Id_AprobacionProgramacionPeriodica" />
+    </Key>
+    <Property Name="Id_ProgramacionPeriodica" Type="int" Nullable="false" />
+    <Property Name="FechaHora_RevisionOperador" Type="datetime" />
+    <Property Name="Id_AprobacionProgramacionPeriodica" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_OperadorRevisor" Type="varchar" MaxLength="250" />
+    <Property Name="Nombre_RolOperadorRevisor" Type="varchar" MaxLength="250" />
+    <Property Name="Fecha_EjecucionAprobada" Type="date" />
+  </EntityType>
+  <EntityType Name="OPE_AreaNegocio">
+    <Key>
+      <PropertyRef Name="Id_AreaNegocio" />
+    </Key>
+    <Property Name="Id_AreaNegocio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Desc_AreaNegocio" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Nombre_AreaNegocio" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Nombre_CarpetaWorkflows" Type="varchar" MaxLength="120" />
+    <Property Name="Num_InicioRangoCodProceso" Type="int" />
+    <Property Name="Num_FinRangoCodProceso" Type="int" />
+  </EntityType>
+  <EntityType Name="OPE_AuditoriaUsuario">
+    <Key>
+      <PropertyRef Name="Id_AuditoriaUsuario" />
+    </Key>
+    <Property Name="FechaHora_Actividad" Type="datetime" />
+    <Property Name="Id_TipoActividadUsuario" Type="int" Nullable="false" />
+    <Property Name="Desc_Actividad" Type="varchar" MaxLength="250" />
+    <Property Name="Id_AuditoriaUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_Usuario" Type="varchar" MaxLength="250" />
+    <Property Name="Desc_DetalleActividad" Type="varchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="OPE_DiaSemana">
+    <Key>
+      <PropertyRef Name="Id_DiaSemana" />
+    </Key>
+    <Property Name="Id_DiaSemana" Type="int" Nullable="false" />
+    <Property Name="Nombre_DiaSemana" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_EstadoEjecucionProceso">
+    <Key>
+      <PropertyRef Name="Id_EstadoEjecucion" />
+    </Key>
+    <Property Name="Id_EstadoEjecucion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_EstadoEjecucion" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_Fecha">
+    <Key>
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="Fecha" Type="date" Nullable="false" />
+    <Property Name="Num_DiaMes" Type="int" Nullable="false" />
+    <Property Name="Num_MesBimestre" Type="int" Nullable="false" />
+    <Property Name="Num_MesTrimestre" Type="int" Nullable="false" />
+    <Property Name="Num_MesSemestre" Type="int" Nullable="false" />
+    <Property Name="Num_Anio" Type="int" Nullable="false" />
+    <Property Name="Num_Semestre" Type="int" Nullable="false" />
+    <Property Name="Num_Trimestre" Type="int" Nullable="false" />
+    <Property Name="Num_Bimestre" Type="int" Nullable="false" />
+    <Property Name="Num_Mes" Type="int" Nullable="false" />
+    <Property Name="Num_SemanaAnio" Type="int" Nullable="false" />
+    <Property Name="Num_SemanaMes" Type="int" Nullable="false" />
+    <Property Name="Num_DiaSemana" Type="int" Nullable="false" />
+    <Property Name="Num_DiaAnio" Type="int" Nullable="false" />
+    <Property Name="Cb_EsFestivoNacional" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="Desc_FestivoNacional" Type="varchar" MaxLength="250" />
+    <Property Name="Cb_EsNoHabilCUD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="Fecha_UltimoDiaMes" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_HorarioSistemaFuente">
+    <Key>
+      <PropertyRef Name="Hora_Inicio" />
+      <PropertyRef Name="Id_SistemaFuente" />
+    </Key>
+    <Property Name="Hora_Inicio" Type="time" Precision="7" Nullable="false" />
+    <Property Name="Hora_Fin" Type="time" Precision="7" Nullable="false" />
+    <Property Name="Id_SistemaFuente" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_Parametro">
+    <Key>
+      <PropertyRef Name="Id_Parametro" />
+    </Key>
+    <Property Name="Id_Parametro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_Parametro" Type="varchar" MaxLength="250" />
+    <Property Name="Valor_Parametro" Type="varchar" MaxLength="2000" />
+    <Property Name="Desc_Parametro" Type="varchar" MaxLength="2000" />
+    <Property Name="Nombre_GrupoParametro" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="OPE_PerfilUsuario">
+    <Key>
+      <PropertyRef Name="Id_PerfilUsuario" />
+    </Key>
+    <Property Name="Id_PerfilUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Desc_PerfilUsuario" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="OPE_PeriodicidadProceso">
+    <Key>
+      <PropertyRef Name="Id_Periodicidad" />
+    </Key>
+    <Property Name="Id_Periodicidad" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Periodicidad" Type="varchar" MaxLength="120" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_Proceso">
+    <Key>
+      <PropertyRef Name="Id_Proceso" />
+    </Key>
+    <Property Name="Id_Proceso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Desc_Proceso" Type="varchar" MaxLength="250" />
+    <Property Name="Cb_ActualAutomaParametros" Type="char" MaxLength="1" />
+    <Property Name="Id_AreaNegocio" Type="int" Nullable="false" />
+    <Property Name="Nombre_Proceso" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Cb_UtilizaParametros" Type="char" MaxLength="1" />
+    <Property Name="Fecha_Eliminado" Type="date" />
+    <Property Name="Num_TiempoEstimadoEjec" Type="int" />
+    <Property Name="Cb_RevisionAutomaticaUsuario" Type="char" MaxLength="1" />
+    <Property Name="Cb_RevisionAutomaticaOperador" Type="char" MaxLength="1" />
+    <Property Name="Cb_PermitirSolicitudOperador" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="OPE_ProcesoPrerequisito">
+    <Key>
+      <PropertyRef Name="Id_ProcesoPrerequisito" />
+    </Key>
+    <Property Name="Id_Proceso" Type="int" Nullable="false" />
+    <Property Name="Id_ProcesoRequerido" Type="int" Nullable="false" />
+    <Property Name="Id_ProcesoPrerequisito" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_ProgramacionPeriodicaProceso">
+    <Key>
+      <PropertyRef Name="Id_ProgramacionPeriodica" />
+    </Key>
+    <Property Name="Id_ProgramacionPeriodica" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Periodicidad" Type="int" Nullable="false" />
+    <Property Name="Num_DiaMes" Type="smallint" />
+    <Property Name="Num_MesPeriodo" Type="smallint" />
+    <Property Name="Num_Semana" Type="smallint" />
+    <Property Name="Hora_Ejecucion" Type="time" Precision="7" />
+    <Property Name="Id_Proceso" Type="int" Nullable="false" />
+    <Property Name="Fecha_Eliminado" Type="date" />
+    <Property Name="Fecha_Creacion" Type="date" Nullable="false" />
+    <Property Name="Cb_Activo" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="OPE_Rel_Proceso_ProcesoGestor">
+    <Key>
+      <PropertyRef Name="Id_ProcesoGestor" />
+      <PropertyRef Name="Id_Proceso" />
+    </Key>
+    <Property Name="Id_ProcesoGestor" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Id_Proceso" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_Rel_Proceso_SistemaFuente">
+    <Key>
+      <PropertyRef Name="Id_SistemaFuente" />
+      <PropertyRef Name="Id_Proceso" />
+    </Key>
+    <Property Name="Id_SistemaFuente" Type="int" Nullable="false" />
+    <Property Name="Id_Proceso" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_Rel_ProgramacionPeriodica_DiaSemana">
+    <Key>
+      <PropertyRef Name="Id_ProgramacionPeriodica" />
+      <PropertyRef Name="Id_DiaSemana" />
+    </Key>
+    <Property Name="Id_ProgramacionPeriodica" Type="int" Nullable="false" />
+    <Property Name="Id_DiaSemana" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_ResultadoEjecucionProgramada">
+    <Key>
+      <PropertyRef Name="Id_ResultadoEjecucionProgramada" />
+    </Key>
+    <Property Name="FechaHora_InicioEjecucion" Type="datetime" />
+    <Property Name="FechaHora_FinEjecucion" Type="datetime" />
+    <Property Name="Id_ResultadoEjecucionProgramada" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_SolicitudEjecucionPorDemanda" Type="int" />
+    <Property Name="Id_AprobacionProgramacionPeriodica" Type="int" />
+    <Property Name="FechaHora_RevisionOperador" Type="datetime" />
+    <Property Name="FechaHora_RevisionUsuario" Type="datetime" />
+    <Property Name="Id_EstadoOperadorEjecucionProceso" Type="int" />
+    <Property Name="Id_EstadoUsuarioEjecucionProceso" Type="int" />
+    <Property Name="Id_EstadoEjecucionInformatica" Type="int" Nullable="false" />
+    <Property Name="Nombre_UsuarioRevisor" Type="varchar" MaxLength="250" />
+    <Property Name="Nombre_OperadorRevisor" Type="varchar" MaxLength="250" />
+    <Property Name="Nombre_RolUsuarioRevisor" Type="varchar" MaxLength="250" />
+    <Property Name="Nombre_RolOperadorRevisor" Type="varchar" MaxLength="250" />
+    <Property Name="Id_Proceso" Type="int" Nullable="false" />
+    <Property Name="Id_ProgramacionPeriodica" Type="int" />
+  </EntityType>
+  <EntityType Name="OPE_RutaPrerequisitoProceso">
+    <Key>
+      <PropertyRef Name="Id_RutaPrerequisito" />
+    </Key>
+    <Property Name="Desc_RutaArchivo" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Id_Proceso" Type="int" Nullable="false" />
+    <Property Name="Id_RutaPrerequisito" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_SistemaFuente">
+    <Key>
+      <PropertyRef Name="Id_SistemaFuente" />
+    </Key>
+    <Property Name="Id_SistemaFuente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_SistemaFuente" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Id_TipoSistemaFuente" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_SolicitudEjecucionPorDemandaProceso">
+    <Key>
+      <PropertyRef Name="Id_SolicitudEjecucionPorDemanda" />
+    </Key>
+    <Property Name="Id_SolicitudEjecucionPorDemanda" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FechaHora_FinVentanaSugerida" Type="datetime" />
+    <Property Name="FechaHora_EjecucionAprobada" Type="datetime" />
+    <Property Name="Id_Proceso" Type="int" Nullable="false" />
+    <Property Name="FechaHora_InicioVentanaSugerida" Type="datetime" />
+    <Property Name="FechaHora_Sugerida" Type="datetime" />
+    <Property Name="FechaHora_RevisionUsuario" Type="datetime" />
+    <Property Name="FechaHora_RevisionOperador" Type="datetime" />
+    <Property Name="Nombre_OperadorRevisor" Type="varchar" MaxLength="250" />
+    <Property Name="Nombre_RolOperadorRevisor" Type="varchar" MaxLength="250" />
+    <Property Name="Nombre_UsuarioSolicitante" Type="varchar" MaxLength="250" />
+    <Property Name="Nombre_RolUsuarioSolicitante" Type="varchar" MaxLength="250" />
+    <Property Name="Cb_Activo" Type="char" MaxLength="1" />
+    <Property Name="Desc_JustificacionSolicitud" Type="varchar" MaxLength="2000" />
+    <Property Name="Id_TipoEjecucionDemanda" Type="int" />
+  </EntityType>
+  <EntityType Name="OPE_TipoActividadUsuario">
+    <Key>
+      <PropertyRef Name="Id_TipoActividadUsuario" />
+    </Key>
+    <Property Name="Id_TipoActividadUsuario" Type="int" Nullable="false" />
+    <Property Name="Nombre_TipoActividadUsuario" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_TipoEjecucionDemanda">
+    <Key>
+      <PropertyRef Name="Id_TipoEjecucionDemanda" />
+    </Key>
+    <Property Name="Id_TipoEjecucionDemanda" Type="int" Nullable="false" />
+    <Property Name="Nombre_TipoEjecucionDemanda" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_TipoSistemaFuente">
+    <Key>
+      <PropertyRef Name="Id_TipoSistemaFuente" />
+    </Key>
+    <Property Name="Id_TipoSistemaFuente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_TipoSistemaFuente" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OPE_Usuario">
+    <Key>
+      <PropertyRef Name="Id_Usuario" />
+    </Key>
+    <Property Name="Id_Usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_Usuario" Type="varchar" MaxLength="250" />
+    <Property Name="Id_PerfilUsuario" Type="int" />
+    <Property Name="Id_AreaNegocio" Type="int" />
+    <Property Name="Desc_JSONMenuUsuario" Type="text" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BI_OPERACION.dbo.C_ProcesoParaEjecucion' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="C_ProcesoParaEjecucion">
+    <Key>
+      <PropertyRef Name="Id_Proceso" />
+      <PropertyRef Name="Nombre_Proceso" />
+      <PropertyRef Name="Nombre_AreaNegocio" />
+    </Key>
+    <Property Name="Id_ProgramacionPeriodica" Type="int" />
+    <Property Name="Id_AprobacionProgramacionPeriodica" Type="int" />
+    <Property Name="Id_SolicitudEjecucionPorDemanda" Type="int" />
+    <Property Name="Id_Proceso" Type="int" Nullable="false" />
+    <Property Name="Nombre_Proceso" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Cb_RevisionAutomaticaUsuario" Type="char" MaxLength="1" />
+    <Property Name="Cb_RevisionAutomaticaOperador" Type="char" MaxLength="1" />
+    <Property Name="Hora_EjecucionProgramada" Type="time" Precision="7" />
+    <Property Name="Nombre_AreaNegocio" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Nombre_CarpetaWorkflows" Type="varchar" MaxLength="120" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BI_OPERACION.dbo.C_ProcesoProgramado' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="C_ProcesoProgramado">
+    <Key>
+      <PropertyRef Name="Id_Proceso" />
+      <PropertyRef Name="Nombre_Proceso" />
+      <PropertyRef Name="Id_AreaNegocio" />
+      <PropertyRef Name="Nombre_AreaNegocio" />
+      <PropertyRef Name="Cb_Vencido" />
+      <PropertyRef Name="Cb_ProgramacionAprobada" />
+      <PropertyRef Name="Cb_ProcesoEjecutado" />
+      <PropertyRef Name="Fecha" />
+      <PropertyRef Name="Id_ProgramacionPeriodica" />
+      <PropertyRef Name="Id_AprobacionProgramacionPeriodica" />
+      <PropertyRef Name="Id_SolicitudEjecucionPorDemanda" />
+    </Key>
+    <Property Name="Fecha" Type="date" Nullable="false" />
+    <Property Name="Id_ProgramacionPeriodica" Type="int" Nullable="false" />
+    <Property Name="Id_AprobacionProgramacionPeriodica" Type="int" Nullable="false" />
+    <Property Name="Id_SolicitudEjecucionPorDemanda" Type="int" Nullable="false" />
+    <Property Name="Id_Proceso" Type="int" Nullable="false" />
+    <Property Name="Nombre_Proceso" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Cb_RevisionAutomaticaUsuario" Type="char" MaxLength="1" />
+    <Property Name="Cb_RevisionAutomaticaOperador" Type="char" MaxLength="1" />
+    <Property Name="Hora_EjecucionProgramada" Type="time" Precision="7" />
+    <Property Name="Id_AreaNegocio" Type="int" Nullable="false" />
+    <Property Name="Nombre_AreaNegocio" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Nombre_CarpetaWorkflows" Type="varchar" MaxLength="120" />
+    <Property Name="Cb_Vencido" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Cb_ProgramacionAprobada" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Cb_ProcesoEjecutado" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="Id_ResultadoEjecucionProgramada" Type="int" />
+    <Property Name="FechaHora_InicioEjecucion" Type="datetime" />
+    <Property Name="FechaHora_FinEjecucion" Type="datetime" />
+    <Property Name="Id_EstadoEjecucionInformatica" Type="int" />
+    <Property Name="Nombre_EstadoEjecucionInformatica" Type="varchar" MaxLength="250" />
+    <Property Name="Id_EstadoOperadorEjecucionProceso" Type="int" />
+    <Property Name="Nombre_EstadoOperadorEjecucionProceso" Type="varchar" MaxLength="250" />
+    <Property Name="Id_EstadoUsuarioEjecucionProceso" Type="int" />
+    <Property Name="Nombre_EstadoUsuarioEjecucionProceso" Type="varchar" MaxLength="250" />
+    <Property Name="Cb_Activo" Type="char" MaxLength="1" />
+  </EntityType>
+  <Association Name="R_10">
+    <End Role="OPE_PerfilUsuario" Type="Self.OPE_PerfilUsuario" Multiplicity="0..1" />
+    <End Role="OPE_Usuario" Type="Self.OPE_Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_PerfilUsuario">
+        <PropertyRef Name="Id_PerfilUsuario" />
+      </Principal>
+      <Dependent Role="OPE_Usuario">
+        <PropertyRef Name="Id_PerfilUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_102">
+    <End Role="OPE_TipoActividadUsuario" Type="Self.OPE_TipoActividadUsuario" Multiplicity="1" />
+    <End Role="OPE_AuditoriaUsuario" Type="Self.OPE_AuditoriaUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_TipoActividadUsuario">
+        <PropertyRef Name="Id_TipoActividadUsuario" />
+      </Principal>
+      <Dependent Role="OPE_AuditoriaUsuario">
+        <PropertyRef Name="Id_TipoActividadUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_21">
+    <End Role="OPE_PeriodicidadProceso" Type="Self.OPE_PeriodicidadProceso" Multiplicity="1" />
+    <End Role="OPE_ProgramacionPeriodicaProceso" Type="Self.OPE_ProgramacionPeriodicaProceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_PeriodicidadProceso">
+        <PropertyRef Name="Id_Periodicidad" />
+      </Principal>
+      <Dependent Role="OPE_ProgramacionPeriodicaProceso">
+        <PropertyRef Name="Id_Periodicidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_24">
+    <End Role="OPE_ProgramacionPeriodicaProceso" Type="Self.OPE_ProgramacionPeriodicaProceso" Multiplicity="1" />
+    <End Role="OPE_Rel_ProgramacionPeriodica_DiaSemana" Type="Self.OPE_Rel_ProgramacionPeriodica_DiaSemana" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_ProgramacionPeriodicaProceso">
+        <PropertyRef Name="Id_ProgramacionPeriodica" />
+      </Principal>
+      <Dependent Role="OPE_Rel_ProgramacionPeriodica_DiaSemana">
+        <PropertyRef Name="Id_ProgramacionPeriodica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_25">
+    <End Role="OPE_DiaSemana" Type="Self.OPE_DiaSemana" Multiplicity="1" />
+    <End Role="OPE_Rel_ProgramacionPeriodica_DiaSemana" Type="Self.OPE_Rel_ProgramacionPeriodica_DiaSemana" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_DiaSemana">
+        <PropertyRef Name="Id_DiaSemana" />
+      </Principal>
+      <Dependent Role="OPE_Rel_ProgramacionPeriodica_DiaSemana">
+        <PropertyRef Name="Id_DiaSemana" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_29">
+    <End Role="OPE_SistemaFuente" Type="Self.OPE_SistemaFuente" Multiplicity="1" />
+    <End Role="OPE_HorarioSistemaFuente" Type="Self.OPE_HorarioSistemaFuente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_SistemaFuente">
+        <PropertyRef Name="Id_SistemaFuente" />
+      </Principal>
+      <Dependent Role="OPE_HorarioSistemaFuente">
+        <PropertyRef Name="Id_SistemaFuente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_30">
+    <End Role="OPE_SistemaFuente" Type="Self.OPE_SistemaFuente" Multiplicity="1" />
+    <End Role="OPE_Rel_Proceso_SistemaFuente" Type="Self.OPE_Rel_Proceso_SistemaFuente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_SistemaFuente">
+        <PropertyRef Name="Id_SistemaFuente" />
+      </Principal>
+      <Dependent Role="OPE_Rel_Proceso_SistemaFuente">
+        <PropertyRef Name="Id_SistemaFuente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_32">
+    <End Role="OPE_EstadoEjecucionProceso" Type="Self.OPE_EstadoEjecucionProceso" Multiplicity="1" />
+    <End Role="OPE_ResultadoEjecucionProgramada" Type="Self.OPE_ResultadoEjecucionProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_EstadoEjecucionProceso">
+        <PropertyRef Name="Id_EstadoEjecucion" />
+      </Principal>
+      <Dependent Role="OPE_ResultadoEjecucionProgramada">
+        <PropertyRef Name="Id_EstadoEjecucionInformatica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_33">
+    <End Role="OPE_Proceso" Type="Self.OPE_Proceso" Multiplicity="1" />
+    <End Role="OPE_ProgramacionPeriodicaProceso" Type="Self.OPE_ProgramacionPeriodicaProceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_ProgramacionPeriodicaProceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_34">
+    <End Role="OPE_AreaNegocio" Type="Self.OPE_AreaNegocio" Multiplicity="1" />
+    <End Role="OPE_Proceso" Type="Self.OPE_Proceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_AreaNegocio">
+        <PropertyRef Name="Id_AreaNegocio" />
+      </Principal>
+      <Dependent Role="OPE_Proceso">
+        <PropertyRef Name="Id_AreaNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_35">
+    <End Role="OPE_Proceso" Type="Self.OPE_Proceso" Multiplicity="1" />
+    <End Role="OPE_SolicitudEjecucionPorDemandaProceso" Type="Self.OPE_SolicitudEjecucionPorDemandaProceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_SolicitudEjecucionPorDemandaProceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_38">
+    <End Role="OPE_AprobacionProgramacionPeriodicaProceso" Type="Self.OPE_AprobacionProgramacionPeriodicaProceso" Multiplicity="0..1" />
+    <End Role="OPE_ResultadoEjecucionProgramada" Type="Self.OPE_ResultadoEjecucionProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_AprobacionProgramacionPeriodicaProceso">
+        <PropertyRef Name="Id_AprobacionProgramacionPeriodica" />
+      </Principal>
+      <Dependent Role="OPE_ResultadoEjecucionProgramada">
+        <PropertyRef Name="Id_AprobacionProgramacionPeriodica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_39">
+    <End Role="OPE_Proceso" Type="Self.OPE_Proceso" Multiplicity="1" />
+    <End Role="OPE_Rel_Proceso_ProcesoGestor" Type="Self.OPE_Rel_Proceso_ProcesoGestor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_Rel_Proceso_ProcesoGestor">
+        <PropertyRef Name="Id_Proceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_40">
+    <End Role="OPE_Proceso" Type="Self.OPE_Proceso" Multiplicity="1" />
+    <End Role="OPE_Rel_Proceso_SistemaFuente" Type="Self.OPE_Rel_Proceso_SistemaFuente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_Rel_Proceso_SistemaFuente">
+        <PropertyRef Name="Id_Proceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_41">
+    <End Role="OPE_Proceso" Type="Self.OPE_Proceso" Multiplicity="1" />
+    <End Role="OPE_RutaPrerequisitoProceso" Type="Self.OPE_RutaPrerequisitoProceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_RutaPrerequisitoProceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_42">
+    <End Role="OPE_Proceso" Type="Self.OPE_Proceso" Multiplicity="1" />
+    <End Role="OPE_ProcesoPrerequisito" Type="Self.OPE_ProcesoPrerequisito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_ProcesoPrerequisito">
+        <PropertyRef Name="Id_Proceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_43">
+    <End Role="OPE_Proceso" Type="Self.OPE_Proceso" Multiplicity="1" />
+    <End Role="OPE_ProcesoPrerequisito" Type="Self.OPE_ProcesoPrerequisito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_ProcesoPrerequisito">
+        <PropertyRef Name="Id_ProcesoRequerido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_46">
+    <End Role="OPE_ProgramacionPeriodicaProceso" Type="Self.OPE_ProgramacionPeriodicaProceso" Multiplicity="1" />
+    <End Role="OPE_AprobacionProgramacionPeriodicaProceso" Type="Self.OPE_AprobacionProgramacionPeriodicaProceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_ProgramacionPeriodicaProceso">
+        <PropertyRef Name="Id_ProgramacionPeriodica" />
+      </Principal>
+      <Dependent Role="OPE_AprobacionProgramacionPeriodicaProceso">
+        <PropertyRef Name="Id_ProgramacionPeriodica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_48">
+    <End Role="OPE_SolicitudEjecucionPorDemandaProceso" Type="Self.OPE_SolicitudEjecucionPorDemandaProceso" Multiplicity="0..1" />
+    <End Role="OPE_ResultadoEjecucionProgramada" Type="Self.OPE_ResultadoEjecucionProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_SolicitudEjecucionPorDemandaProceso">
+        <PropertyRef Name="Id_SolicitudEjecucionPorDemanda" />
+      </Principal>
+      <Dependent Role="OPE_ResultadoEjecucionProgramada">
+        <PropertyRef Name="Id_SolicitudEjecucionPorDemanda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_49">
+    <End Role="OPE_EstadoEjecucionProceso" Type="Self.OPE_EstadoEjecucionProceso" Multiplicity="0..1" />
+    <End Role="OPE_ResultadoEjecucionProgramada" Type="Self.OPE_ResultadoEjecucionProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_EstadoEjecucionProceso">
+        <PropertyRef Name="Id_EstadoEjecucion" />
+      </Principal>
+      <Dependent Role="OPE_ResultadoEjecucionProgramada">
+        <PropertyRef Name="Id_EstadoOperadorEjecucionProceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_50">
+    <End Role="OPE_EstadoEjecucionProceso" Type="Self.OPE_EstadoEjecucionProceso" Multiplicity="0..1" />
+    <End Role="OPE_ResultadoEjecucionProgramada" Type="Self.OPE_ResultadoEjecucionProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_EstadoEjecucionProceso">
+        <PropertyRef Name="Id_EstadoEjecucion" />
+      </Principal>
+      <Dependent Role="OPE_ResultadoEjecucionProgramada">
+        <PropertyRef Name="Id_EstadoUsuarioEjecucionProceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_88">
+    <End Role="OPE_Proceso" Type="Self.OPE_Proceso" Multiplicity="1" />
+    <End Role="OPE_ResultadoEjecucionProgramada" Type="Self.OPE_ResultadoEjecucionProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_ResultadoEjecucionProgramada">
+        <PropertyRef Name="Id_Proceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_898">
+    <End Role="OPE_TipoSistemaFuente" Type="Self.OPE_TipoSistemaFuente" Multiplicity="1" />
+    <End Role="OPE_SistemaFuente" Type="Self.OPE_SistemaFuente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_TipoSistemaFuente">
+        <PropertyRef Name="Id_TipoSistemaFuente" />
+      </Principal>
+      <Dependent Role="OPE_SistemaFuente">
+        <PropertyRef Name="Id_TipoSistemaFuente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BI_OPERACIONModelStoreContainer">
+    <EntitySet Name="OPE_AprobacionProgramacionPeriodicaProceso" EntityType="Self.OPE_AprobacionProgramacionPeriodicaProceso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_AreaNegocio" EntityType="Self.OPE_AreaNegocio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_AuditoriaUsuario" EntityType="Self.OPE_AuditoriaUsuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_DiaSemana" EntityType="Self.OPE_DiaSemana" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_EstadoEjecucionProceso" EntityType="Self.OPE_EstadoEjecucionProceso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_Fecha" EntityType="Self.OPE_Fecha" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_HorarioSistemaFuente" EntityType="Self.OPE_HorarioSistemaFuente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_Parametro" EntityType="Self.OPE_Parametro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_PerfilUsuario" EntityType="Self.OPE_PerfilUsuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_PeriodicidadProceso" EntityType="Self.OPE_PeriodicidadProceso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_Proceso" EntityType="Self.OPE_Proceso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_ProcesoPrerequisito" EntityType="Self.OPE_ProcesoPrerequisito" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_ProgramacionPeriodicaProceso" EntityType="Self.OPE_ProgramacionPeriodicaProceso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_Rel_Proceso_ProcesoGestor" EntityType="Self.OPE_Rel_Proceso_ProcesoGestor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_Rel_Proceso_SistemaFuente" EntityType="Self.OPE_Rel_Proceso_SistemaFuente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_Rel_ProgramacionPeriodica_DiaSemana" EntityType="Self.OPE_Rel_ProgramacionPeriodica_DiaSemana" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_ResultadoEjecucionProgramada" EntityType="Self.OPE_ResultadoEjecucionProgramada" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_RutaPrerequisitoProceso" EntityType="Self.OPE_RutaPrerequisitoProceso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_SistemaFuente" EntityType="Self.OPE_SistemaFuente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_SolicitudEjecucionPorDemandaProceso" EntityType="Self.OPE_SolicitudEjecucionPorDemandaProceso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_TipoActividadUsuario" EntityType="Self.OPE_TipoActividadUsuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_TipoEjecucionDemanda" EntityType="Self.OPE_TipoEjecucionDemanda" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_TipoSistemaFuente" EntityType="Self.OPE_TipoSistemaFuente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPE_Usuario" EntityType="Self.OPE_Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="C_ProcesoParaEjecucion" EntityType="Self.C_ProcesoParaEjecucion" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [C_ProcesoParaEjecucion].[Id_ProgramacionPeriodica] AS [Id_ProgramacionPeriodica], 
+    [C_ProcesoParaEjecucion].[Id_AprobacionProgramacionPeriodica] AS [Id_AprobacionProgramacionPeriodica], 
+    [C_ProcesoParaEjecucion].[Id_SolicitudEjecucionPorDemanda] AS [Id_SolicitudEjecucionPorDemanda], 
+    [C_ProcesoParaEjecucion].[Id_Proceso] AS [Id_Proceso], 
+    [C_ProcesoParaEjecucion].[Nombre_Proceso] AS [Nombre_Proceso], 
+    [C_ProcesoParaEjecucion].[Cb_RevisionAutomaticaUsuario] AS [Cb_RevisionAutomaticaUsuario], 
+    [C_ProcesoParaEjecucion].[Cb_RevisionAutomaticaOperador] AS [Cb_RevisionAutomaticaOperador], 
+    [C_ProcesoParaEjecucion].[Hora_EjecucionProgramada] AS [Hora_EjecucionProgramada], 
+    [C_ProcesoParaEjecucion].[Nombre_AreaNegocio] AS [Nombre_AreaNegocio], 
+    [C_ProcesoParaEjecucion].[Nombre_CarpetaWorkflows] AS [Nombre_CarpetaWorkflows]
+    FROM [dbo].[C_ProcesoParaEjecucion] AS [C_ProcesoParaEjecucion]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="C_ProcesoProgramado" EntityType="Self.C_ProcesoProgramado" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [C_ProcesoProgramado].[Fecha] AS [Fecha], 
+    [C_ProcesoProgramado].[Id_ProgramacionPeriodica] AS [Id_ProgramacionPeriodica], 
+    [C_ProcesoProgramado].[Id_AprobacionProgramacionPeriodica] AS [Id_AprobacionProgramacionPeriodica], 
+    [C_ProcesoProgramado].[Id_SolicitudEjecucionPorDemanda] AS [Id_SolicitudEjecucionPorDemanda], 
+    [C_ProcesoProgramado].[Id_Proceso] AS [Id_Proceso], 
+    [C_ProcesoProgramado].[Nombre_Proceso] AS [Nombre_Proceso], 
+    [C_ProcesoProgramado].[Cb_RevisionAutomaticaUsuario] AS [Cb_RevisionAutomaticaUsuario], 
+    [C_ProcesoProgramado].[Cb_RevisionAutomaticaOperador] AS [Cb_RevisionAutomaticaOperador], 
+    [C_ProcesoProgramado].[Hora_EjecucionProgramada] AS [Hora_EjecucionProgramada], 
+    [C_ProcesoProgramado].[Id_AreaNegocio] AS [Id_AreaNegocio], 
+    [C_ProcesoProgramado].[Nombre_AreaNegocio] AS [Nombre_AreaNegocio], 
+    [C_ProcesoProgramado].[Nombre_CarpetaWorkflows] AS [Nombre_CarpetaWorkflows], 
+    [C_ProcesoProgramado].[Cb_Vencido] AS [Cb_Vencido], 
+    [C_ProcesoProgramado].[Cb_ProgramacionAprobada] AS [Cb_ProgramacionAprobada], 
+    [C_ProcesoProgramado].[Cb_ProcesoEjecutado] AS [Cb_ProcesoEjecutado], 
+    [C_ProcesoProgramado].[Id_ResultadoEjecucionProgramada] AS [Id_ResultadoEjecucionProgramada], 
+    [C_ProcesoProgramado].[FechaHora_InicioEjecucion] AS [FechaHora_InicioEjecucion], 
+    [C_ProcesoProgramado].[FechaHora_FinEjecucion] AS [FechaHora_FinEjecucion], 
+    [C_ProcesoProgramado].[Id_EstadoEjecucionInformatica] AS [Id_EstadoEjecucionInformatica], 
+    [C_ProcesoProgramado].[Nombre_EstadoEjecucionInformatica] AS [Nombre_EstadoEjecucionInformatica], 
+    [C_ProcesoProgramado].[Id_EstadoOperadorEjecucionProceso] AS [Id_EstadoOperadorEjecucionProceso], 
+    [C_ProcesoProgramado].[Nombre_EstadoOperadorEjecucionProceso] AS [Nombre_EstadoOperadorEjecucionProceso], 
+    [C_ProcesoProgramado].[Id_EstadoUsuarioEjecucionProceso] AS [Id_EstadoUsuarioEjecucionProceso], 
+    [C_ProcesoProgramado].[Nombre_EstadoUsuarioEjecucionProceso] AS [Nombre_EstadoUsuarioEjecucionProceso], 
+    [C_ProcesoProgramado].[Cb_Activo] AS [Cb_Activo]
+    FROM [dbo].[C_ProcesoProgramado] AS [C_ProcesoProgramado]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="R_10" Association="Self.R_10">
+      <End Role="OPE_PerfilUsuario" EntitySet="OPE_PerfilUsuario" />
+      <End Role="OPE_Usuario" EntitySet="OPE_Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="R_102" Association="Self.R_102">
+      <End Role="OPE_TipoActividadUsuario" EntitySet="OPE_TipoActividadUsuario" />
+      <End Role="OPE_AuditoriaUsuario" EntitySet="OPE_AuditoriaUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="R_21" Association="Self.R_21">
+      <End Role="OPE_PeriodicidadProceso" EntitySet="OPE_PeriodicidadProceso" />
+      <End Role="OPE_ProgramacionPeriodicaProceso" EntitySet="OPE_ProgramacionPeriodicaProceso" />
+    </AssociationSet>
+    <AssociationSet Name="R_24" Association="Self.R_24">
+      <End Role="OPE_ProgramacionPeriodicaProceso" EntitySet="OPE_ProgramacionPeriodicaProceso" />
+      <End Role="OPE_Rel_ProgramacionPeriodica_DiaSemana" EntitySet="OPE_Rel_ProgramacionPeriodica_DiaSemana" />
+    </AssociationSet>
+    <AssociationSet Name="R_25" Association="Self.R_25">
+      <End Role="OPE_DiaSemana" EntitySet="OPE_DiaSemana" />
+      <End Role="OPE_Rel_ProgramacionPeriodica_DiaSemana" EntitySet="OPE_Rel_ProgramacionPeriodica_DiaSemana" />
+    </AssociationSet>
+    <AssociationSet Name="R_29" Association="Self.R_29">
+      <End Role="OPE_SistemaFuente" EntitySet="OPE_SistemaFuente" />
+      <End Role="OPE_HorarioSistemaFuente" EntitySet="OPE_HorarioSistemaFuente" />
+    </AssociationSet>
+    <AssociationSet Name="R_30" Association="Self.R_30">
+      <End Role="OPE_SistemaFuente" EntitySet="OPE_SistemaFuente" />
+      <End Role="OPE_Rel_Proceso_SistemaFuente" EntitySet="OPE_Rel_Proceso_SistemaFuente" />
+    </AssociationSet>
+    <AssociationSet Name="R_32" Association="Self.R_32">
+      <End Role="OPE_EstadoEjecucionProceso" EntitySet="OPE_EstadoEjecucionProceso" />
+      <End Role="OPE_ResultadoEjecucionProgramada" EntitySet="OPE_ResultadoEjecucionProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="R_33" Association="Self.R_33">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_ProgramacionPeriodicaProceso" EntitySet="OPE_ProgramacionPeriodicaProceso" />
+    </AssociationSet>
+    <AssociationSet Name="R_34" Association="Self.R_34">
+      <End Role="OPE_AreaNegocio" EntitySet="OPE_AreaNegocio" />
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+    </AssociationSet>
+    <AssociationSet Name="R_35" Association="Self.R_35">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_SolicitudEjecucionPorDemandaProceso" EntitySet="OPE_SolicitudEjecucionPorDemandaProceso" />
+    </AssociationSet>
+    <AssociationSet Name="R_38" Association="Self.R_38">
+      <End Role="OPE_AprobacionProgramacionPeriodicaProceso" EntitySet="OPE_AprobacionProgramacionPeriodicaProceso" />
+      <End Role="OPE_ResultadoEjecucionProgramada" EntitySet="OPE_ResultadoEjecucionProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="R_39" Association="Self.R_39">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_Rel_Proceso_ProcesoGestor" EntitySet="OPE_Rel_Proceso_ProcesoGestor" />
+    </AssociationSet>
+    <AssociationSet Name="R_40" Association="Self.R_40">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_Rel_Proceso_SistemaFuente" EntitySet="OPE_Rel_Proceso_SistemaFuente" />
+    </AssociationSet>
+    <AssociationSet Name="R_41" Association="Self.R_41">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_RutaPrerequisitoProceso" EntitySet="OPE_RutaPrerequisitoProceso" />
+    </AssociationSet>
+    <AssociationSet Name="R_42" Association="Self.R_42">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_ProcesoPrerequisito" EntitySet="OPE_ProcesoPrerequisito" />
+    </AssociationSet>
+    <AssociationSet Name="R_43" Association="Self.R_43">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_ProcesoPrerequisito" EntitySet="OPE_ProcesoPrerequisito" />
+    </AssociationSet>
+    <AssociationSet Name="R_46" Association="Self.R_46">
+      <End Role="OPE_ProgramacionPeriodicaProceso" EntitySet="OPE_ProgramacionPeriodicaProceso" />
+      <End Role="OPE_AprobacionProgramacionPeriodicaProceso" EntitySet="OPE_AprobacionProgramacionPeriodicaProceso" />
+    </AssociationSet>
+    <AssociationSet Name="R_48" Association="Self.R_48">
+      <End Role="OPE_SolicitudEjecucionPorDemandaProceso" EntitySet="OPE_SolicitudEjecucionPorDemandaProceso" />
+      <End Role="OPE_ResultadoEjecucionProgramada" EntitySet="OPE_ResultadoEjecucionProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="R_49" Association="Self.R_49">
+      <End Role="OPE_EstadoEjecucionProceso" EntitySet="OPE_EstadoEjecucionProceso" />
+      <End Role="OPE_ResultadoEjecucionProgramada" EntitySet="OPE_ResultadoEjecucionProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="R_50" Association="Self.R_50">
+      <End Role="OPE_EstadoEjecucionProceso" EntitySet="OPE_EstadoEjecucionProceso" />
+      <End Role="OPE_ResultadoEjecucionProgramada" EntitySet="OPE_ResultadoEjecucionProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="R_88" Association="Self.R_88">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_ResultadoEjecucionProgramada" EntitySet="OPE_ResultadoEjecucionProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="R_898" Association="Self.R_898">
+      <End Role="OPE_TipoSistemaFuente" EntitySet="OPE_TipoSistemaFuente" />
+      <End Role="OPE_SistemaFuente" EntitySet="OPE_SistemaFuente" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

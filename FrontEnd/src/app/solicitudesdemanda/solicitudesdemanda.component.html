@@ -1,0 +1,158 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+  <button mat-icon-button td-menu-button tdLayoutToggle>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div td-toolbar-content layout="row" layout-align="center center" flex>
+    <span style="color: white;">Solicitud de procesos</span>
+    <span flex></span>
+    <app-notificaciones></app-notificaciones>
+  </div>
+  <mat-progress-spinner [mode]="'indeterminate'" *ngIf="isLoading" style="margin: auto;">
+  </mat-progress-spinner>
+  <div class="mat-content" layout-padding flex>
+    <div layout-gt-xs="row" layout-align-gt-xs="center start" class="margin">
+      <div flex-gt-xs="75">
+
+        <mat-card class="push-bottom-xs" tdMediaToggle="gt-xs" [mediaClasses]="['push']">
+          <div class="pad" *ngIf="!isLoading && procesos?.length === 0" layout="row" layout-align="center center">
+            <h3>No existen procesos para mostrar.</h3>
+          </div>
+          <mat-card-content>
+            <div [hidden]="isLoading" class="divSize">
+              <mat-table matTableFilter [exampleEntity]="filterEntity" [filterType]="filterType"
+                [dataSource]="dataSource" matSort>
+
+                <ng-container matColumnDef="Nombre_Proceso">
+                  <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="35">
+                    <b>
+                      <mat-form-field>
+                        <input matInput placeholder="Nombre" [(ngModel)]="filterEntity.Nombre_Proceso">
+                      </mat-form-field>
+                    </b>
+                  </mat-header-cell>
+                  <mat-cell *matCellDef="let row" flex="35"> {{row.Nombre_Proceso}} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="Nombre_AreaNegocio">
+                  <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="35">
+                    <b>
+                      <mat-form-field>
+                        <input matInput placeholder="Área de Negocio"
+                          [(ngModel)]="filterEntity.Nombre_AreaNegocio">
+                      </mat-form-field>
+                    </b>
+                  </mat-header-cell>
+                  <mat-cell *matCellDef="let row" flex="35"> {{row.Nombre_AreaNegocio}} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="Num_TiempoEstimadoEjec">
+                  <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="35">
+                    <b>
+                      <mat-form-field>
+                        <input matInput placeholder="Tiempo Estimado Ejecución"
+                          [(ngModel)]="filterEntity.Num_TiempoEstimadoEjec">
+                      </mat-form-field>
+                    </b>
+                  </mat-header-cell>
+                  <mat-cell *matCellDef="let row" flex="35"> {{row.Num_TiempoEstimadoEjec}} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="Editar">
+                  <mat-header-cell *matHeaderCellDef style="color: black;" flex="5"><b>Solicitar</b> </mat-header-cell>
+                  <mat-cell *matCellDef="let row" flex="5">
+                    <button mat-icon-button color="blue" [routerLink]="[row.Id_Proceso, 'edit']">
+                      <mat-icon class="mat-18">edit</mat-icon>
+                    </button>
+                  </mat-cell>
+                </ng-container>
+
+
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;">
+                </mat-row>
+              </mat-table>
+            </div>
+            <div [hidden]="isLoading">
+              <mat-paginator [pageSizeOptions]="[10, 20, 30, 50]">
+              </mat-paginator>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+    <div layout-gt-xs="row" layout-align-gt-xs="center start" class="margin">
+      <mat-progress-spinner [mode]="'indeterminate'" *ngIf="isLoading2" style="margin: auto;">
+      </mat-progress-spinner>
+      <div flex-gt-xs="75" *ngIf="show">
+        <mat-card flex-gt-sm>
+          <mat-card-title>Solicitar Ejecución Proceso {{ Nombre_Proceso }}</mat-card-title>
+          <mat-divider style="width: 100%;"></mat-divider>
+          <mat-nav-list class="will-load item-list">
+            <a mat-list-item layout-align="row">
+              <mat-icon matListAvatar> group_work </mat-icon>
+              <span flex></span>
+              <span class="mat-caption" flex="20"> Área de Negocio </span>
+              <span flex></span>
+              <span class="mat-caption" flex="20"> {{ Nombre_AreaNegocio }} </span>
+            </a>
+            <a mat-list-item layout-align="row">
+              <mat-icon matListAvatar> account_box </mat-icon>
+              <span flex></span>
+              <span class="mat-caption" flex="20"> Utiliza Parámetros </span>
+              <span flex></span>
+              <span class="mat-caption" flex="20"> {{ Cb_UtilizaParametros | homologacion }} </span>
+            </a>
+            <a mat-list-item layout-align="row">
+              <mat-icon matListAvatar> description </mat-icon>
+              <span flex></span>
+              <span class="mat-caption" flex="20"> Actualiza Parámetros </span>
+              <span flex></span>
+              <span class="mat-caption" flex="20"> {{ Cb_ActualAutomaParametros | homologacion }} </span>
+            </a>
+            <mat-divider *ngIf="!last" [inset]="true"></mat-divider>
+
+            <mat-card-content class="push-bottom-none">
+              <form #solicitudForm="ngForm">
+                <div layout="row">
+                  <mat-form-field style="width: 25%;">
+                    <input matInput #FechaHora_InicioVentanaSugeridaAprobadaElement
+                      #FechaHora_InicioVentanaSugeridaControl="ngModel" type="datetime-local"
+                      name="FechaHora_InicioVentanaSugerida" placeholder="Fecha Hora Inicio Ventana Sugerida"
+                      [(ngModel)]="FechaHora_InicioVentanaSugerida" [min]="today" (blur)="validarHora();" required>
+                  </mat-form-field>
+                </div>
+
+                <div layout="row">
+                  <mat-form-field style="width: 25%;">
+                    <input matInput #FechaHora_FinVentanaSugeridaElement #FechaHora_FinVentanaSugeridaControl="ngModel"
+                      type="datetime-local" name="FechaHora_FinVentanaSugerida"
+                      placeholder="Fecha Hora Fin Ventana Sugerida" [(ngModel)]="FechaHora_FinVentanaSugerida"
+                      [min]="FechaHora_InicioVentanaSugerida" (blur)="validarFecha();" required>
+                  </mat-form-field>
+                </div>
+
+                <div layout="row">
+                  <mat-form-field style="width: 25%;">
+                    <input matInput #FechaHora_SugeridaElement #FechaHora_SugeridaControl="ngModel"
+                      type="datetime-local" name="FechaHora_Sugerida" placeholder="Fecha Hora de Ejecución Sugerida"
+                      [(ngModel)]="FechaHora_Sugerida" [min]="FechaHora_InicioVentanaSugerida"
+                      [max]="FechaHora_FinVentanaSugerida" (blur)="validarFechaSugerida();" required>
+                  </mat-form-field>
+                </div>
+              </form>
+            </mat-card-content>
+
+          </mat-nav-list>
+          <mat-divider style="width: 100%;"></mat-divider>
+          <mat-card-actions>
+            <button mat-button [disabled]="!solicitudForm.form.valid" color="primary"
+              (click)="save()">Solicitar</button>
+            <button mat-button (click)="cleanForm()">Cancelar</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+</td-layout-nav>

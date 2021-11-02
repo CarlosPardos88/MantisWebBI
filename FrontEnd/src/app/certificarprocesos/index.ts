@@ -1,0 +1,1 @@
+export { CertificarprocesosService, ICertificar, CERTIFICAR_API, CERTIFICAR_PROVIDER } from './services/certificarprocesos.service';

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WL5G3N0:definitions xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:WL5G3N1="http://banrep.gov.co/s3" name="ServicioMenuPerfilWS" targetNamespace="http://banrep.gov.co/s3" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/">
+  <WL5G3N0:types>
+    <xsd:schema xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://banrep.gov.co/s3" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import schemaLocation="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/DemeMenu?SCHEMA%2FDemeMenu%2FXSD%2FServicioMenuPerfilWS" namespace="http://banrep.gov.co/s3" />
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="consultarMenuPerfil">
+    <WL5G3N0:part name="parameters" element="WL5G3N1:consultarMenuPerfil" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultarMenuPerfilResponse">
+    <WL5G3N0:part name="parameters" element="WL5G3N1:consultarMenuPerfilResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="AdministradorMenuException">
+    <WL5G3N0:part name="fault" element="WL5G3N1:AdministradorMenuException" />
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="AdministradorMenuWS">
+    <WL5G3N0:operation name="consultarMenuPerfil">
+      <WL5G3N0:input message="WL5G3N1:consultarMenuPerfil" />
+      <WL5G3N0:output message="WL5G3N1:consultarMenuPerfilResponse" />
+      <WL5G3N0:fault name="AdministradorMenuException" message="WL5G3N1:AdministradorMenuException" />
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="AdministradorMenuWSPortBinding" type="WL5G3N1:AdministradorMenuWS">
+    <WL5G3N2:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <WL5G3N0:operation name="consultarMenuPerfil">
+      <WL5G3N2:operation soapAction="consultarMenuPerfil" />
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="AdministradorMenuException">
+        <WL5G3N2:fault use="literal" name="AdministradorMenuException" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="AdministradorMenuWSPortBindingQSService">
+    <WL5G3N0:port name="AdministradorMenuWSPortBindingQSPort" binding="WL5G3N1:AdministradorMenuWSPortBinding">
+      <WL5G3N2:address location="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/DemeMenu" />
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

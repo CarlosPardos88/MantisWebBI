@@ -1,0 +1,132 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+    <button mat-icon-button td-menu-button tdLayoutToggle>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <div td-toolbar-content layout="row" layout-align="center center" flex>
+        <span style="color: white;">Configuración de parámetros</span>
+        <span flex></span>
+        <app-notificaciones></app-notificaciones>
+    </div>
+
+    <mat-progress-spinner [mode]="'indeterminate'" *ngIf="isLoading" style="margin: auto;">
+    </mat-progress-spinner>
+    <mat-card class="push-bottom-xxl" tdMediaToggle="gt-xs" [mediaClasses]="['push']">
+        <div class="pad" *ngIf="!isLoading && filteredParametros?.length === 0" layout="row"
+            layout-align="center center">
+            <h3>No existen parámetros para mostrar.</h3>
+        </div>
+          
+        <div [hidden]="isLoading || filteredParametros?.length === 0">
+            <mat-table matTableFilter [exampleEntity]="filterEntity" [filterType]="filterType" [dataSource]="dataSource"
+                matSort>
+                <ng-container matColumnDef="NombreGrupoParametro">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="15">
+                        <b>
+                            <mat-form-field>
+                                <input matInput placeholder="Área de Negocio"
+                                    [(ngModel)]="filterEntity.NombreGrupoParametro">
+                            </mat-form-field>
+                        </b>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row" flex="15"> {{row.NombreGrupoParametro}} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="NombreParametro">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;">
+                        <b>
+                            <mat-form-field>
+                                <input matInput placeholder="Nombre Parámetro"
+                                    [(ngModel)]="filterEntity.NombreParametro">
+                            </mat-form-field>
+                        </b>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row"> {{row.NombreParametro}} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="ValorParametro">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;">
+                        <b>
+                            <mat-form-field>
+                                <input matInput placeholder="Valor Parámetro" [(ngModel)]="filterEntity.ValorParametro">
+                            </mat-form-field>
+                        </b>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row"> {{row.ValorParametro}} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="DescripcionParametro">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;">
+                        <b>
+                            <mat-form-field>
+                                <input matInput placeholder="Descripción Parámetro"
+                                    [(ngModel)]="filterEntity.DescripcionParametro">
+                            </mat-form-field>
+                        </b>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row"> {{row.DescripcionParametro}} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="FechaCreacion">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;">
+                        <b>
+                            <mat-form-field>
+                                <input matInput placeholder="Fecha Creación" [(ngModel)]="filterEntity.FechaCreacion">
+                            </mat-form-field>
+                        </b>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row"> {{row.FechaCreacion}} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="FechaModificacion">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;">
+                        <b>
+                            <mat-form-field>
+                                <input matInput placeholder="Fecha Modificación"
+                                    [(ngModel)]="filterEntity.FechaModificacion">
+                            </mat-form-field>
+                        </b>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row"> {{row.FechaModificacion}}
+                    </mat-cell>
+                </ng-container>
+                
+               
+                <ng-container matColumnDef="Editar" *ngIf="!perfilUsuario">
+                        <mat-header-cell   *matHeaderCellDef flex="5"><b>Editar</b> </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="5">
+                            <button mat-icon-button color="blue" [routerLink]="[row.Id_Parametro, 'edit']">
+                                <mat-icon class="mat-18">edit</mat-icon>
+                            </button>
+                        </mat-cell>
+                   
+                </ng-container>
+                <div *ngIf="!perfilUsuario">
+                    <mat-header-row *matHeaderRowDef="displayedColumns">
+
+                    </mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;">
+                    </mat-row>
+                </div>
+               <div *ngIf="perfilUsuario != 'Operador'">
+                <mat-header-row *matHeaderRowDef="displayedColumnsOperador">
+
+                </mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumnsOperador;">
+                </mat-row>
+               </div>
+            </mat-table>
+        </div>
+        <div [hidden]="isLoading || filteredParametros?.length === 0">
+            <mat-paginator [pageSizeOptions]="[10, 20, 30, 50]">
+            </mat-paginator>
+        </div>
+
+    </mat-card>
+    <!-- </ng-template> -->
+</td-layout-nav>
+<div *ngIf="!perfilUsuario">
+    <a mat-fab color="accent" class="mat-fab-bottom-right fixed z-3" [routerLink]="['add']">
+        <mat-icon>add</mat-icon>
+    </a>
+</div>
+

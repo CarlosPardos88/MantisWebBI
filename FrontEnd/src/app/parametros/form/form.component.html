@@ -1,0 +1,75 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+  <button mat-icon-button td-menu-button tdLayoutToggle>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div td-toolbar-content layout="row" layout-align="center center" flex>
+    <span style="color: white;">Parámetro</span>
+    <span flex></span>
+  </div>
+  <td-layout-card-over cardTitle="Parámetro" cardSubtitle="Llene los campos para {{action}} parámetro">
+    <ng-template tdLoading="parametro.form">
+      <mat-card-content class="push-bottom-none">
+        <form #parametroForm="ngForm">
+          <div layout="row">
+            <mat-form-field flex>
+              <mat-label>Área de Negocio</mat-label>
+              <mat-select [(ngModel)]="nombreGrupoParametro" name="nombreGrupoParametro" required
+                [disabled]="idParametro">
+                <mat-option *ngFor="let area of areas" [value]="area.Nombre_AreaNegocio">
+                  {{area.Nombre_AreaNegocio}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div layout="row">
+            <mat-form-field flex>
+              <input matInput #nombreParametroElement #nombreParametroControl="ngModel" type="text"
+                placeholder="Nombre Parámetro" [(ngModel)]="nombreParametro" name="nombreParametro" 
+                (blur)="validarEspacios(nombreParametro,nombreParametroControl);"
+                maxlength="60"
+                required [disabled]="idParametro">
+              <mat-hint align="start">
+                <span [hidden]="nombreParametroControl.pristine" class="tc-red-600">
+                  <span [hidden]="!nombreParametroControl.hasError('required')">Campo obligatorio</span>
+                </span>
+              </mat-hint>
+              <mat-hint align="end">{{nombreParametroElement.value.length}} / 60</mat-hint>
+            </mat-form-field>
+          </div>
+          <div layout="row">
+            <mat-form-field flex>
+              <input matInput #valorParametroElement #valorParametroControl="ngModel" type="text"
+                placeholder="Valor Parámetro" [(ngModel)]="valorParametro" name="valorParametro" maxlength="2000"
+                (blur)="validarEspacios(valorParametro,valorParametroControl);" required>
+              <mat-hint align="start">
+                <span [hidden]="valorParametroControl.pristine" class="tc-red-600">
+                  <span [hidden]="!valorParametroControl.hasError('required')">Campo obligatorio</span>
+                </span>
+              </mat-hint>
+              <mat-hint align="end">{{valorParametroElement.value.length}} / 2000</mat-hint>
+            </mat-form-field>
+          </div>
+          <div layout="row">
+            <mat-form-field flex>
+              <input matInput #descripcionParametroElement #descripcionParametroControl="ngModel" type="text"
+                placeholder="Descripción Parámetro" [(ngModel)]="descripcionParametro" name="descripcionParametro"
+                (blur)="validarEspacios(descripcionParametro,descripcionParametroControl);" 
+                maxlength="2000" required>
+              <mat-hint align="start">
+                <span [hidden]="descripcionParametroControl.pristine" class="tc-red-600">
+                  <span [hidden]="!descripcionParametroControl.hasError('required')">Campo obligatorio</span>
+                </span>
+              </mat-hint>
+              <mat-hint align="end">{{descripcionParametroElement.value.length}} / 2000</mat-hint>
+            </mat-form-field>
+          </div>
+        </form>
+      </mat-card-content>
+      <mat-divider></mat-divider>
+      <mat-card-actions>
+        <button mat-button [disabled]="!parametroForm.form.valid" color="primary" (click)="save()">Guardar</button>
+        <button mat-button (click)="goBack()">Cancelar</button>
+      </mat-card-actions>
+    </ng-template>
+  </td-layout-card-over>
+</td-layout-nav>

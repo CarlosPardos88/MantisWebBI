@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ModelTd.Store" Provider="Teradata.Client.Provider" ProviderManifestToken="15.00" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TP_Parametros_BI">
+          <Key>
+            <PropertyRef Name="Id_Parametro" />
+          </Key>
+          <Property Name="Id_Parametro" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NombreGrupoParametro" Type="varchar" MaxLength="60" Unicode="false" Nullable="false" />
+          <Property Name="NombreParametro" Type="varchar" MaxLength="60" Unicode="false" Nullable="false" />
+          <Property Name="ValorParametro" Type="varchar" MaxLength="2000" Unicode="false" Nullable="false" />
+          <Property Name="DescripcionParametro" Type="varchar" MaxLength="2000" Unicode="false" Nullable="false" />
+          <Property Name="FechaCreacion" Type="timestamp" Precision="3" Nullable="false" />
+          <Property Name="FechaModificacion" Type="timestamp" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="ModelTdStoreContainer">
+          <EntitySet Name="TP_Parametros_BI" EntityType="Self.TP_Parametros_BI" Schema="DES_BR_DATA" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ModelTd" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TP_Parametros_BI">
+          <Key>
+            <PropertyRef Name="Id_Parametro" />
+          </Key>
+          <Property Name="Id_Parametro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NombreGrupoParametro" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NombreParametro" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ValorParametro" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DescripcionParametro" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Precision="3" Nullable="false" />
+          <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="TDModel" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TP_Parametros_BI" EntityType="Self.TP_Parametros_BI" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelTdStoreContainer" CdmEntityContainer="TDModel">
+          <EntitySetMapping Name="TP_Parametros_BI">
+            <EntityTypeMapping TypeName="ModelTd.TP_Parametros_BI">
+              <MappingFragment StoreEntitySet="TP_Parametros_BI">
+                <ScalarProperty Name="Id_Parametro" ColumnName="Id_Parametro" />
+                <ScalarProperty Name="NombreGrupoParametro" ColumnName="NombreGrupoParametro" />
+                <ScalarProperty Name="NombreParametro" ColumnName="NombreParametro" />
+                <ScalarProperty Name="ValorParametro" ColumnName="ValorParametro" />
+                <ScalarProperty Name="DescripcionParametro" ColumnName="DescripcionParametro" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

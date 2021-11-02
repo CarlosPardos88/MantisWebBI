@@ -1,0 +1,116 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+    <button mat-icon-button td-menu-button tdLayoutToggle>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <div td-toolbar-content layout="row" layout-align="center center" flex>
+        <span style="color: white;">Configuración de Áreas de negocio</span>
+        <span flex></span>
+        <app-notificaciones></app-notificaciones>
+    </div>
+
+    <mat-progress-spinner [mode]="'indeterminate'" *ngIf="isLoading" style="margin: auto;">
+    </mat-progress-spinner>
+    <mat-card class="push-bottom-xxl" tdMediaToggle="gt-xs" [mediaClasses]="['push']">
+        <div class="pad" *ngIf="!isLoading && filteredAreas?.length === 0" layout="row" layout-align="center center">
+            <h3>No existen áreas de Negocio para mostrar.</h3>
+        </div>
+        <div [hidden]="isLoading">
+            <div class="example-container mat-elevation-z8">
+                <mat-table matTableFilter [exampleEntity]="filterEntity" [filterType]="filterType"
+                    [dataSource]="dataSource" matSort>
+                    <ng-container matColumnDef="Nombre_AreaNegocio">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Nombre Area de Negocio"
+                                        [(ngModel)]="filterEntity.Nombre_AreaNegocio">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Nombre_AreaNegocio}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Desc_AreaNegocio">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Descripción Area de Negocio"
+                                        [(ngModel)]="filterEntity.Desc_AreaNegocio">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Desc_AreaNegocio}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Nombre_CarpetaWorkflows">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Nombre Carpeta Workflows"
+                                        [(ngModel)]="filterEntity.Nombre_CarpetaWorkflows">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Nombre_CarpetaWorkflows}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Num_InicioRangoCodProceso">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Número Inicio Código Proceso"
+                                        [(ngModel)]="filterEntity.Num_InicioRangoCodProceso">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Num_InicioRangoCodProceso}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Num_FinRangoCodProceso">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Número Fin Código Proceso"
+                                        [(ngModel)]="filterEntity.Num_FinRangoCodProceso">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Num_FinRangoCodProceso}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Editar">
+                        <mat-header-cell *matHeaderCellDef style="color: black;" flex="10"><b>Editar</b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="10">
+                            <button mat-icon-button color="blue" [routerLink]="[row.Id_AreaNegocio, 'edit']">
+                                <mat-icon class="mat-18">edit</mat-icon>
+                            </button>
+                        </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Eliminar">
+                        <mat-header-cell *matHeaderCellDef style="color: black;" flex="10"><b>Eliminar</b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="10">
+                            <button mat-icon-button color="blue" (click)="delete(row.Id_AreaNegocio)">
+                                <mat-icon class="mat-18">delete</mat-icon>
+                            </button>
+                        </mat-cell>
+                    </ng-container>
+
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;">
+                    </mat-row>
+                </mat-table>
+            </div>
+        </div>
+        <div [hidden]="isLoading">
+            <mat-paginator [pageSizeOptions]="[10, 20, 30, 50]">
+            </mat-paginator>
+        </div>
+    </mat-card>
+    <!-- </ng-template> -->
+</td-layout-nav>
+<a mat-fab color="accent" class="mat-fab-bottom-right fixed z-3" [routerLink]="['add']">
+    <mat-icon>add</mat-icon>
+</a>

@@ -1,0 +1,57 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+    <button mat-icon-button td-menu-button tdLayoutToggle>
+        <mat-icon>menu</mat-icon>
+    </button>       
+               
+    <mat-card tdMediaToggle="gt-xs" [mediaClasses]="['push-top-lg']">
+            <mat-card-title>Logs</mat-card-title>
+            <mat-divider></mat-divider>
+            <mat-progress-spinner [mode]="'indeterminate'" *ngIf="isLoading" style="margin: auto;">
+                </mat-progress-spinner>
+   <mat-card class="push-bottom-xxl" tdMediaToggle="gt-xs" [mediaClasses]="['push']">
+        <div class="pad" *ngIf="!isLoading && filteredLogs?.length === 0" layout="row"
+            layout-align="center center">
+            <h3>No existen logs de ejecución para mostrar.</h3>	
+        </div>
+        <div [hidden]="isLoading">
+            <div class="example-container mat-elevation-z8">
+                <mat-table [dataSource]="dataSource" matSort>
+                    <ng-container matColumnDef="NombreArchivos">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"><b>Nombre del Proceso</b> </mat-header-cell>
+                        <mat-cell *matCellDef="let row"> {{row.NombreArchivos}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Fecha">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"><b>Fecha de Creación</b> </mat-header-cell>
+                        <mat-cell *matCellDef="let row"> {{row.Fecha}} </mat-cell>
+                    </ng-container>
+  
+                    <ng-container matColumnDef="Ruta">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header  style="color: black;"><b>Logs</b> </mat-header-cell>
+                        <mat-cell *matCellDef="let row">
+                            <button mat-icon-button color="blue" (click)="descargaArchivo(row.NombreArchivos)">
+                                <mat-icon class="mat-18">cloud_download</mat-icon>
+                            </button>
+                        </mat-cell>
+                    </ng-container>
+  
+                   
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;">
+                    </mat-row>
+                </mat-table>
+            </div>
+        </div>
+        <div [hidden]="isLoading">
+            <mat-paginator [pageSizeOptions]="[10, 20, 30, 50]">
+            </mat-paginator>
+        </div>
+    </mat-card>
+    <mat-card-actions>
+        <button mat-button (click)="goBack()">Cancelar</button>
+    </mat-card-actions>
+    </mat-card>
+
+
+
+</td-layout-nav>

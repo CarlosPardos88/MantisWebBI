@@ -1,0 +1,1 @@
+export { AprobacionesprogramadoService, IAprobacion, APROBACIONES_API, APROBACION_PROVIDER } from './services/aprobacionesprogramado.service';

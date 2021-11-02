@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BI_OPERACIONModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BI_OPERACIONEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="OPE_AprobacionProgramacionPeriodicaProceso" EntityType="BI_OPERACIONModel.OPE_AprobacionProgramacionPeriodicaProceso" />
+    <EntitySet Name="OPE_AreaNegocio" EntityType="BI_OPERACIONModel.OPE_AreaNegocio" />
+    <EntitySet Name="OPE_EstadoEjecucionProceso" EntityType="BI_OPERACIONModel.OPE_EstadoEjecucionProceso" />
+    <EntitySet Name="OPE_HorarioSistemaFuente" EntityType="BI_OPERACIONModel.OPE_HorarioSistemaFuente" />
+    <EntitySet Name="OPE_Proceso" EntityType="BI_OPERACIONModel.OPE_Proceso" />
+    <EntitySet Name="OPE_ProcesoPrerequisito" EntityType="BI_OPERACIONModel.OPE_ProcesoPrerequisito" />
+    <EntitySet Name="OPE_ProgramacionPeriodicaProceso" EntityType="BI_OPERACIONModel.OPE_ProgramacionPeriodicaProceso" />
+    <EntitySet Name="OPE_Rel_Proceso_ProcesoGestor" EntityType="BI_OPERACIONModel.OPE_Rel_Proceso_ProcesoGestor" />
+    <EntitySet Name="OPE_ResultadoEjecucionProgramada" EntityType="BI_OPERACIONModel.OPE_ResultadoEjecucionProgramada" />
+    <EntitySet Name="OPE_RutaPrerequisitoProceso" EntityType="BI_OPERACIONModel.OPE_RutaPrerequisitoProceso" />
+    <EntitySet Name="OPE_SistemaFuente" EntityType="BI_OPERACIONModel.OPE_SistemaFuente" />
+    <EntitySet Name="OPE_SolicitudEjecucionPorDemandaProceso" EntityType="BI_OPERACIONModel.OPE_SolicitudEjecucionPorDemandaProceso" />
+    <EntitySet Name="OPE_TipoSistemaFuente" EntityType="BI_OPERACIONModel.OPE_TipoSistemaFuente" />
+    <EntitySet Name="OPE_PeriodicidadProceso" EntityType="BI_OPERACIONModel.OPE_PeriodicidadProceso" />
+    <AssociationSet Name="R_38" Association="BI_OPERACIONModel.R_38">
+      <End Role="OPE_AprobacionProgramacionPeriodicaProceso" EntitySet="OPE_AprobacionProgramacionPeriodicaProceso" />
+      <End Role="OPE_ResultadoEjecucionProgramada" EntitySet="OPE_ResultadoEjecucionProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="R_46" Association="BI_OPERACIONModel.R_46">
+      <End Role="OPE_ProgramacionPeriodicaProceso" EntitySet="OPE_ProgramacionPeriodicaProceso" />
+      <End Role="OPE_AprobacionProgramacionPeriodicaProceso" EntitySet="OPE_AprobacionProgramacionPeriodicaProceso" />
+    </AssociationSet>
+    <AssociationSet Name="R_34" Association="BI_OPERACIONModel.R_34">
+      <End Role="OPE_AreaNegocio" EntitySet="OPE_AreaNegocio" />
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+    </AssociationSet>
+    <AssociationSet Name="R_32" Association="BI_OPERACIONModel.R_32">
+      <End Role="OPE_EstadoEjecucionProceso" EntitySet="OPE_EstadoEjecucionProceso" />
+      <End Role="OPE_ResultadoEjecucionProgramada" EntitySet="OPE_ResultadoEjecucionProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="R_49" Association="BI_OPERACIONModel.R_49">
+      <End Role="OPE_EstadoEjecucionProceso" EntitySet="OPE_EstadoEjecucionProceso" />
+      <End Role="OPE_ResultadoEjecucionProgramada" EntitySet="OPE_ResultadoEjecucionProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="R_50" Association="BI_OPERACIONModel.R_50">
+      <End Role="OPE_EstadoEjecucionProceso" EntitySet="OPE_EstadoEjecucionProceso" />
+      <End Role="OPE_ResultadoEjecucionProgramada" EntitySet="OPE_ResultadoEjecucionProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="R_29" Association="BI_OPERACIONModel.R_29">
+      <End Role="OPE_SistemaFuente" EntitySet="OPE_SistemaFuente" />
+      <End Role="OPE_HorarioSistemaFuente" EntitySet="OPE_HorarioSistemaFuente" />
+    </AssociationSet>
+    <AssociationSet Name="R_21" Association="BI_OPERACIONModel.R_21">
+      <End Role="OPE_PeriodicidadProceso" EntitySet="OPE_PeriodicidadProceso" />
+      <End Role="OPE_ProgramacionPeriodicaProceso" EntitySet="OPE_ProgramacionPeriodicaProceso" />
+    </AssociationSet>
+    <AssociationSet Name="R_33" Association="BI_OPERACIONModel.R_33">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_ProgramacionPeriodicaProceso" EntitySet="OPE_ProgramacionPeriodicaProceso" />
+    </AssociationSet>
+    <AssociationSet Name="R_35" Association="BI_OPERACIONModel.R_35">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_SolicitudEjecucionPorDemandaProceso" EntitySet="OPE_SolicitudEjecucionPorDemandaProceso" />
+    </AssociationSet>
+    <AssociationSet Name="R_39" Association="BI_OPERACIONModel.R_39">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_Rel_Proceso_ProcesoGestor" EntitySet="OPE_Rel_Proceso_ProcesoGestor" />
+    </AssociationSet>
+    <AssociationSet Name="R_41" Association="BI_OPERACIONModel.R_41">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_RutaPrerequisitoProceso" EntitySet="OPE_RutaPrerequisitoProceso" />
+    </AssociationSet>
+    <AssociationSet Name="R_42" Association="BI_OPERACIONModel.R_42">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_ProcesoPrerequisito" EntitySet="OPE_ProcesoPrerequisito" />
+    </AssociationSet>
+    <AssociationSet Name="R_43" Association="BI_OPERACIONModel.R_43">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_ProcesoPrerequisito" EntitySet="OPE_ProcesoPrerequisito" />
+    </AssociationSet>
+    <AssociationSet Name="R_48" Association="BI_OPERACIONModel.R_48">
+      <End Role="OPE_SolicitudEjecucionPorDemandaProceso" EntitySet="OPE_SolicitudEjecucionPorDemandaProceso" />
+      <End Role="OPE_ResultadoEjecucionProgramada" EntitySet="OPE_ResultadoEjecucionProgramada" />
+    </AssociationSet>
+    <AssociationSet Name="R_898" Association="BI_OPERACIONModel.R_898">
+      <End Role="OPE_TipoSistemaFuente" EntitySet="OPE_TipoSistemaFuente" />
+      <End Role="OPE_SistemaFuente" EntitySet="OPE_SistemaFuente" />
+    </AssociationSet>
+    <AssociationSet Name="OPE_Rel_Proceso_SistemaFuente1" Association="BI_OPERACIONModel.OPE_Rel_Proceso_SistemaFuente1">
+      <End Role="OPE_SistemaFuente" EntitySet="OPE_SistemaFuente" />
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+    </AssociationSet>
+    <EntitySet Name="OPE_DiaSemana" EntityType="BI_OPERACIONModel.OPE_DiaSemana" />
+    <AssociationSet Name="OPE_Rel_ProgramacionPeriodica_DiaSemana" Association="BI_OPERACIONModel.OPE_Rel_ProgramacionPeriodica_DiaSemana">
+      <End Role="OPE_ProgramacionPeriodicaProceso" EntitySet="OPE_ProgramacionPeriodicaProceso" />
+      <End Role="OPE_DiaSemana" EntitySet="OPE_DiaSemana" />
+    </AssociationSet>
+    <EntitySet Name="OPE_Fecha" EntityType="BI_OPERACIONModel.OPE_Fecha" />
+    <EntitySet Name="C_ProcesoParaEjecucion" EntityType="BI_OPERACIONModel.C_ProcesoParaEjecucion" />
+    <EntitySet Name="C_ProcesoProgramado" EntityType="BI_OPERACIONModel.C_ProcesoProgramado" />
+    <AssociationSet Name="R_88" Association="BI_OPERACIONModel.R_88">
+      <End Role="OPE_Proceso" EntitySet="OPE_Proceso" />
+      <End Role="OPE_ResultadoEjecucionProgramada" EntitySet="OPE_ResultadoEjecucionProgramada" />
+    </AssociationSet>
+    <EntitySet Name="OPE_AuditoriaUsuario" EntityType="BI_OPERACIONModel.OPE_AuditoriaUsuario" />
+    <EntitySet Name="OPE_Parametro" EntityType="BI_OPERACIONModel.OPE_Parametro" />
+    <EntitySet Name="OPE_PerfilUsuario" EntityType="BI_OPERACIONModel.OPE_PerfilUsuario" />
+    <EntitySet Name="OPE_TipoActividadUsuario" EntityType="BI_OPERACIONModel.OPE_TipoActividadUsuario" />
+    <EntitySet Name="OPE_TipoEjecucionDemanda" EntityType="BI_OPERACIONModel.OPE_TipoEjecucionDemanda" />
+    <EntitySet Name="OPE_Usuario" EntityType="BI_OPERACIONModel.OPE_Usuario" />
+    <AssociationSet Name="R_102" Association="BI_OPERACIONModel.R_102">
+      <End Role="OPE_TipoActividadUsuario" EntitySet="OPE_TipoActividadUsuario" />
+      <End Role="OPE_AuditoriaUsuario" EntitySet="OPE_AuditoriaUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="R_10" Association="BI_OPERACIONModel.R_10">
+      <End Role="OPE_PerfilUsuario" EntitySet="OPE_PerfilUsuario" />
+      <End Role="OPE_Usuario" EntitySet="OPE_Usuario" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="OPE_AprobacionProgramacionPeriodicaProceso">
+    <Key>
+      <PropertyRef Name="Id_AprobacionProgramacionPeriodica" />
+    </Key>
+    <Property Name="Id_ProgramacionPeriodica" Type="Int32" Nullable="false" />
+    <Property Name="FechaHora_RevisionOperador" Type="DateTime" Precision="3" />
+    <Property Name="Id_AprobacionProgramacionPeriodica" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_OperadorRevisor" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_RolOperadorRevisor" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OPE_ResultadoEjecucionProgramada" Relationship="BI_OPERACIONModel.R_38" FromRole="OPE_AprobacionProgramacionPeriodicaProceso" ToRole="OPE_ResultadoEjecucionProgramada" />
+    <NavigationProperty Name="OPE_ProgramacionPeriodicaProceso" Relationship="BI_OPERACIONModel.R_46" FromRole="OPE_AprobacionProgramacionPeriodicaProceso" ToRole="OPE_ProgramacionPeriodicaProceso" />
+    <Property Name="Fecha_EjecucionAprobada" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="OPE_AreaNegocio">
+    <Key>
+      <PropertyRef Name="Id_AreaNegocio" />
+    </Key>
+    <Property Name="Id_AreaNegocio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Desc_AreaNegocio" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_AreaNegocio" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_CarpetaWorkflows" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Num_InicioRangoCodProceso" Type="Int32" />
+    <Property Name="Num_FinRangoCodProceso" Type="Int32" />
+    <NavigationProperty Name="OPE_Proceso" Relationship="BI_OPERACIONModel.R_34" FromRole="OPE_AreaNegocio" ToRole="OPE_Proceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+  </EntityType>
+  <EntityType Name="OPE_EstadoEjecucionProceso">
+    <Key>
+      <PropertyRef Name="Id_EstadoEjecucion" />
+    </Key>
+    <Property Name="Id_EstadoEjecucion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_EstadoEjecucion" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OPE_ResultadoEjecucionProgramada" Relationship="BI_OPERACIONModel.R_32" FromRole="OPE_EstadoEjecucionProceso" ToRole="OPE_ResultadoEjecucionProgramada" />
+    <NavigationProperty Name="OPE_ResultadoEjecucionProgramada1" Relationship="BI_OPERACIONModel.R_49" FromRole="OPE_EstadoEjecucionProceso" ToRole="OPE_ResultadoEjecucionProgramada" />
+    <NavigationProperty Name="OPE_ResultadoEjecucionProgramada2" Relationship="BI_OPERACIONModel.R_50" FromRole="OPE_EstadoEjecucionProceso" ToRole="OPE_ResultadoEjecucionProgramada" />
+  </EntityType>
+  <EntityType Name="OPE_HorarioSistemaFuente">
+    <Key>
+      <PropertyRef Name="Id_SistemaFuente" />
+      <PropertyRef Name="Hora_Inicio" />
+    </Key>
+    <Property Name="Hora_Inicio" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Hora_Fin" Type="Time" Precision="7" Nullable="false" />
+    <Property Name="Id_SistemaFuente" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="OPE_SistemaFuente" Relationship="BI_OPERACIONModel.R_29" FromRole="OPE_HorarioSistemaFuente" ToRole="OPE_SistemaFuente" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+  </EntityType>
+  <EntityType Name="OPE_Proceso">
+    <Key>
+      <PropertyRef Name="Id_Proceso" />
+    </Key>
+    <Property Name="Id_Proceso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Desc_Proceso" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Cb_ActualAutomaParametros" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Id_AreaNegocio" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Proceso" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Cb_UtilizaParametros" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Fecha_Eliminado" Type="DateTime" Precision="0" />
+    <Property Name="Num_TiempoEstimadoEjec" Type="Int32" />
+    <NavigationProperty Name="OPE_AreaNegocio" Relationship="BI_OPERACIONModel.R_34" FromRole="OPE_Proceso" ToRole="OPE_AreaNegocio" a:GetterAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Public" />
+    <NavigationProperty Name="OPE_ProgramacionPeriodicaProceso" Relationship="BI_OPERACIONModel.R_33" FromRole="OPE_Proceso" ToRole="OPE_ProgramacionPeriodicaProceso" />
+    <NavigationProperty Name="OPE_SolicitudEjecucionPorDemandaProceso" Relationship="BI_OPERACIONModel.R_35" FromRole="OPE_Proceso" ToRole="OPE_SolicitudEjecucionPorDemandaProceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+    <NavigationProperty Name="OPE_Rel_Proceso_ProcesoGestor" Relationship="BI_OPERACIONModel.R_39" FromRole="OPE_Proceso" ToRole="OPE_Rel_Proceso_ProcesoGestor" />
+    <NavigationProperty Name="OPE_RutaPrerequisitoProceso" Relationship="BI_OPERACIONModel.R_41" FromRole="OPE_Proceso" ToRole="OPE_RutaPrerequisitoProceso" />
+    <NavigationProperty Name="OPE_ProcesoPrerequisito" Relationship="BI_OPERACIONModel.R_42" FromRole="OPE_Proceso" ToRole="OPE_ProcesoPrerequisito" a:GetterAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Public" />
+    <NavigationProperty Name="OPE_ProcesoPrerequisito1" Relationship="BI_OPERACIONModel.R_43" FromRole="OPE_Proceso" ToRole="OPE_ProcesoPrerequisito" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+    <NavigationProperty Name="OPE_SistemaFuente" Relationship="BI_OPERACIONModel.OPE_Rel_Proceso_SistemaFuente1" FromRole="OPE_Proceso" ToRole="OPE_SistemaFuente" a:GetterAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Public" />
+    <Property Name="Cb_RevisionAutomaticaUsuario" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Cb_RevisionAutomaticaOperador" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Cb_PermitirSolicitudOperador" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="OPE_ResultadoEjecucionProgramada" Relationship="BI_OPERACIONModel.R_88" FromRole="OPE_Proceso" ToRole="OPE_ResultadoEjecucionProgramada" />
+  </EntityType>
+  <EntityType Name="OPE_ProcesoPrerequisito">
+    <Key>
+      <PropertyRef Name="Id_ProcesoPrerequisito" />
+    </Key>
+    <Property Name="Id_Proceso" Type="Int32" Nullable="false" />
+    <Property Name="Id_ProcesoRequerido" Type="Int32" Nullable="false" />
+    <Property Name="Id_ProcesoPrerequisito" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="OPE_Proceso" Relationship="BI_OPERACIONModel.R_42" FromRole="OPE_ProcesoPrerequisito" ToRole="OPE_Proceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+    <NavigationProperty Name="OPE_Proceso1" Relationship="BI_OPERACIONModel.R_43" FromRole="OPE_ProcesoPrerequisito" ToRole="OPE_Proceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+  </EntityType>
+  <EntityType Name="OPE_ProgramacionPeriodicaProceso">
+    <Key>
+      <PropertyRef Name="Id_ProgramacionPeriodica" />
+    </Key>
+    <Property Name="Id_ProgramacionPeriodica" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Periodicidad" Type="Int32" Nullable="false" />
+    <Property Name="Num_DiaMes" Type="Int16" />
+    <Property Name="Num_MesPeriodo" Type="Int16" />
+    <Property Name="Num_Semana" Type="Int16" />
+    <Property Name="Hora_Ejecucion" Type="Time" Precision="7" />
+    <Property Name="Id_Proceso" Type="Int32" Nullable="false" />
+    <Property Name="Fecha_Eliminado" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="OPE_AprobacionProgramacionPeriodicaProceso" Relationship="BI_OPERACIONModel.R_46" FromRole="OPE_ProgramacionPeriodicaProceso" ToRole="OPE_AprobacionProgramacionPeriodicaProceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+    <NavigationProperty Name="OPE_PeriodicidadProceso" Relationship="BI_OPERACIONModel.R_21" FromRole="OPE_ProgramacionPeriodicaProceso" ToRole="OPE_PeriodicidadProceso" />
+    <NavigationProperty Name="OPE_Proceso" Relationship="BI_OPERACIONModel.R_33" FromRole="OPE_ProgramacionPeriodicaProceso" ToRole="OPE_Proceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+    <NavigationProperty Name="OPE_DiaSemana" Relationship="BI_OPERACIONModel.OPE_Rel_ProgramacionPeriodica_DiaSemana" FromRole="OPE_ProgramacionPeriodicaProceso" ToRole="OPE_DiaSemana" />
+    <Property Name="Fecha_Creacion" Type="DateTime" Precision="0" Nullable="false" />
+    <Property Name="Cb_Activo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="OPE_Rel_Proceso_ProcesoGestor">
+    <Key>
+      <PropertyRef Name="Id_ProcesoGestor" />
+      <PropertyRef Name="Id_Proceso" />
+    </Key>
+    <Property Name="Id_ProcesoGestor" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Proceso" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="OPE_Proceso" Relationship="BI_OPERACIONModel.R_39" FromRole="OPE_Rel_Proceso_ProcesoGestor" ToRole="OPE_Proceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+  </EntityType>
+  <EntityType Name="OPE_ResultadoEjecucionProgramada">
+    <Key>
+      <PropertyRef Name="Id_ResultadoEjecucionProgramada" />
+    </Key>
+    <Property Name="FechaHora_InicioEjecucion" Type="DateTime" Precision="3" />
+    <Property Name="FechaHora_FinEjecucion" Type="DateTime" Precision="3" />
+    <Property Name="Id_ResultadoEjecucionProgramada" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_SolicitudEjecucionPorDemanda" Type="Int32" />
+    <Property Name="Id_AprobacionProgramacionPeriodica" Type="Int32" />
+    <Property Name="FechaHora_RevisionOperador" Type="DateTime" Precision="3" />
+    <Property Name="FechaHora_RevisionUsuario" Type="DateTime" Precision="3" />
+    <Property Name="Id_EstadoOperadorEjecucionProceso" Type="Int32" />
+    <Property Name="Id_EstadoUsuarioEjecucionProceso" Type="Int32" />
+    <Property Name="Id_EstadoEjecucionInformatica" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_UsuarioRevisor" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_OperadorRevisor" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_RolUsuarioRevisor" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_RolOperadorRevisor" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OPE_AprobacionProgramacionPeriodicaProceso" Relationship="BI_OPERACIONModel.R_38" FromRole="OPE_ResultadoEjecucionProgramada" ToRole="OPE_AprobacionProgramacionPeriodicaProceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+    <NavigationProperty Name="OPE_EstadoEjecucionProceso" Relationship="BI_OPERACIONModel.R_32" FromRole="OPE_ResultadoEjecucionProgramada" ToRole="OPE_EstadoEjecucionProceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+    <NavigationProperty Name="OPE_EstadoEjecucionProceso1" Relationship="BI_OPERACIONModel.R_49" FromRole="OPE_ResultadoEjecucionProgramada" ToRole="OPE_EstadoEjecucionProceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+    <NavigationProperty Name="OPE_EstadoEjecucionProceso2" Relationship="BI_OPERACIONModel.R_50" FromRole="OPE_ResultadoEjecucionProgramada" ToRole="OPE_EstadoEjecucionProceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+    <NavigationProperty Name="OPE_SolicitudEjecucionPorDemandaProceso" Relationship="BI_OPERACIONModel.R_48" FromRole="OPE_ResultadoEjecucionProgramada" ToRole="OPE_SolicitudEjecucionPorDemandaProceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+    <Property Name="Id_Proceso" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="OPE_Proceso" Relationship="BI_OPERACIONModel.R_88" FromRole="OPE_ResultadoEjecucionProgramada" ToRole="OPE_Proceso" />
+    <Property Name="Id_ProgramacionPeriodica" Type="Int32" />
+  </EntityType>
+  <EntityType Name="OPE_RutaPrerequisitoProceso">
+    <Key>
+      <PropertyRef Name="Id_RutaPrerequisito" />
+    </Key>
+    <Property Name="Desc_RutaArchivo" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Proceso" Type="Int32" Nullable="false" />
+    <Property Name="Id_RutaPrerequisito" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="OPE_Proceso" Relationship="BI_OPERACIONModel.R_41" FromRole="OPE_RutaPrerequisitoProceso" ToRole="OPE_Proceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+  </EntityType>
+  <EntityType Name="OPE_SistemaFuente">
+    <Key>
+      <PropertyRef Name="Id_SistemaFuente" />
+    </Key>
+    <Property Name="Id_SistemaFuente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_SistemaFuente" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Id_TipoSistemaFuente" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="OPE_HorarioSistemaFuente" Relationship="BI_OPERACIONModel.R_29" FromRole="OPE_SistemaFuente" ToRole="OPE_HorarioSistemaFuente" />
+    <NavigationProperty Name="OPE_TipoSistemaFuente" Relationship="BI_OPERACIONModel.R_898" FromRole="OPE_SistemaFuente" ToRole="OPE_TipoSistemaFuente" />
+    <NavigationProperty Name="OPE_Proceso" Relationship="BI_OPERACIONModel.OPE_Rel_Proceso_SistemaFuente1" FromRole="OPE_SistemaFuente" ToRole="OPE_Proceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+  </EntityType>
+  <EntityType Name="OPE_SolicitudEjecucionPorDemandaProceso">
+    <Key>
+      <PropertyRef Name="Id_SolicitudEjecucionPorDemanda" />
+    </Key>
+    <Property Name="Id_SolicitudEjecucionPorDemanda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FechaHora_FinVentanaSugerida" Type="DateTime" Precision="3" />
+    <Property Name="FechaHora_EjecucionAprobada" Type="DateTime" Precision="3" />
+    <Property Name="Id_Proceso" Type="Int32" Nullable="false" />
+    <Property Name="FechaHora_InicioVentanaSugerida" Type="DateTime" Precision="3" />
+    <Property Name="FechaHora_Sugerida" Type="DateTime" Precision="3" />
+    <Property Name="FechaHora_RevisionUsuario" Type="DateTime" Precision="3" />
+    <Property Name="FechaHora_RevisionOperador" Type="DateTime" Precision="3" />
+    <Property Name="Nombre_OperadorRevisor" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_RolOperadorRevisor" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_UsuarioSolicitante" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_RolUsuarioSolicitante" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OPE_Proceso" Relationship="BI_OPERACIONModel.R_35" FromRole="OPE_SolicitudEjecucionPorDemandaProceso" ToRole="OPE_Proceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+    <NavigationProperty Name="OPE_ResultadoEjecucionProgramada" Relationship="BI_OPERACIONModel.R_48" FromRole="OPE_SolicitudEjecucionPorDemandaProceso" ToRole="OPE_ResultadoEjecucionProgramada" />
+    <Property Name="Cb_Activo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Desc_JustificacionSolicitud" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="Id_TipoEjecucionDemanda" Type="Int32" />
+  </EntityType>
+  <EntityType Name="OPE_TipoSistemaFuente">
+    <Key>
+      <PropertyRef Name="Id_TipoSistemaFuente" />
+    </Key>
+    <Property Name="Id_TipoSistemaFuente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_TipoSistemaFuente" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OPE_SistemaFuente" Relationship="BI_OPERACIONModel.R_898" FromRole="OPE_TipoSistemaFuente" ToRole="OPE_SistemaFuente" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+  </EntityType>
+  <EntityType Name="OPE_PeriodicidadProceso">
+    <Key>
+      <PropertyRef Name="Id_Periodicidad" />
+    </Key>
+    <Property Name="Id_Periodicidad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Periodicidad" Type="String" Nullable="false" MaxLength="120" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OPE_ProgramacionPeriodicaProceso" Relationship="BI_OPERACIONModel.R_21" FromRole="OPE_PeriodicidadProceso" ToRole="OPE_ProgramacionPeriodicaProceso" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+  </EntityType>
+  <Association Name="R_38">
+    <End Type="BI_OPERACIONModel.OPE_AprobacionProgramacionPeriodicaProceso" Role="OPE_AprobacionProgramacionPeriodicaProceso" Multiplicity="0..1" />
+    <End Type="BI_OPERACIONModel.OPE_ResultadoEjecucionProgramada" Role="OPE_ResultadoEjecucionProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_AprobacionProgramacionPeriodicaProceso">
+        <PropertyRef Name="Id_AprobacionProgramacionPeriodica" />
+      </Principal>
+      <Dependent Role="OPE_ResultadoEjecucionProgramada">
+        <PropertyRef Name="Id_AprobacionProgramacionPeriodica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_46">
+    <End Type="BI_OPERACIONModel.OPE_ProgramacionPeriodicaProceso" Role="OPE_ProgramacionPeriodicaProceso" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_AprobacionProgramacionPeriodicaProceso" Role="OPE_AprobacionProgramacionPeriodicaProceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_ProgramacionPeriodicaProceso">
+        <PropertyRef Name="Id_ProgramacionPeriodica" />
+      </Principal>
+      <Dependent Role="OPE_AprobacionProgramacionPeriodicaProceso">
+        <PropertyRef Name="Id_ProgramacionPeriodica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_34">
+    <End Type="BI_OPERACIONModel.OPE_AreaNegocio" Role="OPE_AreaNegocio" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_Proceso" Role="OPE_Proceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_AreaNegocio">
+        <PropertyRef Name="Id_AreaNegocio" />
+      </Principal>
+      <Dependent Role="OPE_Proceso">
+        <PropertyRef Name="Id_AreaNegocio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_32">
+    <End Type="BI_OPERACIONModel.OPE_EstadoEjecucionProceso" Role="OPE_EstadoEjecucionProceso" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_ResultadoEjecucionProgramada" Role="OPE_ResultadoEjecucionProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_EstadoEjecucionProceso">
+        <PropertyRef Name="Id_EstadoEjecucion" />
+      </Principal>
+      <Dependent Role="OPE_ResultadoEjecucionProgramada">
+        <PropertyRef Name="Id_EstadoEjecucionInformatica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_49">
+    <End Type="BI_OPERACIONModel.OPE_EstadoEjecucionProceso" Role="OPE_EstadoEjecucionProceso" Multiplicity="0..1" />
+    <End Type="BI_OPERACIONModel.OPE_ResultadoEjecucionProgramada" Role="OPE_ResultadoEjecucionProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_EstadoEjecucionProceso">
+        <PropertyRef Name="Id_EstadoEjecucion" />
+      </Principal>
+      <Dependent Role="OPE_ResultadoEjecucionProgramada">
+        <PropertyRef Name="Id_EstadoOperadorEjecucionProceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_50">
+    <End Type="BI_OPERACIONModel.OPE_EstadoEjecucionProceso" Role="OPE_EstadoEjecucionProceso" Multiplicity="0..1" />
+    <End Type="BI_OPERACIONModel.OPE_ResultadoEjecucionProgramada" Role="OPE_ResultadoEjecucionProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_EstadoEjecucionProceso">
+        <PropertyRef Name="Id_EstadoEjecucion" />
+      </Principal>
+      <Dependent Role="OPE_ResultadoEjecucionProgramada">
+        <PropertyRef Name="Id_EstadoUsuarioEjecucionProceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_29">
+    <End Type="BI_OPERACIONModel.OPE_SistemaFuente" Role="OPE_SistemaFuente" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_HorarioSistemaFuente" Role="OPE_HorarioSistemaFuente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_SistemaFuente">
+        <PropertyRef Name="Id_SistemaFuente" />
+      </Principal>
+      <Dependent Role="OPE_HorarioSistemaFuente">
+        <PropertyRef Name="Id_SistemaFuente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_21">
+    <End Type="BI_OPERACIONModel.OPE_PeriodicidadProceso" Role="OPE_PeriodicidadProceso" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_ProgramacionPeriodicaProceso" Role="OPE_ProgramacionPeriodicaProceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_PeriodicidadProceso">
+        <PropertyRef Name="Id_Periodicidad" />
+      </Principal>
+      <Dependent Role="OPE_ProgramacionPeriodicaProceso">
+        <PropertyRef Name="Id_Periodicidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_33">
+    <End Type="BI_OPERACIONModel.OPE_Proceso" Role="OPE_Proceso" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_ProgramacionPeriodicaProceso" Role="OPE_ProgramacionPeriodicaProceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_ProgramacionPeriodicaProceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_35">
+    <End Type="BI_OPERACIONModel.OPE_Proceso" Role="OPE_Proceso" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_SolicitudEjecucionPorDemandaProceso" Role="OPE_SolicitudEjecucionPorDemandaProceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_SolicitudEjecucionPorDemandaProceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_39">
+    <End Type="BI_OPERACIONModel.OPE_Proceso" Role="OPE_Proceso" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_Rel_Proceso_ProcesoGestor" Role="OPE_Rel_Proceso_ProcesoGestor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_Rel_Proceso_ProcesoGestor">
+        <PropertyRef Name="Id_Proceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_41">
+    <End Type="BI_OPERACIONModel.OPE_Proceso" Role="OPE_Proceso" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_RutaPrerequisitoProceso" Role="OPE_RutaPrerequisitoProceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_RutaPrerequisitoProceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_42">
+    <End Type="BI_OPERACIONModel.OPE_Proceso" Role="OPE_Proceso" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_ProcesoPrerequisito" Role="OPE_ProcesoPrerequisito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_ProcesoPrerequisito">
+        <PropertyRef Name="Id_Proceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_43">
+    <End Type="BI_OPERACIONModel.OPE_Proceso" Role="OPE_Proceso" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_ProcesoPrerequisito" Role="OPE_ProcesoPrerequisito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_ProcesoPrerequisito">
+        <PropertyRef Name="Id_ProcesoRequerido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_48">
+    <End Type="BI_OPERACIONModel.OPE_SolicitudEjecucionPorDemandaProceso" Role="OPE_SolicitudEjecucionPorDemandaProceso" Multiplicity="0..1" />
+    <End Type="BI_OPERACIONModel.OPE_ResultadoEjecucionProgramada" Role="OPE_ResultadoEjecucionProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_SolicitudEjecucionPorDemandaProceso">
+        <PropertyRef Name="Id_SolicitudEjecucionPorDemanda" />
+      </Principal>
+      <Dependent Role="OPE_ResultadoEjecucionProgramada">
+        <PropertyRef Name="Id_SolicitudEjecucionPorDemanda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_898">
+    <End Type="BI_OPERACIONModel.OPE_TipoSistemaFuente" Role="OPE_TipoSistemaFuente" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_SistemaFuente" Role="OPE_SistemaFuente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_TipoSistemaFuente">
+        <PropertyRef Name="Id_TipoSistemaFuente" />
+      </Principal>
+      <Dependent Role="OPE_SistemaFuente">
+        <PropertyRef Name="Id_TipoSistemaFuente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OPE_Rel_Proceso_SistemaFuente1">
+    <End Type="BI_OPERACIONModel.OPE_SistemaFuente" Role="OPE_SistemaFuente" Multiplicity="*" />
+    <End Type="BI_OPERACIONModel.OPE_Proceso" Role="OPE_Proceso" Multiplicity="*" />
+  </Association>
+  <EntityType Name="OPE_DiaSemana">
+    <Key>
+      <PropertyRef Name="Id_DiaSemana" />
+    </Key>
+    <Property Name="Id_DiaSemana" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_DiaSemana" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OPE_ProgramacionPeriodicaProceso" Relationship="BI_OPERACIONModel.OPE_Rel_ProgramacionPeriodica_DiaSemana" FromRole="OPE_DiaSemana" ToRole="OPE_ProgramacionPeriodicaProceso" />
+  </EntityType>
+  <Association Name="OPE_Rel_ProgramacionPeriodica_DiaSemana">
+    <End Type="BI_OPERACIONModel.OPE_ProgramacionPeriodicaProceso" Role="OPE_ProgramacionPeriodicaProceso" Multiplicity="*" />
+    <End Type="BI_OPERACIONModel.OPE_DiaSemana" Role="OPE_DiaSemana" Multiplicity="*" />
+  </Association>
+  <EntityType Name="OPE_Fecha">
+    <Key>
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Num_DiaMes" Type="Int32" Nullable="false" />
+    <Property Name="Num_MesBimestre" Type="Int32" Nullable="false" />
+    <Property Name="Num_MesTrimestre" Type="Int32" Nullable="false" />
+    <Property Name="Num_MesSemestre" Type="Int32" Nullable="false" />
+    <Property Name="Num_Anio" Type="Int32" Nullable="false" />
+    <Property Name="Num_Semestre" Type="Int32" Nullable="false" />
+    <Property Name="Num_Trimestre" Type="Int32" Nullable="false" />
+    <Property Name="Num_Bimestre" Type="Int32" Nullable="false" />
+    <Property Name="Num_Mes" Type="Int32" Nullable="false" />
+    <Property Name="Num_SemanaAnio" Type="Int32" Nullable="false" />
+    <Property Name="Num_SemanaMes" Type="Int32" Nullable="false" />
+    <Property Name="Num_DiaSemana" Type="Int32" Nullable="false" />
+    <Property Name="Num_DiaAnio" Type="Int32" Nullable="false" />
+    <Property Name="Cb_EsFestivoNacional" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Desc_FestivoNacional" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Cb_EsNoHabilCUD" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Fecha_UltimoDiaMes" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="C_ProcesoParaEjecucion">
+    <Key>
+      <PropertyRef Name="Nombre_Proceso" />
+      <PropertyRef Name="Nombre_AreaNegocio" />
+      <PropertyRef Name="Id_Proceso" />
+    </Key>
+    <Property Name="Id_AprobacionProgramacionPeriodica" Type="Int32" />
+    <Property Name="Id_SolicitudEjecucionPorDemanda" Type="Int32" />
+    <Property Name="Nombre_Proceso" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Hora_EjecucionProgramada" Type="Time" Precision="7" />
+    <Property Name="Nombre_AreaNegocio" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_CarpetaWorkflows" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Proceso" Type="Int32" Nullable="false" />
+    <Property Name="Id_ProgramacionPeriodica" Type="Int32" />
+    <Property Name="Cb_RevisionAutomaticaUsuario" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Cb_RevisionAutomaticaOperador" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="C_ProcesoProgramado">
+    <Key>
+      <PropertyRef Name="Id_Proceso" />
+      <PropertyRef Name="Nombre_Proceso" />
+      <PropertyRef Name="Id_AreaNegocio" />
+      <PropertyRef Name="Nombre_AreaNegocio" />
+      <PropertyRef Name="Cb_Vencido" />
+      <PropertyRef Name="Cb_ProgramacionAprobada" />
+      <PropertyRef Name="Cb_ProcesoEjecutado" />
+      <PropertyRef Name="Id_SolicitudEjecucionPorDemanda" />
+      <PropertyRef Name="Id_ProgramacionPeriodica" />
+      <PropertyRef Name="Id_AprobacionProgramacionPeriodica" />
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="Fecha" Type="DateTime" Precision="0" Nullable="false" />
+    <Property Name="Id_ProgramacionPeriodica" Type="Int32" Nullable="false" />
+    <Property Name="Id_AprobacionProgramacionPeriodica" Type="Int32" Nullable="false" />
+    <Property Name="Id_SolicitudEjecucionPorDemanda" Type="Int32" Nullable="false" />
+    <Property Name="Id_Proceso" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Proceso" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Hora_EjecucionProgramada" Type="Time" Precision="7" />
+    <Property Name="Id_AreaNegocio" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_AreaNegocio" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_CarpetaWorkflows" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Cb_Vencido" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Cb_ProgramacionAprobada" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Cb_ProcesoEjecutado" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="FechaHora_InicioEjecucion" Type="DateTime" Precision="3" />
+    <Property Name="FechaHora_FinEjecucion" Type="DateTime" Precision="3" />
+    <Property Name="Id_EstadoEjecucionInformatica" Type="Int32" />
+    <Property Name="Nombre_EstadoEjecucionInformatica" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Id_EstadoOperadorEjecucionProceso" Type="Int32" />
+    <Property Name="Nombre_EstadoOperadorEjecucionProceso" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Id_EstadoUsuarioEjecucionProceso" Type="Int32" />
+    <Property Name="Nombre_EstadoUsuarioEjecucionProceso" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Id_ResultadoEjecucionProgramada" Type="Int32" />
+    <Property Name="Cb_RevisionAutomaticaUsuario" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Cb_RevisionAutomaticaOperador" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Cb_Activo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <Association Name="R_88">
+    <End Type="BI_OPERACIONModel.OPE_Proceso" Role="OPE_Proceso" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_ResultadoEjecucionProgramada" Role="OPE_ResultadoEjecucionProgramada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_Proceso">
+        <PropertyRef Name="Id_Proceso" />
+      </Principal>
+      <Dependent Role="OPE_ResultadoEjecucionProgramada">
+        <PropertyRef Name="Id_Proceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="OPE_AuditoriaUsuario">
+    <Key>
+      <PropertyRef Name="Id_AuditoriaUsuario" />
+    </Key>
+    <Property Name="FechaHora_Actividad" Type="DateTime" Precision="3" />
+    <Property Name="Id_TipoActividadUsuario" Type="Int32" Nullable="false" />
+    <Property Name="Desc_Actividad" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Id_AuditoriaUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Usuario" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Desc_DetalleActividad" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OPE_TipoActividadUsuario" Relationship="BI_OPERACIONModel.R_102" FromRole="OPE_AuditoriaUsuario" ToRole="OPE_TipoActividadUsuario" />
+  </EntityType>
+  <EntityType Name="OPE_Parametro">
+    <Key>
+      <PropertyRef Name="Id_Parametro" />
+    </Key>
+    <Property Name="Id_Parametro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Parametro" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Valor_Parametro" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="Desc_Parametro" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_GrupoParametro" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="OPE_PerfilUsuario">
+    <Key>
+      <PropertyRef Name="Id_PerfilUsuario" />
+    </Key>
+    <Property Name="Id_PerfilUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Desc_PerfilUsuario" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OPE_Usuario" Relationship="BI_OPERACIONModel.R_10" FromRole="OPE_PerfilUsuario" ToRole="OPE_Usuario" />
+  </EntityType>
+  <EntityType Name="OPE_TipoActividadUsuario">
+    <Key>
+      <PropertyRef Name="Id_TipoActividadUsuario" />
+    </Key>
+    <Property Name="Id_TipoActividadUsuario" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_TipoActividadUsuario" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OPE_AuditoriaUsuario" Relationship="BI_OPERACIONModel.R_102" FromRole="OPE_TipoActividadUsuario" ToRole="OPE_AuditoriaUsuario" />
+  </EntityType>
+  <EntityType Name="OPE_TipoEjecucionDemanda">
+    <Key>
+      <PropertyRef Name="Id_TipoEjecucionDemanda" />
+    </Key>
+    <Property Name="Id_TipoEjecucionDemanda" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_TipoEjecucionDemanda" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="OPE_Usuario">
+    <Key>
+      <PropertyRef Name="Id_Usuario" />
+    </Key>
+    <Property Name="Id_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Usuario" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Id_PerfilUsuario" Type="Int32" />
+    <Property Name="Id_AreaNegocio" Type="Int32" />
+    <Property Name="Desc_JSONMenuUsuario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OPE_PerfilUsuario" Relationship="BI_OPERACIONModel.R_10" FromRole="OPE_Usuario" ToRole="OPE_PerfilUsuario" />
+  </EntityType>
+  <Association Name="R_102">
+    <End Type="BI_OPERACIONModel.OPE_TipoActividadUsuario" Role="OPE_TipoActividadUsuario" Multiplicity="1" />
+    <End Type="BI_OPERACIONModel.OPE_AuditoriaUsuario" Role="OPE_AuditoriaUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_TipoActividadUsuario">
+        <PropertyRef Name="Id_TipoActividadUsuario" />
+      </Principal>
+      <Dependent Role="OPE_AuditoriaUsuario">
+        <PropertyRef Name="Id_TipoActividadUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_10">
+    <End Type="BI_OPERACIONModel.OPE_PerfilUsuario" Role="OPE_PerfilUsuario" Multiplicity="0..1" />
+    <End Type="BI_OPERACIONModel.OPE_Usuario" Role="OPE_Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OPE_PerfilUsuario">
+        <PropertyRef Name="Id_PerfilUsuario" />
+      </Principal>
+      <Dependent Role="OPE_Usuario">
+        <PropertyRef Name="Id_PerfilUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

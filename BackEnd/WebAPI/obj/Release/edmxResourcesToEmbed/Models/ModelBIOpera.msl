@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BI_OPERACIONModelStoreContainer" CdmEntityContainer="BI_OPERACIONEntities">
+    <EntitySetMapping Name="OPE_AprobacionProgramacionPeriodicaProceso">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_AprobacionProgramacionPeriodicaProceso">
+        <MappingFragment StoreEntitySet="OPE_AprobacionProgramacionPeriodicaProceso">
+          <ScalarProperty Name="Fecha_EjecucionAprobada" ColumnName="Fecha_EjecucionAprobada" />
+          <ScalarProperty Name="Nombre_RolOperadorRevisor" ColumnName="Nombre_RolOperadorRevisor" />
+          <ScalarProperty Name="Nombre_OperadorRevisor" ColumnName="Nombre_OperadorRevisor" />
+          <ScalarProperty Name="Id_AprobacionProgramacionPeriodica" ColumnName="Id_AprobacionProgramacionPeriodica" />
+          <ScalarProperty Name="FechaHora_RevisionOperador" ColumnName="FechaHora_RevisionOperador" />
+          <ScalarProperty Name="Id_ProgramacionPeriodica" ColumnName="Id_ProgramacionPeriodica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_AreaNegocio">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_AreaNegocio">
+        <MappingFragment StoreEntitySet="OPE_AreaNegocio">
+          <ScalarProperty Name="Num_FinRangoCodProceso" ColumnName="Num_FinRangoCodProceso" />
+          <ScalarProperty Name="Num_InicioRangoCodProceso" ColumnName="Num_InicioRangoCodProceso" />
+          <ScalarProperty Name="Nombre_CarpetaWorkflows" ColumnName="Nombre_CarpetaWorkflows" />
+          <ScalarProperty Name="Nombre_AreaNegocio" ColumnName="Nombre_AreaNegocio" />
+          <ScalarProperty Name="Desc_AreaNegocio" ColumnName="Desc_AreaNegocio" />
+          <ScalarProperty Name="Id_AreaNegocio" ColumnName="Id_AreaNegocio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_EstadoEjecucionProceso">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_EstadoEjecucionProceso">
+        <MappingFragment StoreEntitySet="OPE_EstadoEjecucionProceso">
+          <ScalarProperty Name="Nombre_EstadoEjecucion" ColumnName="Nombre_EstadoEjecucion" />
+          <ScalarProperty Name="Id_EstadoEjecucion" ColumnName="Id_EstadoEjecucion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_HorarioSistemaFuente">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_HorarioSistemaFuente">
+        <MappingFragment StoreEntitySet="OPE_HorarioSistemaFuente">
+          <ScalarProperty Name="Id_SistemaFuente" ColumnName="Id_SistemaFuente" />
+          <ScalarProperty Name="Hora_Fin" ColumnName="Hora_Fin" />
+          <ScalarProperty Name="Hora_Inicio" ColumnName="Hora_Inicio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_Proceso">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_Proceso">
+        <MappingFragment StoreEntitySet="OPE_Proceso">
+          <ScalarProperty Name="Cb_PermitirSolicitudOperador" ColumnName="Cb_PermitirSolicitudOperador" />
+          <ScalarProperty Name="Cb_RevisionAutomaticaOperador" ColumnName="Cb_RevisionAutomaticaOperador" />
+          <ScalarProperty Name="Cb_RevisionAutomaticaUsuario" ColumnName="Cb_RevisionAutomaticaUsuario" />
+          <ScalarProperty Name="Num_TiempoEstimadoEjec" ColumnName="Num_TiempoEstimadoEjec" />
+          <ScalarProperty Name="Fecha_Eliminado" ColumnName="Fecha_Eliminado" />
+          <ScalarProperty Name="Cb_UtilizaParametros" ColumnName="Cb_UtilizaParametros" />
+          <ScalarProperty Name="Nombre_Proceso" ColumnName="Nombre_Proceso" />
+          <ScalarProperty Name="Id_AreaNegocio" ColumnName="Id_AreaNegocio" />
+          <ScalarProperty Name="Cb_ActualAutomaParametros" ColumnName="Cb_ActualAutomaParametros" />
+          <ScalarProperty Name="Desc_Proceso" ColumnName="Desc_Proceso" />
+          <ScalarProperty Name="Id_Proceso" ColumnName="Id_Proceso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_ProcesoPrerequisito">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_ProcesoPrerequisito">
+        <MappingFragment StoreEntitySet="OPE_ProcesoPrerequisito">
+          <ScalarProperty Name="Id_ProcesoPrerequisito" ColumnName="Id_ProcesoPrerequisito" />
+          <ScalarProperty Name="Id_ProcesoRequerido" ColumnName="Id_ProcesoRequerido" />
+          <ScalarProperty Name="Id_Proceso" ColumnName="Id_Proceso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_ProgramacionPeriodicaProceso">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_ProgramacionPeriodicaProceso">
+        <MappingFragment StoreEntitySet="OPE_ProgramacionPeriodicaProceso">
+          <ScalarProperty Name="Cb_Activo" ColumnName="Cb_Activo" />
+          <ScalarProperty Name="Fecha_Creacion" ColumnName="Fecha_Creacion" />
+          <ScalarProperty Name="Fecha_Eliminado" ColumnName="Fecha_Eliminado" />
+          <ScalarProperty Name="Id_Proceso" ColumnName="Id_Proceso" />
+          <ScalarProperty Name="Hora_Ejecucion" ColumnName="Hora_Ejecucion" />
+          <ScalarProperty Name="Num_Semana" ColumnName="Num_Semana" />
+          <ScalarProperty Name="Num_MesPeriodo" ColumnName="Num_MesPeriodo" />
+          <ScalarProperty Name="Num_DiaMes" ColumnName="Num_DiaMes" />
+          <ScalarProperty Name="Id_Periodicidad" ColumnName="Id_Periodicidad" />
+          <ScalarProperty Name="Id_ProgramacionPeriodica" ColumnName="Id_ProgramacionPeriodica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_Rel_Proceso_ProcesoGestor">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_Rel_Proceso_ProcesoGestor">
+        <MappingFragment StoreEntitySet="OPE_Rel_Proceso_ProcesoGestor">
+          <ScalarProperty Name="Id_Proceso" ColumnName="Id_Proceso" />
+          <ScalarProperty Name="Id_ProcesoGestor" ColumnName="Id_ProcesoGestor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_ResultadoEjecucionProgramada">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_ResultadoEjecucionProgramada">
+        <MappingFragment StoreEntitySet="OPE_ResultadoEjecucionProgramada">
+          <ScalarProperty Name="Id_ProgramacionPeriodica" ColumnName="Id_ProgramacionPeriodica" />
+          <ScalarProperty Name="Id_Proceso" ColumnName="Id_Proceso" />
+          <ScalarProperty Name="Nombre_RolOperadorRevisor" ColumnName="Nombre_RolOperadorRevisor" />
+          <ScalarProperty Name="Nombre_RolUsuarioRevisor" ColumnName="Nombre_RolUsuarioRevisor" />
+          <ScalarProperty Name="Nombre_OperadorRevisor" ColumnName="Nombre_OperadorRevisor" />
+          <ScalarProperty Name="Nombre_UsuarioRevisor" ColumnName="Nombre_UsuarioRevisor" />
+          <ScalarProperty Name="Id_EstadoEjecucionInformatica" ColumnName="Id_EstadoEjecucionInformatica" />
+          <ScalarProperty Name="Id_EstadoUsuarioEjecucionProceso" ColumnName="Id_EstadoUsuarioEjecucionProceso" />
+          <ScalarProperty Name="Id_EstadoOperadorEjecucionProceso" ColumnName="Id_EstadoOperadorEjecucionProceso" />
+          <ScalarProperty Name="FechaHora_RevisionUsuario" ColumnName="FechaHora_RevisionUsuario" />
+          <ScalarProperty Name="FechaHora_RevisionOperador" ColumnName="FechaHora_RevisionOperador" />
+          <ScalarProperty Name="Id_AprobacionProgramacionPeriodica" ColumnName="Id_AprobacionProgramacionPeriodica" />
+          <ScalarProperty Name="Id_SolicitudEjecucionPorDemanda" ColumnName="Id_SolicitudEjecucionPorDemanda" />
+          <ScalarProperty Name="Id_ResultadoEjecucionProgramada" ColumnName="Id_ResultadoEjecucionProgramada" />
+          <ScalarProperty Name="FechaHora_FinEjecucion" ColumnName="FechaHora_FinEjecucion" />
+          <ScalarProperty Name="FechaHora_InicioEjecucion" ColumnName="FechaHora_InicioEjecucion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_RutaPrerequisitoProceso">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_RutaPrerequisitoProceso">
+        <MappingFragment StoreEntitySet="OPE_RutaPrerequisitoProceso">
+          <ScalarProperty Name="Id_RutaPrerequisito" ColumnName="Id_RutaPrerequisito" />
+          <ScalarProperty Name="Id_Proceso" ColumnName="Id_Proceso" />
+          <ScalarProperty Name="Desc_RutaArchivo" ColumnName="Desc_RutaArchivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_SistemaFuente">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_SistemaFuente">
+        <MappingFragment StoreEntitySet="OPE_SistemaFuente">
+          <ScalarProperty Name="Id_TipoSistemaFuente" ColumnName="Id_TipoSistemaFuente" />
+          <ScalarProperty Name="Nombre_SistemaFuente" ColumnName="Nombre_SistemaFuente" />
+          <ScalarProperty Name="Id_SistemaFuente" ColumnName="Id_SistemaFuente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_SolicitudEjecucionPorDemandaProceso">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_SolicitudEjecucionPorDemandaProceso">
+        <MappingFragment StoreEntitySet="OPE_SolicitudEjecucionPorDemandaProceso">
+          <ScalarProperty Name="Id_TipoEjecucionDemanda" ColumnName="Id_TipoEjecucionDemanda" />
+          <ScalarProperty Name="Desc_JustificacionSolicitud" ColumnName="Desc_JustificacionSolicitud" />
+          <ScalarProperty Name="Cb_Activo" ColumnName="Cb_Activo" />
+          <ScalarProperty Name="Nombre_RolUsuarioSolicitante" ColumnName="Nombre_RolUsuarioSolicitante" />
+          <ScalarProperty Name="Nombre_UsuarioSolicitante" ColumnName="Nombre_UsuarioSolicitante" />
+          <ScalarProperty Name="Nombre_RolOperadorRevisor" ColumnName="Nombre_RolOperadorRevisor" />
+          <ScalarProperty Name="Nombre_OperadorRevisor" ColumnName="Nombre_OperadorRevisor" />
+          <ScalarProperty Name="FechaHora_RevisionOperador" ColumnName="FechaHora_RevisionOperador" />
+          <ScalarProperty Name="FechaHora_RevisionUsuario" ColumnName="FechaHora_RevisionUsuario" />
+          <ScalarProperty Name="FechaHora_Sugerida" ColumnName="FechaHora_Sugerida" />
+          <ScalarProperty Name="FechaHora_InicioVentanaSugerida" ColumnName="FechaHora_InicioVentanaSugerida" />
+          <ScalarProperty Name="Id_Proceso" ColumnName="Id_Proceso" />
+          <ScalarProperty Name="FechaHora_EjecucionAprobada" ColumnName="FechaHora_EjecucionAprobada" />
+          <ScalarProperty Name="FechaHora_FinVentanaSugerida" ColumnName="FechaHora_FinVentanaSugerida" />
+          <ScalarProperty Name="Id_SolicitudEjecucionPorDemanda" ColumnName="Id_SolicitudEjecucionPorDemanda" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_TipoSistemaFuente">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_TipoSistemaFuente">
+        <MappingFragment StoreEntitySet="OPE_TipoSistemaFuente">
+          <ScalarProperty Name="Nombre_TipoSistemaFuente" ColumnName="Nombre_TipoSistemaFuente" />
+          <ScalarProperty Name="Id_TipoSistemaFuente" ColumnName="Id_TipoSistemaFuente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_PeriodicidadProceso">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_PeriodicidadProceso">
+        <MappingFragment StoreEntitySet="OPE_PeriodicidadProceso">
+          <ScalarProperty Name="Nombre_Periodicidad" ColumnName="Nombre_Periodicidad" />
+          <ScalarProperty Name="Id_Periodicidad" ColumnName="Id_Periodicidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="OPE_Rel_Proceso_SistemaFuente1" TypeName="BI_OPERACIONModel.OPE_Rel_Proceso_SistemaFuente1" StoreEntitySet="OPE_Rel_Proceso_SistemaFuente">
+      <EndProperty Name="OPE_Proceso">
+        <ScalarProperty Name="Id_Proceso" ColumnName="Id_Proceso" />
+      </EndProperty>
+      <EndProperty Name="OPE_SistemaFuente">
+        <ScalarProperty Name="Id_SistemaFuente" ColumnName="Id_SistemaFuente" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="OPE_DiaSemana">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_DiaSemana">
+        <MappingFragment StoreEntitySet="OPE_DiaSemana">
+          <ScalarProperty Name="Nombre_DiaSemana" ColumnName="Nombre_DiaSemana" />
+          <ScalarProperty Name="Id_DiaSemana" ColumnName="Id_DiaSemana" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="OPE_Rel_ProgramacionPeriodica_DiaSemana" TypeName="BI_OPERACIONModel.OPE_Rel_ProgramacionPeriodica_DiaSemana" StoreEntitySet="OPE_Rel_ProgramacionPeriodica_DiaSemana">
+      <EndProperty Name="OPE_DiaSemana">
+        <ScalarProperty Name="Id_DiaSemana" ColumnName="Id_DiaSemana" />
+      </EndProperty>
+      <EndProperty Name="OPE_ProgramacionPeriodicaProceso">
+        <ScalarProperty Name="Id_ProgramacionPeriodica" ColumnName="Id_ProgramacionPeriodica" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="OPE_Fecha">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_Fecha">
+        <MappingFragment StoreEntitySet="OPE_Fecha">
+          <ScalarProperty Name="Fecha_UltimoDiaMes" ColumnName="Fecha_UltimoDiaMes" />
+          <ScalarProperty Name="Cb_EsNoHabilCUD" ColumnName="Cb_EsNoHabilCUD" />
+          <ScalarProperty Name="Desc_FestivoNacional" ColumnName="Desc_FestivoNacional" />
+          <ScalarProperty Name="Cb_EsFestivoNacional" ColumnName="Cb_EsFestivoNacional" />
+          <ScalarProperty Name="Num_DiaAnio" ColumnName="Num_DiaAnio" />
+          <ScalarProperty Name="Num_DiaSemana" ColumnName="Num_DiaSemana" />
+          <ScalarProperty Name="Num_SemanaMes" ColumnName="Num_SemanaMes" />
+          <ScalarProperty Name="Num_SemanaAnio" ColumnName="Num_SemanaAnio" />
+          <ScalarProperty Name="Num_Mes" ColumnName="Num_Mes" />
+          <ScalarProperty Name="Num_Bimestre" ColumnName="Num_Bimestre" />
+          <ScalarProperty Name="Num_Trimestre" ColumnName="Num_Trimestre" />
+          <ScalarProperty Name="Num_Semestre" ColumnName="Num_Semestre" />
+          <ScalarProperty Name="Num_Anio" ColumnName="Num_Anio" />
+          <ScalarProperty Name="Num_MesSemestre" ColumnName="Num_MesSemestre" />
+          <ScalarProperty Name="Num_MesTrimestre" ColumnName="Num_MesTrimestre" />
+          <ScalarProperty Name="Num_MesBimestre" ColumnName="Num_MesBimestre" />
+          <ScalarProperty Name="Num_DiaMes" ColumnName="Num_DiaMes" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_ProcesoParaEjecucion">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.C_ProcesoParaEjecucion">
+        <MappingFragment StoreEntitySet="C_ProcesoParaEjecucion">
+          <ScalarProperty Name="Cb_RevisionAutomaticaOperador" ColumnName="Cb_RevisionAutomaticaOperador" />
+          <ScalarProperty Name="Cb_RevisionAutomaticaUsuario" ColumnName="Cb_RevisionAutomaticaUsuario" />
+          <ScalarProperty Name="Id_ProgramacionPeriodica" ColumnName="Id_ProgramacionPeriodica" />
+          <ScalarProperty Name="Id_Proceso" ColumnName="Id_Proceso" />
+          <ScalarProperty Name="Nombre_CarpetaWorkflows" ColumnName="Nombre_CarpetaWorkflows" />
+          <ScalarProperty Name="Nombre_AreaNegocio" ColumnName="Nombre_AreaNegocio" />
+          <ScalarProperty Name="Hora_EjecucionProgramada" ColumnName="Hora_EjecucionProgramada" />
+          <ScalarProperty Name="Nombre_Proceso" ColumnName="Nombre_Proceso" />
+          <ScalarProperty Name="Id_SolicitudEjecucionPorDemanda" ColumnName="Id_SolicitudEjecucionPorDemanda" />
+          <ScalarProperty Name="Id_AprobacionProgramacionPeriodica" ColumnName="Id_AprobacionProgramacionPeriodica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_ProcesoProgramado">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.C_ProcesoProgramado">
+        <MappingFragment StoreEntitySet="C_ProcesoProgramado">
+          <ScalarProperty Name="Cb_Activo" ColumnName="Cb_Activo" />
+          <ScalarProperty Name="Cb_RevisionAutomaticaOperador" ColumnName="Cb_RevisionAutomaticaOperador" />
+          <ScalarProperty Name="Cb_RevisionAutomaticaUsuario" ColumnName="Cb_RevisionAutomaticaUsuario" />
+          <ScalarProperty Name="Id_ResultadoEjecucionProgramada" ColumnName="Id_ResultadoEjecucionProgramada" />
+          <ScalarProperty Name="Nombre_EstadoUsuarioEjecucionProceso" ColumnName="Nombre_EstadoUsuarioEjecucionProceso" />
+          <ScalarProperty Name="Id_EstadoUsuarioEjecucionProceso" ColumnName="Id_EstadoUsuarioEjecucionProceso" />
+          <ScalarProperty Name="Nombre_EstadoOperadorEjecucionProceso" ColumnName="Nombre_EstadoOperadorEjecucionProceso" />
+          <ScalarProperty Name="Id_EstadoOperadorEjecucionProceso" ColumnName="Id_EstadoOperadorEjecucionProceso" />
+          <ScalarProperty Name="Nombre_EstadoEjecucionInformatica" ColumnName="Nombre_EstadoEjecucionInformatica" />
+          <ScalarProperty Name="Id_EstadoEjecucionInformatica" ColumnName="Id_EstadoEjecucionInformatica" />
+          <ScalarProperty Name="FechaHora_FinEjecucion" ColumnName="FechaHora_FinEjecucion" />
+          <ScalarProperty Name="FechaHora_InicioEjecucion" ColumnName="FechaHora_InicioEjecucion" />
+          <ScalarProperty Name="Cb_ProcesoEjecutado" ColumnName="Cb_ProcesoEjecutado" />
+          <ScalarProperty Name="Cb_ProgramacionAprobada" ColumnName="Cb_ProgramacionAprobada" />
+          <ScalarProperty Name="Cb_Vencido" ColumnName="Cb_Vencido" />
+          <ScalarProperty Name="Nombre_CarpetaWorkflows" ColumnName="Nombre_CarpetaWorkflows" />
+          <ScalarProperty Name="Nombre_AreaNegocio" ColumnName="Nombre_AreaNegocio" />
+          <ScalarProperty Name="Id_AreaNegocio" ColumnName="Id_AreaNegocio" />
+          <ScalarProperty Name="Hora_EjecucionProgramada" ColumnName="Hora_EjecucionProgramada" />
+          <ScalarProperty Name="Nombre_Proceso" ColumnName="Nombre_Proceso" />
+          <ScalarProperty Name="Id_Proceso" ColumnName="Id_Proceso" />
+          <ScalarProperty Name="Id_SolicitudEjecucionPorDemanda" ColumnName="Id_SolicitudEjecucionPorDemanda" />
+          <ScalarProperty Name="Id_AprobacionProgramacionPeriodica" ColumnName="Id_AprobacionProgramacionPeriodica" />
+          <ScalarProperty Name="Id_ProgramacionPeriodica" ColumnName="Id_ProgramacionPeriodica" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_AuditoriaUsuario">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_AuditoriaUsuario">
+        <MappingFragment StoreEntitySet="OPE_AuditoriaUsuario">
+          <ScalarProperty Name="Desc_DetalleActividad" ColumnName="Desc_DetalleActividad" />
+          <ScalarProperty Name="Nombre_Usuario" ColumnName="Nombre_Usuario" />
+          <ScalarProperty Name="Id_AuditoriaUsuario" ColumnName="Id_AuditoriaUsuario" />
+          <ScalarProperty Name="Desc_Actividad" ColumnName="Desc_Actividad" />
+          <ScalarProperty Name="Id_TipoActividadUsuario" ColumnName="Id_TipoActividadUsuario" />
+          <ScalarProperty Name="FechaHora_Actividad" ColumnName="FechaHora_Actividad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_Parametro">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_Parametro">
+        <MappingFragment StoreEntitySet="OPE_Parametro">
+          <ScalarProperty Name="Nombre_GrupoParametro" ColumnName="Nombre_GrupoParametro" />
+          <ScalarProperty Name="Desc_Parametro" ColumnName="Desc_Parametro" />
+          <ScalarProperty Name="Valor_Parametro" ColumnName="Valor_Parametro" />
+          <ScalarProperty Name="Nombre_Parametro" ColumnName="Nombre_Parametro" />
+          <ScalarProperty Name="Id_Parametro" ColumnName="Id_Parametro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_PerfilUsuario">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_PerfilUsuario">
+        <MappingFragment StoreEntitySet="OPE_PerfilUsuario">
+          <ScalarProperty Name="Desc_PerfilUsuario" ColumnName="Desc_PerfilUsuario" />
+          <ScalarProperty Name="Id_PerfilUsuario" ColumnName="Id_PerfilUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_TipoActividadUsuario">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_TipoActividadUsuario">
+        <MappingFragment StoreEntitySet="OPE_TipoActividadUsuario">
+          <ScalarProperty Name="Nombre_TipoActividadUsuario" ColumnName="Nombre_TipoActividadUsuario" />
+          <ScalarProperty Name="Id_TipoActividadUsuario" ColumnName="Id_TipoActividadUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_TipoEjecucionDemanda">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_TipoEjecucionDemanda">
+        <MappingFragment StoreEntitySet="OPE_TipoEjecucionDemanda">
+          <ScalarProperty Name="Nombre_TipoEjecucionDemanda" ColumnName="Nombre_TipoEjecucionDemanda" />
+          <ScalarProperty Name="Id_TipoEjecucionDemanda" ColumnName="Id_TipoEjecucionDemanda" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPE_Usuario">
+      <EntityTypeMapping TypeName="BI_OPERACIONModel.OPE_Usuario">
+        <MappingFragment StoreEntitySet="OPE_Usuario">
+          <ScalarProperty Name="Desc_JSONMenuUsuario" ColumnName="Desc_JSONMenuUsuario" />
+          <ScalarProperty Name="Id_AreaNegocio" ColumnName="Id_AreaNegocio" />
+          <ScalarProperty Name="Id_PerfilUsuario" ColumnName="Id_PerfilUsuario" />
+          <ScalarProperty Name="Nombre_Usuario" ColumnName="Nombre_Usuario" />
+          <ScalarProperty Name="Id_Usuario" ColumnName="Id_Usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

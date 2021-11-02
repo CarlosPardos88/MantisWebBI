@@ -1,0 +1,106 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+  <button mat-icon-button td-menu-button tdLayoutToggle>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div td-toolbar-content layout="row" layout-align="center center" flex>
+    <span>Solicitud Ejecución Proceso</span>
+    <span flex></span>
+  </div>
+  <div layout-gt-xs="row" layout-align-gt-xs="center start" class="margin">
+    <mat-progress-spinner [mode]="'indeterminate'" *ngIf="isLoading2" style="margin: auto;">
+    </mat-progress-spinner>
+    <div flex-gt-xs="75" *ngIf="show">
+      <mat-card flex-gt-sm>
+        <mat-card-title>Solicitar Ejecución Proceso {{ Nombre_Proceso }}</mat-card-title>
+        <mat-divider style="width: 100%;"></mat-divider>
+        <mat-nav-list class="will-load item-list">
+          <a mat-list-item layout-align="row">
+            <mat-icon matListAvatar> group_work </mat-icon>
+            <span flex></span>
+            <span class="mat-caption" flex="20"> Área de Negocio </span>
+            <span flex></span>
+            <span class="mat-caption" flex="20"> {{ Nombre_AreaNegocio }} </span>
+          </a>
+          <a mat-list-item layout-align="row">
+            <mat-icon matListAvatar> account_box </mat-icon>
+            <span flex></span>
+            <span class="mat-caption" flex="20"> Utiliza Parámetros </span>
+            <span flex></span>
+            <span class="mat-caption" flex="20"> {{ Cb_UtilizaParametros | homologacion }} </span>
+          </a>
+          <a mat-list-item layout-align="row">
+            <mat-icon matListAvatar> description </mat-icon>
+            <span flex></span>
+            <span class="mat-caption" flex="20"> Actualiza Parámetros </span>
+            <span flex></span>
+            <span class="mat-caption" flex="20"> {{ Cb_ActualAutomaParametros | homologacion }} </span>
+          </a>
+          <mat-divider *ngIf="!last" [inset]="true"></mat-divider>
+
+          <mat-card-content class="push-bottom-none">
+            <form #solicitudForm="ngForm">
+              <div layout="row">
+                <mat-form-field style="width: 25%;">
+                  <input matInput #FechaHora_InicioVentanaSugeridaAprobadaElement
+                    #FechaHora_InicioVentanaSugeridaControl="ngModel" type="datetime-local"
+                    name="FechaHora_InicioVentanaSugerida" placeholder="Fecha Hora Inicio Ventana Sugerida"
+                    [(ngModel)]="FechaHora_InicioVentanaSugerida" [min]="today" (blur)="validarHora();" required>
+                </mat-form-field>
+              </div>
+
+              <div layout="row">
+                <mat-form-field style="width: 25%;">
+                  <input matInput #FechaHora_FinVentanaSugeridaElement #FechaHora_FinVentanaSugeridaControl="ngModel"
+                    type="datetime-local" name="FechaHora_FinVentanaSugerida"
+                    placeholder="Fecha Hora Fin Ventana Sugerida" [(ngModel)]="FechaHora_FinVentanaSugerida"
+                    [min]="FechaHora_InicioVentanaSugerida" (blur)="validarFecha();" required>
+                </mat-form-field>
+              </div>
+
+              <div layout="row">
+                <mat-form-field style="width: 25%;">
+                  <input matInput #FechaHora_SugeridaElement #FechaHora_SugeridaControl="ngModel" type="datetime-local"
+                    name="FechaHora_Sugerida" placeholder="Fecha Hora de Ejecución Sugerida"
+                    [(ngModel)]="FechaHora_Sugerida" [min]="FechaHora_InicioVentanaSugerida"
+                    [max]="FechaHora_FinVentanaSugerida" (blur)="validarFechaSugerida();" required>
+                </mat-form-field>
+              </div>
+              <div layout="row">
+                <mat-form-field flex>
+                  <mat-label>Tipo de Justificación</mat-label>
+                  <mat-select [(ngModel)]="Id_Justificacion" name="Id_Justificacion" required>
+                    <mat-option *ngFor="let justificacion of OPE_TipoJustificacion"
+                      [value]="justificacion.Id_TipoEjecucionDemanda">
+                      {{justificacion.Nombre_TipoEjecucionDemanda}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div layout="row">
+                <mat-form-field flex>
+                  <input matInput #Justificacion_ProcesoElement #Justificacion_ProcesoControl="ngModel" type="text"
+                    placeholder="Justificacion" [(ngModel)]="Justificacion_Proceso" name="Justificacion_Proceso"
+                    (blur)="validarEspacios(Justificacion_Proceso,Justificacion_ProcesoControl);" maxlength="500"
+                    minlength="3" required>
+                  <mat-hint align="start">
+                    <span [hidden]="Justificacion_ProcesoControl.pristine" class="tc-red-600">
+                      <span [hidden]="!Justificacion_ProcesoControl.hasError('required')">Requerido</span>
+                    </span>
+                  </mat-hint>
+                  <mat-hint align="end">{{Justificacion_ProcesoElement.value.length}} / 500</mat-hint>
+                </mat-form-field>
+              </div>
+            </form>
+          </mat-card-content>
+
+        </mat-nav-list>
+        <mat-divider style="width: 100%;"></mat-divider>
+        <mat-card-actions>
+          <button mat-button [disabled]="!solicitudForm.form.valid" color="primary" (click)="save()">Solicitar</button>
+          <button mat-button (click)="goBack()">Cancelar</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+</td-layout-nav>

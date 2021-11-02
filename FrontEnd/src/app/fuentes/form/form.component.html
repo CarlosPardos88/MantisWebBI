@@ -1,0 +1,93 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+  <button mat-icon-button td-menu-button tdLayoutToggle>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div td-toolbar-content layout="row" layout-align="center center" flex>
+    <span>Sistema Fuente</span>
+    <span flex></span>
+  </div>
+  <td-layout-card-over cardTitle="Sistema Fuente" cardSubtitle="Llene el formulario para agregar sistema fuente">
+    <ng-template tdLoading="fuente.form">
+      <mat-card-content class="push-bottom-none">
+        <form #fuenteForm="ngForm">
+          <div layout="row">
+            <mat-form-field flex> 
+              <input matInput
+                      #Nombre_fuenteNegocioElement
+                      #Nombre_fuenteNegocioControl="ngModel"
+                      type="text" 
+                      placeholder="Nombre" 
+                      [(ngModel)]="Nombre_SistemaFuente" 
+                      name="Nombre_SistemaFuente" 
+                      maxlength="30"
+                      (blur)="validarEspacios(Nombre_SistemaFuente,Nombre_fuenteNegocioControl);"
+                      [disabled]="Id_SistemaFuente"
+                      required>
+              <mat-hint align="start">
+                <span [hidden]="Nombre_fuenteNegocioControl.pristine" class="tc-red-600">
+                  <span [hidden]="!Nombre_fuenteNegocioControl.hasError('required')">Requerido</span>
+                </span>
+              </mat-hint>
+              <mat-hint align="end">{{Nombre_fuenteNegocioElement.value.length}} / 30</mat-hint>
+            </mat-form-field>
+          </div>
+          
+          <div layout="row">
+            <mat-form-field flex>
+              <mat-label>Tipo Sistema Fuente</mat-label>
+              <mat-select [(ngModel)]="Id_TipoSistemaFuente" name="Id_TipoSistemaFuente" required>
+                <mat-option *ngFor="let tipo of tiposfuente" [value]="tipo.Id_TipoSistemaFuente">
+                  {{tipo.Nombre_TipoSistemaFuente}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <div layout="row">
+            <mat-form-field flex>
+              <input matInput
+                      #Hora_InicioElement
+                      #Hora_InicioControl="ngModel"
+                      type="time" 
+                      placeholder="Hora de Inicio" 
+                      [(ngModel)]="horaInicio"
+                      (blur)="validarHoras();"
+                      name="Hora_Inicio"
+                      required>
+              <mat-hint align="start">
+                <span [hidden]="Hora_InicioControl.pristine" class="tc-red-600">
+                  <span [hidden]="!Hora_InicioControl.hasError('required')">Requerido</span>
+                </span>
+              </mat-hint>              
+            </mat-form-field>
+          </div>
+
+          <div layout="row">
+            <mat-form-field flex>
+              <input matInput
+                      #Hora_FinElement
+                      #Hora_FinControl="ngModel"
+                      type="time" 
+                      placeholder="Hora Fin" 
+                      [(ngModel)]="horaFin"
+                      name="Hora_Fin"
+                      (blur)="validarHoras();"
+                      required>
+              <mat-hint align="start">
+                <span [hidden]="Hora_FinControl.pristine" class="tc-red-600">
+                  <span [hidden]="!Hora_FinControl.hasError('required')">Required</span>
+                </span>
+              </mat-hint>
+            </mat-form-field>
+          </div>
+          
+        </form>
+      </mat-card-content>
+      <mat-divider></mat-divider>
+      <mat-card-actions>
+        <button mat-button [disabled]="!fuenteForm.form.valid" color="primary" (click)="save()">Guardar</button>
+        <button mat-button (click)="goBack()">Cancelar</button>
+      </mat-card-actions>
+    </ng-template>
+  </td-layout-card-over>
+</td-layout-nav>

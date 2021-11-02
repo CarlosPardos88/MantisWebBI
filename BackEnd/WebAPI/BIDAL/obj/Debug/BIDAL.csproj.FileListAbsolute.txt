@@ -1,0 +1,143 @@
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\bin\Debug\BIDAL.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\bin\Debug\BIDAL.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\bin\Debug\Teradata.Net.Security.Tdgss.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\bin\Debug\EntitiesTD.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll.config
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\obj\Debug\BIDAL.csprojAssemblyReference.cache
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\obj\Debug\BIDAL.csproj.CoreCompileInputs.cache
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\obj\Debug\BIDAL.csproj.CopyComplete
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\obj\Debug\BIDAL.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\WebAPI\BIDAL\obj\Debug\BIDAL.pdb
+C:\Actas-BR-master\WebAPI\BIDAL\bin\Debug\BIDAL.dll
+C:\Actas-BR-master\WebAPI\BIDAL\bin\Debug\BIDAL.pdb
+C:\Actas-BR-master\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll
+C:\Actas-BR-master\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.dll
+C:\Actas-BR-master\WebAPI\BIDAL\bin\Debug\Teradata.Net.Security.Tdgss.dll
+C:\Actas-BR-master\WebAPI\BIDAL\bin\Debug\EntitiesTD.pdb
+C:\Actas-BR-master\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll.config
+C:\Actas-BR-master\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.xml
+C:\Actas-BR-master\WebAPI\BIDAL\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+C:\Actas-BR-master\WebAPI\BIDAL\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\Actas-BR-master\WebAPI\BIDAL\obj\Debug\BIDAL.csprojAssemblyReference.cache
+C:\Actas-BR-master\WebAPI\BIDAL\obj\Debug\BIDAL.csproj.CopyComplete
+C:\Actas-BR-master\WebAPI\BIDAL\obj\Debug\BIDAL.dll
+C:\Actas-BR-master\WebAPI\BIDAL\obj\Debug\BIDAL.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\BIDAL.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\BIDAL.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\Teradata.Net.Security.Tdgss.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\EntitiesTD.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll.config
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\obj\Debug\BIDAL.csprojAssemblyReference.cache
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\obj\Debug\BIDAL.csproj.CoreCompileInputs.cache
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\obj\Debug\BIDAL.csproj.CopyComplete
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\obj\Debug\BIDAL.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\Operacion-Web-BI-master\WebAPI\BIDAL\obj\Debug\BIDAL.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\bin\Debug\BIDAL.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\bin\Debug\BIDAL.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\bin\Debug\Teradata.Net.Security.Tdgss.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\bin\Debug\EntitiesTD.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll.config
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\obj\Debug\BIDAL.csprojAssemblyReference.cache
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\obj\Debug\BIDAL.csproj.CoreCompileInputs.cache
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\obj\Debug\BIDAL.csproj.CopyComplete
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\obj\Debug\BIDAL.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BIDAL\obj\Debug\BIDAL.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\BIDAL.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\BIDAL.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\Teradata.Net.Security.Tdgss.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\EntitiesTD.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll.config
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\obj\Debug\BIDAL.csprojAssemblyReference.cache
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\obj\Debug\BIDAL.csproj.CopyComplete
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\obj\Debug\BIDAL.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\Operacion-Web-BI-master2\Operacion-Web-BI-master\WebAPI\BIDAL\obj\Debug\BIDAL.pdb
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\bin\Debug\BIDAL.dll
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\bin\Debug\BIDAL.pdb
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.dll
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\bin\Debug\Teradata.Net.Security.Tdgss.dll
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\bin\Debug\EntitiesTD.pdb
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll.config
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.xml
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\obj\Debug\BIDAL.csprojAssemblyReference.cache
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\obj\Debug\BIDAL.csproj.CopyComplete
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\obj\Debug\BIDAL.dll
+C:\Users\eo255004\Documents\TERADATA\WebAPI\BIDAL\obj\Debug\BIDAL.pdb
+C:\WebAPI\BIDAL\bin\Debug\BIDAL.dll
+C:\WebAPI\BIDAL\bin\Debug\BIDAL.pdb
+C:\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll
+C:\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.dll
+C:\WebAPI\BIDAL\bin\Debug\Teradata.Net.Security.Tdgss.dll
+C:\WebAPI\BIDAL\bin\Debug\EntitiesTD.pdb
+C:\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll.config
+C:\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.xml
+C:\WebAPI\BIDAL\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+C:\WebAPI\BIDAL\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\WebAPI\BIDAL\obj\Debug\BIDAL.csprojAssemblyReference.cache
+C:\WebAPI\BIDAL\obj\Debug\BIDAL.csproj.CopyComplete
+C:\WebAPI\BIDAL\obj\Debug\BIDAL.dll
+C:\WebAPI\BIDAL\obj\Debug\BIDAL.pdb
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\bin\Debug\BIDAL.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\bin\Debug\BIDAL.pdb
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\bin\Debug\Teradata.Net.Security.Tdgss.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\bin\Debug\EntitiesTD.pdb
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll.config
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.xml
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\obj\Debug\BIDAL.csprojAssemblyReference.cache
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\obj\Debug\BIDAL.csproj.CopyComplete
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\obj\Debug\BIDAL.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\WebAPI\WebAPI\BIDAL\obj\Debug\BIDAL.pdb
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\bin\Debug\BIDAL.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\bin\Debug\BIDAL.pdb
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\bin\Debug\Teradata.Net.Security.Tdgss.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\bin\Debug\EntitiesTD.pdb
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll.config
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.xml
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\obj\Debug\BIDAL.csprojAssemblyReference.cache
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\obj\Debug\BIDAL.csproj.CopyComplete
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\obj\Debug\BIDAL.dll
+C:\Users\js250177\OneDrive - Teradata\Documents\copia - Copy\WebAPI\WebAPI\BIDAL\obj\Debug\BIDAL.pdb
+C:\Operacion Web BI\WebAPI\BIDAL\bin\Debug\BIDAL.dll
+C:\Operacion Web BI\WebAPI\BIDAL\bin\Debug\BIDAL.pdb
+C:\Operacion Web BI\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll
+C:\Operacion Web BI\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.dll
+C:\Operacion Web BI\WebAPI\BIDAL\bin\Debug\Teradata.Net.Security.Tdgss.dll
+C:\Operacion Web BI\WebAPI\BIDAL\bin\Debug\EntitiesTD.pdb
+C:\Operacion Web BI\WebAPI\BIDAL\bin\Debug\EntitiesTD.dll.config
+C:\Operacion Web BI\WebAPI\BIDAL\bin\Debug\Teradata.Client.Provider.xml
+C:\Operacion Web BI\WebAPI\BIDAL\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+C:\Operacion Web BI\WebAPI\BIDAL\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\Operacion Web BI\WebAPI\BIDAL\obj\Debug\BIDAL.csprojAssemblyReference.cache
+C:\Operacion Web BI\WebAPI\BIDAL\obj\Debug\BIDAL.csproj.CopyComplete
+C:\Operacion Web BI\WebAPI\BIDAL\obj\Debug\BIDAL.dll
+C:\Operacion Web BI\WebAPI\BIDAL\obj\Debug\BIDAL.pdb

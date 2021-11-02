@@ -1,0 +1,659 @@
+C:\OperacionBI\WebAPI\WebAPI\bin\ApplicationInsights.config
+C:\OperacionBI\WebAPI\WebAPI\bin\WebAPI.dll.config
+C:\OperacionBI\WebAPI\WebAPI\bin\WebAPI.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\WebAPI.pdb
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\csc.exe
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\csc.exe.config
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\csc.rsp
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\csi.exe
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\csi.exe.config
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\csi.rsp
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.AppContext.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Console.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.IO.Compression.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.IO.Pipes.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Security.AccessControl.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Security.Claims.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.ValueTuple.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Xml.XPath.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\vbc.exe
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\vbc.exe.config
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\vbc.rsp
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\VBCSCompiler.exe
+C:\OperacionBI\WebAPI\WebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\OperacionBI\WebAPI\WebAPI\bin\Antlr3.Runtime.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\BllTD.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\EntitiesTD.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\EntityFramework.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\EntityFramework.SqlServer.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.AI.DependencyCollector.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.AI.Web.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.AI.WindowsServer.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.ApplicationInsights.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\Newtonsoft.Json.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Diagnostics.DiagnosticSource.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Net.Http.Formatting.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Cors.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Helpers.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Http.Cors.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Http.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Http.WebHost.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Mvc.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Optimization.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Razor.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.WebPages.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\Teradata.Client.Provider.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\Teradata.Net.Security.Tdgss.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\WebGrease.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\BIDAL.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\BllTD.pdb
+C:\OperacionBI\WebAPI\WebAPI\bin\EntitiesTD.pdb
+C:\OperacionBI\WebAPI\WebAPI\bin\EntitiesTD.dll.config
+C:\OperacionBI\WebAPI\WebAPI\bin\EntityFramework.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\EntityFramework.SqlServer.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Net.Http.Formatting.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Http.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Http.Cors.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\Newtonsoft.Json.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Helpers.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Http.WebHost.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Mvc.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Optimization.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.Razor.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.WebPages.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\Teradata.Client.Provider.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\Antlr3.Runtime.pdb
+C:\OperacionBI\WebAPI\WebAPI\bin\System.Diagnostics.DiagnosticSource.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.AI.DependencyCollector.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.AI.WindowsServer.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.AI.Web.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\OperacionBI\WebAPI\WebAPI\bin\BIDAL.pdb
+C:\OperacionBI\WebAPI\WebAPI\bin\ja\Teradata.Client.Provider.resources.dll
+C:\OperacionBI\WebAPI\WebAPI\bin\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\OperacionBI\WebAPI\WebAPI\obj\Release\WebAPI.csprojAssemblyReference.cache
+C:\OperacionBI\WebAPI\WebAPI\obj\Release\WebAPI.csproj.CopyComplete
+C:\OperacionBI\WebAPI\WebAPI\obj\Release\WebAPI.dll
+C:\OperacionBI\WebAPI\WebAPI\obj\Release\WebAPI.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\ApplicationInsights.config
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\WebAPI.dll.config
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\WebAPI.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\WebAPI.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\csc.exe
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\csc.exe.config
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\csc.rsp
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\csi.exe
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\csi.exe.config
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\csi.rsp
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.AppContext.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Console.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.IO.Compression.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.IO.Pipes.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Security.Claims.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.ValueTuple.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\vbc.exe
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\vbc.exe.config
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\vbc.rsp
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Antlr3.Runtime.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\BIDAL.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\BllTD.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\EntitiesTD.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\EntityFramework.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AI.Web.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.Owin.Cors.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.Owin.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.Owin.Host.HttpListener.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.Owin.Hosting.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.Owin.Security.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Newtonsoft.Json.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Owin.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Cors.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Helpers.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Http.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Http.Owin.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Mvc.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Optimization.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Razor.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.WebPages.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Teradata.Client.Provider.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Teradata.Net.Security.Tdgss.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\WebGrease.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\BIDAL.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\BllTD.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\EntitiesTD.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\EntitiesTD.dll.config
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\EntityFramework.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.Owin.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.Owin.Cors.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.Owin.Host.HttpListener.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.Owin.Hosting.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.Owin.Security.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Http.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Http.Cors.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Http.Owin.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Newtonsoft.Json.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Helpers.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Mvc.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Optimization.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.Razor.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.WebPages.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Teradata.Client.Provider.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Antlr3.Runtime.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.AI.Web.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\ja\Teradata.Client.Provider.resources.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\bin\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\obj\Release\WebAPI.csprojAssemblyReference.cache
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\obj\Release\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\obj\Release\WebAPI.csproj.CopyComplete
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\obj\Release\WebAPI.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\WebAPI\obj\Release\WebAPI.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\ApplicationInsights.config
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\WebAPI.dll.config
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\WebAPI.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\WebAPI.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\csc.exe
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\csc.exe.config
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\csc.rsp
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\csi.exe
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\csi.exe.config
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\csi.rsp
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.AppContext.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Console.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.IO.Compression.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.IO.Pipes.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Security.Claims.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.ValueTuple.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\vbc.exe
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\vbc.exe.config
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\vbc.rsp
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Antlr3.Runtime.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\BIDAL.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\BllTD.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\EntitiesTD.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\EntityFramework.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AI.Web.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.Owin.Cors.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.Owin.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.Owin.Host.HttpListener.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.Owin.Hosting.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.Owin.Security.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Newtonsoft.Json.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Owin.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Cors.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Helpers.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Http.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Http.Owin.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Mvc.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Optimization.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Razor.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.WebPages.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Teradata.Client.Provider.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Teradata.Net.Security.Tdgss.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\WebGrease.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\BIDAL.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\BllTD.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\EntitiesTD.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\EntitiesTD.dll.config
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\EntityFramework.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.Owin.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.Owin.Cors.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.Owin.Host.HttpListener.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.Owin.Hosting.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.Owin.Security.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Http.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Http.Cors.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Http.Owin.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Newtonsoft.Json.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Helpers.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Mvc.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Optimization.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.Razor.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.WebPages.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Teradata.Client.Provider.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Antlr3.Runtime.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.AI.Web.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\ja\Teradata.Client.Provider.resources.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\bin\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\obj\Release\WebAPI.csprojAssemblyReference.cache
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\obj\Release\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\obj\Release\WebAPI.csproj.CopyComplete
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\obj\Release\WebAPI.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\WebAPI\obj\Release\WebAPI.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\ApplicationInsights.config
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\WebAPI.dll.config
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\WebAPI.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\WebAPI.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\csc.exe
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\csc.exe.config
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\csc.rsp
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\csi.exe
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\csi.exe.config
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\csi.rsp
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.AppContext.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Console.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.IO.Compression.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.IO.FileSystem.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.IO.Pipes.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Security.AccessControl.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Security.Claims.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.ValueTuple.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Xml.XPath.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\vbc.exe
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\vbc.exe.config
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\vbc.rsp
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\VBCSCompiler.exe
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Antlr3.Runtime.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\BIDAL.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\BllTD.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\EntitiesTD.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\EntityFramework.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\EntityFramework.SqlServer.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AI.DependencyCollector.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AI.Web.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AI.WindowsServer.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.ApplicationInsights.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.Owin.Cors.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.Owin.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.Owin.Host.HttpListener.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.Owin.Hosting.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.Owin.Security.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Newtonsoft.Json.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Owin.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Net.Http.Formatting.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Cors.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Helpers.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Http.Cors.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Http.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Http.Owin.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Http.WebHost.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Mvc.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Optimization.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Razor.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.WebPages.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.WebPages.Razor.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Teradata.Client.Provider.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Teradata.Net.Security.Tdgss.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\WebGrease.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\BIDAL.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\BllTD.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\EntitiesTD.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\EntitiesTD.dll.config
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\EntityFramework.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\EntityFramework.SqlServer.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.Core.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.Owin.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.Owin.Cors.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.Owin.Host.HttpListener.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.Owin.Hosting.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.Owin.Security.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Net.Http.Formatting.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Http.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Http.Cors.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Http.Owin.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Newtonsoft.Json.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Helpers.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Http.WebHost.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Mvc.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Optimization.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.Razor.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.WebPages.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Web.WebPages.Razor.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Teradata.Client.Provider.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Antlr3.Runtime.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AI.DependencyCollector.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AI.WindowsServer.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.AI.Web.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\ja\Teradata.Client.Provider.resources.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\bin\ja\Teradata.Net.Security.Tdgss.resources.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\obj\Release\WebAPI.csprojAssemblyReference.cache
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\obj\Release\WebAPI.csproj.CoreCompileInputs.cache
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\obj\Release\WebAPI.csproj.CopyComplete
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\obj\Release\WebAPI.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\WebAPI\obj\Release\WebAPI.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\ApplicationInsights.config
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\WebAPI.dll.config
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\WebAPI.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\WebAPI.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\csc.exe
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\csc.exe.config
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\csc.rsp
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\csi.exe
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\csi.exe.config
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\csi.rsp
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.AppContext.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Console.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.IO.Compression.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.IO.Pipes.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Security.AccessControl.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Security.Claims.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.ValueTuple.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Xml.XPath.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\vbc.exe
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\vbc.exe.config
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\vbc.rsp
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\VBCSCompiler.exe
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Antlr3.Runtime.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\BIDAL.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\BllTD.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\EntitiesTD.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\EntityFramework.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\EntityFramework.SqlServer.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AI.DependencyCollector.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AI.Web.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AI.WindowsServer.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.ApplicationInsights.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.Owin.Cors.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.Owin.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.Owin.Host.HttpListener.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.Owin.Hosting.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.Owin.Security.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Newtonsoft.Json.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Owin.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Diagnostics.DiagnosticSource.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Net.Http.Formatting.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Cors.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Helpers.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Http.Cors.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Http.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Http.Owin.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Http.WebHost.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Mvc.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Optimization.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Razor.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.WebPages.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.WebPages.Razor.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Teradata.Client.Provider.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Teradata.Net.Security.Tdgss.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\WebGrease.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\BIDAL.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\BllTD.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\EntitiesTD.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\EntitiesTD.dll.config
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\EntityFramework.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\EntityFramework.SqlServer.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.Owin.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.Owin.Cors.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.Owin.Host.HttpListener.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.Owin.Hosting.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.Owin.Security.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Net.Http.Formatting.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Http.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Http.Cors.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Http.Owin.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Newtonsoft.Json.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Helpers.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Http.WebHost.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Mvc.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Optimization.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.Razor.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.WebPages.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Web.WebPages.Razor.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Teradata.Client.Provider.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Antlr3.Runtime.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\System.Diagnostics.DiagnosticSource.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AI.DependencyCollector.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AI.WindowsServer.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.AI.Web.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\ja\Teradata.Client.Provider.resources.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\bin\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\obj\Release\WebAPI.csproj.AssemblyReference.cache
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\obj\Release\WebAPI.csproj.CoreCompileInputs.cache
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\obj\Release\WebAPI.csproj.CopyComplete
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\obj\Release\WebAPI.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\WebAPI\obj\Release\WebAPI.pdb

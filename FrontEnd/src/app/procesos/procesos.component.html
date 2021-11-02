@@ -1,0 +1,133 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+    <button mat-icon-button td-menu-button tdLayoutToggle>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <div td-toolbar-content layout="row" layout-align="center center" flex>
+        <span style="color: white;">Creación de procesos</span>
+        <span flex></span>
+        <app-notificaciones></app-notificaciones>
+    </div>
+
+    <mat-progress-spinner [mode]="'indeterminate'" *ngIf="isLoading" style="margin: auto;">
+    </mat-progress-spinner>
+    <mat-progress-bar *ngIf="isDeleting" mode="indeterminate"></mat-progress-bar>
+    <mat-card class="push-bottom-xxl" tdMediaToggle="gt-xs" [mediaClasses]="['push']">
+        <div class="pad" *ngIf="!isLoading && filteredProcesos?.length === 0" layout="row" layout-align="center center">
+            <h3>No existen procesos para mostrar.</h3>
+        </div>
+        <div [hidden]="isLoading" class="divSize">
+            <mat-table matTableFilter [exampleEntity]="filterEntity" [filterType]="filterType" [dataSource]="dataSource"
+                matSort>
+
+                <ng-container matColumnDef="Nombre_Proceso">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                        <b>
+                            <mat-form-field>
+                                <input matInput placeholder="Nombre" [(ngModel)]="filterEntity.Nombre_Proceso">
+                            </mat-form-field>
+                        </b>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row" flex="20"> {{row.Nombre_Proceso}} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="Desc_Proceso">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                        <b>
+                            <mat-form-field>
+                                <input matInput placeholder="Descripción" [(ngModel)]="filterEntity.Desc_Proceso">
+                            </mat-form-field>
+                        </b>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row" flex="20"> {{row.Desc_Proceso}} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="Nombre_AreaNegocio">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="15">
+                        <b>
+                            <mat-form-field>
+                                <input matInput placeholder="Área de Negocio"
+                                    [(ngModel)]="filterEntity.Nombre_AreaNegocio">
+                            </mat-form-field>
+                        </b>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row" flex="15"> {{row.Nombre_AreaNegocio}} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="Num_TiempoEstimadoEjec">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="15">
+                        <b>
+                            <mat-form-field>
+                                <input matInput placeholder="Tiempo Estimado Ejecución"
+                                    [(ngModel)]="filterEntity.Num_TiempoEstimadoEjec">
+                            </mat-form-field>
+                        </b>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row" flex="15"> {{row.Num_TiempoEstimadoEjec}} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="Cb_UtilizaParametros">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="10">
+                        <b>
+                            Utiliza Parámetros
+                        </b>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row" flex="10"> {{row.Cb_UtilizaParametros | homologacion }} </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="Cb_ActualAutomaParametros">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="10">
+                        <b>
+                            Actualiza Parámetros
+                        </b>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row" flex="10"> {{row.Cb_ActualAutomaParametros | homologacion}}
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="Programación">
+                    <mat-header-cell *matHeaderCellDef style="color: black;" flex="10"><b>Programación</b>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let row" flex="10">
+                        <button mat-icon-button color="blue"
+                            [routerLink]="[row.Id_Proceso, row.Nombre_Proceso, 'programacion']">
+                            <mat-icon class="mat-18">schedule</mat-icon>
+                        </button>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="Editar">
+                    <mat-header-cell *matHeaderCellDef style="color: black;" flex="5"><b>Editar</b> </mat-header-cell>
+                    <mat-cell *matCellDef="let row" flex="5">
+                        <button mat-icon-button color="blue" [routerLink]="[row.Id_Proceso, 'edit']"
+                            [disabled]="isDeleting">
+                            <mat-icon class="mat-18">edit</mat-icon>
+                        </button>
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="Eliminar">
+                    <mat-header-cell *matHeaderCellDef style="color: black;" flex="5"><b>Eliminar</b> </mat-header-cell>
+                    <mat-cell *matCellDef="let row" flex="5">
+                        <button mat-icon-button color="blue" (click)="delete(row.Id_Proceso, row)"
+                            [disabled]="isDeleting">
+                            <mat-icon class="mat-18">delete</mat-icon>
+                        </button>
+                    </mat-cell>
+                </ng-container>
+
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"
+                [ngClass]="{'highlight': validarProSolActivas(row.Id_Proceso)}">
+                </mat-row>
+            </mat-table>
+        </div>
+        <div [hidden]="isLoading">
+            <mat-paginator [pageSizeOptions]="[10, 20, 30, 50]">
+            </mat-paginator>
+        </div>
+    </mat-card>
+    <!-- </ng-template> -->
+</td-layout-nav>
+<a mat-fab color="accent" class="mat-fab-bottom-right fixed z-3" [routerLink]="['add']" [disabled]="isDeleting">
+    <mat-icon>add</mat-icon>
+</a>

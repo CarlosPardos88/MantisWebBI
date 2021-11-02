@@ -1,0 +1,85 @@
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\bin\Debug\BllTD.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\bin\Debug\BllTD.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\bin\Debug\BIDAL.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\bin\Debug\EntitiesTD.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\bin\Debug\Teradata.Client.Provider.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\bin\Debug\Teradata.Net.Security.Tdgss.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\bin\Debug\BIDAL.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\bin\Debug\EntitiesTD.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\bin\Debug\EntitiesTD.dll.config
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\bin\Debug\Teradata.Client.Provider.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\obj\Debug\BllTD.csprojAssemblyReference.cache
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\obj\Debug\BllTD.csproj.CoreCompileInputs.cache
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\obj\Debug\BllTD.csproj.CopyComplete
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\obj\Debug\BllTD.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI\BllTD\obj\Debug\BllTD.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Debug\BllTD.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Debug\BllTD.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Debug\BIDAL.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Debug\EntitiesTD.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Debug\Teradata.Client.Provider.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Debug\Teradata.Net.Security.Tdgss.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Debug\BIDAL.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Debug\EntitiesTD.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Debug\EntitiesTD.dll.config
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Debug\Teradata.Client.Provider.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\obj\Debug\BllTD.csprojAssemblyReference.cache
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\obj\Debug\BllTD.csproj.CoreCompileInputs.cache
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\obj\Debug\BllTD.csproj.CopyComplete
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\obj\Debug\BllTD.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\obj\Debug\BllTD.pdb
+D:\WebAPI\BllTD\bin\Debug\BllTD.dll
+D:\WebAPI\BllTD\bin\Debug\BllTD.pdb
+D:\WebAPI\BllTD\bin\Debug\BIDAL.dll
+D:\WebAPI\BllTD\bin\Debug\EntitiesTD.dll
+D:\WebAPI\BllTD\bin\Debug\Teradata.Client.Provider.dll
+D:\WebAPI\BllTD\bin\Debug\Teradata.Net.Security.Tdgss.dll
+D:\WebAPI\BllTD\bin\Debug\BIDAL.pdb
+D:\WebAPI\BllTD\bin\Debug\EntitiesTD.pdb
+D:\WebAPI\BllTD\bin\Debug\EntitiesTD.dll.config
+D:\WebAPI\BllTD\bin\Debug\Teradata.Client.Provider.xml
+D:\WebAPI\BllTD\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+D:\WebAPI\BllTD\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+D:\WebAPI\BllTD\obj\Debug\BllTD.csprojAssemblyReference.cache
+D:\WebAPI\BllTD\obj\Debug\BllTD.csproj.CoreCompileInputs.cache
+D:\WebAPI\BllTD\obj\Debug\BllTD.csproj.CopyComplete
+D:\WebAPI\BllTD\obj\Debug\BllTD.dll
+D:\WebAPI\BllTD\obj\Debug\BllTD.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Debug\BllTD.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Debug\BllTD.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Debug\BIDAL.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Debug\EntitiesTD.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Debug\Teradata.Client.Provider.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Debug\Teradata.Net.Security.Tdgss.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Debug\BIDAL.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Debug\EntitiesTD.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Debug\EntitiesTD.dll.config
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Debug\Teradata.Client.Provider.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\obj\Debug\BllTD.csproj.AssemblyReference.cache
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\obj\Debug\BllTD.csproj.CoreCompileInputs.cache
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\obj\Debug\BllTD.csproj.CopyComplete
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\obj\Debug\BllTD.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\obj\Debug\BllTD.pdb
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\bin\Debug\BllTD.dll
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\bin\Debug\BllTD.pdb
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\bin\Debug\BIDAL.dll
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\bin\Debug\EntitiesTD.dll
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\bin\Debug\Teradata.Client.Provider.dll
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\bin\Debug\Teradata.Net.Security.Tdgss.dll
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\bin\Debug\BIDAL.pdb
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\bin\Debug\EntitiesTD.pdb
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\bin\Debug\EntitiesTD.dll.config
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\bin\Debug\Teradata.Client.Provider.xml
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\bin\Debug\ja\Teradata.Client.Provider.resources.dll
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\bin\Debug\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\obj\Debug\BllTD.csproj.AssemblyReference.cache
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\obj\Debug\BllTD.csproj.CoreCompileInputs.cache
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\obj\Debug\BllTD.csproj.CopyComplete
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\obj\Debug\BllTD.dll
+C:\GitHub\Operacion-Web-BI\BackEnd\BllTD\obj\Debug\BllTD.pdb

@@ -1,0 +1,79 @@
+<button class="overflow-visible" mat-icon-button [matMenuTriggerFor]="notificationsMenu">
+  <td-notification-count [notifications]=[_notificacionService.listNotificacion.length] [limit]="9">
+    <mat-icon>notifications</mat-icon>
+  </td-notification-count>
+</button>
+<mat-menu #notificationsMenu="matMenu">
+  <td-menu *ngIf="_notificacionService.listNotificacion.length>0">
+    <div td-menu-header class="mat-subhead">Notificaciones
+    </div>
+    <mat-nav-list dense>
+
+      <h3 matSubheader *ngIf="_notificacionService.listParametrosModificados.length >0">
+        Parámetros
+        modificados</h3>
+      <a mat-list-item *ngFor="let item of _notificacionService.listParametrosModificados"
+        (click)="_notificacionService.onClick(item)">
+        <p matLine>Area: {{item.area}}</p>
+        <h4 matLine><span class="text-wrap">{{item.msj}}</span></h4>
+      </a>
+      <mat-divider *ngIf="_notificacionService.listParametrosModificados.length >0"></mat-divider>
+      <h3 matSubheader *ngIf="_notificacionService.listProcesosImpactados.length >0">Procesos inactivos</h3>
+      <a mat-list-item *ngFor="let item of _notificacionService.listProcesosImpactados"
+        (click)="_notificacionService.onClick(item)"
+        [routerLink]="['/procesos',item.idProceso, item.nombreProceso, 'programacion']">
+        <p matLine>Area: {{item.area}}</p>
+        <h4 matLine><span class="text-wrap">{{item.msj}}</span></h4>
+      </a>
+      <mat-divider *ngIf="_notificacionService.listProcesosImpactados.length >0"></mat-divider>
+      <h3 matSubheader *ngIf="_notificacionService.listFlujosVencidos.length >0">Flujos vencidos</h3>
+      <a mat-list-item *ngFor="let item of _notificacionService.listFlujosVencidos"
+        (click)="_notificacionService.onClick(item)" [routerLink]="['/ejecuciones','procesosvencidos']">
+        <p matLine>Area: {{item.area}}</p>
+        <h4 matLine><span class="text-wrap">{{item.msj}}</span></h4>
+        <p matLine>Hora: {{item.hora}}</p>
+
+      </a>
+      <mat-divider *ngIf="_notificacionService.listFlujosVencidos.length >0"></mat-divider>
+      <h3 matSubheader *ngIf="_notificacionService.listProcesosPorCertificar.length >0">Procesos por certificar</h3>
+      <a mat-list-item *ngFor="let item of _notificacionService.listProcesosPorCertificar"
+        (click)="_notificacionService.onClick(item)" [routerLink]="['/certificarprocesos','certificar']">
+        <p matLine>Area: {{item.area}}</p>
+        <h4 matLine><span class="text-wrap">{{item.msj}}</span></h4>
+
+      </a>
+      <mat-divider *ngIf="_notificacionService.listProcesosPorCertificarOperador.length >0"></mat-divider>
+      <h3 matSubheader *ngIf="_notificacionService.listProcesosPorCertificarOperador.length >0">Procesos por certificar
+      </h3>
+      <a mat-list-item *ngFor="let item of _notificacionService.listProcesosPorCertificarOperador"
+        (click)="_notificacionService.onClick(item)" [routerLink]="['/certificarprocesos','certificaradop']">
+        <p matLine>Area: {{item.area}}</p>
+        <h4 matLine><span class="text-wrap">{{item.msj}}</span></h4>
+      </a>
+      <mat-divider *ngIf="_notificacionService.listProcesosSolicitudesDemanda.length >0"></mat-divider>
+      <h3 matSubheader *ngIf="_notificacionService.listProcesosSolicitudesDemanda.length >0">Solicitudes ejecuciones por
+        demanda
+      </h3>
+      <a mat-list-item *ngFor="let item of _notificacionService.listProcesosSolicitudesDemanda"
+        (click)="_notificacionService.onClick(item)"
+        [routerLink]="['/aprobacionesdemanda',item.idProceso,item.idSolicitud,item.area,'edit']">
+        <p matLine>Area: {{item.area}}</p>
+        <h4 matLine><span class="text-wrap">{{item.msj}}</span></h4>
+      </a>
+      <mat-divider *ngIf="_notificacionService.listProcesosSolicitudesProcesoProgramado.length >0"></mat-divider>
+      <h3 matSubheader *ngIf="_notificacionService.listProcesosSolicitudesProcesoProgramado.length >0">Procesos
+        pendientes por
+        aprobar
+      </h3>
+      <a mat-list-item *ngFor="let item of _notificacionService.listProcesosSolicitudesProcesoProgramado"
+        (click)="_notificacionService.onClick(item)"
+        [routerLink]="['/aprobacionesprogramado',item.idProceso,item.idSolicitud,item.area,item.fecha,'edit']">
+        <p matLine>Area: {{item.area}}</p>
+        <h4 matLine><span class="text-wrap">{{item.msj}}</span></h4>
+      </a>
+    </mat-nav-list>
+    <button mat-button td-menu-footer (click)="_notificacionService.clean()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </td-menu>
+</mat-menu>

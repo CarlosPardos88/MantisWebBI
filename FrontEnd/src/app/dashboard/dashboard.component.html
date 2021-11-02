@@ -1,0 +1,26 @@
+<td-layout-nav logo="assets:logobank" toolbarTitle="Operación BI WEB">
+  <button mat-icon-button td-menu-button tdLayoutToggle>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div td-toolbar-content layout="row" layout-align="center center" flex>
+    <span flex></span>
+
+    <app-notificaciones></app-notificaciones>
+  </div>
+
+  <div layout-gt-sm="row" tdMediaToggle="gt-xs" [mediaClasses]="['push-sm']">
+    <!--<div flex-gt-sm="60">-->
+    <div flex-gt-sm>
+      <mat-card>
+
+      </mat-card>
+    </div>
+  </div>
+  <td-layout-footer>
+    <div layout="row" layout-align="start center">
+      <span class="mat-caption">Copyright &copy; {{year}} Teradata. All rights reserved</span>
+      <span flex></span>
+      <!--<mat-icon class="mat-icon-ux" svgIcon="assets:teradata-ux"></mat-icon>-->
+    </div>
+  </td-layout-footer>
+</td-layout-nav>

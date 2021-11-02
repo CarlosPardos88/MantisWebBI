@@ -1,0 +1,84 @@
+C:\OperacionBI\WebAPI\BllTD\bin\Release\BllTD.dll
+C:\OperacionBI\WebAPI\BllTD\bin\Release\BllTD.pdb
+C:\OperacionBI\WebAPI\BllTD\bin\Release\BIDAL.dll
+C:\OperacionBI\WebAPI\BllTD\bin\Release\EntitiesTD.dll
+C:\OperacionBI\WebAPI\BllTD\bin\Release\Teradata.Client.Provider.dll
+C:\OperacionBI\WebAPI\BllTD\bin\Release\Teradata.Net.Security.Tdgss.dll
+C:\OperacionBI\WebAPI\BllTD\bin\Release\BIDAL.pdb
+C:\OperacionBI\WebAPI\BllTD\bin\Release\EntitiesTD.pdb
+C:\OperacionBI\WebAPI\BllTD\bin\Release\EntitiesTD.dll.config
+C:\OperacionBI\WebAPI\BllTD\bin\Release\Teradata.Client.Provider.xml
+C:\OperacionBI\WebAPI\BllTD\bin\Release\ja\Teradata.Client.Provider.resources.dll
+C:\OperacionBI\WebAPI\BllTD\bin\Release\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\OperacionBI\WebAPI\BllTD\obj\Release\BllTD.csprojAssemblyReference.cache
+C:\OperacionBI\WebAPI\BllTD\obj\Release\BllTD.csproj.CopyComplete
+C:\OperacionBI\WebAPI\BllTD\obj\Release\BllTD.dll
+C:\OperacionBI\WebAPI\BllTD\obj\Release\BllTD.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\bin\Release\BllTD.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\bin\Release\BllTD.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\bin\Release\BIDAL.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\bin\Release\EntitiesTD.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\bin\Release\Teradata.Client.Provider.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\bin\Release\Teradata.Net.Security.Tdgss.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\bin\Release\BIDAL.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\bin\Release\EntitiesTD.pdb
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\bin\Release\EntitiesTD.dll.config
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\bin\Release\Teradata.Client.Provider.xml
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\bin\Release\ja\Teradata.Client.Provider.resources.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\bin\Release\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\obj\Release\BllTD.csprojAssemblyReference.cache
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\obj\Release\BllTD.csproj.CoreCompileInputs.cache
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\obj\Release\BllTD.csproj.CopyComplete
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\obj\Release\BllTD.dll
+C:\Users\CI250004\Documents\ciglesias\WEB BI\GIT\Operacion-Web-BI\WebAPI\BllTD\obj\Release\BllTD.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\bin\Release\BllTD.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\bin\Release\BllTD.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\bin\Release\BIDAL.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\bin\Release\EntitiesTD.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\bin\Release\Teradata.Client.Provider.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\bin\Release\Teradata.Net.Security.Tdgss.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\bin\Release\BIDAL.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\bin\Release\EntitiesTD.pdb
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\bin\Release\EntitiesTD.dll.config
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\bin\Release\Teradata.Client.Provider.xml
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\bin\Release\ja\Teradata.Client.Provider.resources.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\bin\Release\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\obj\Release\BllTD.csprojAssemblyReference.cache
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\obj\Release\BllTD.csproj.CoreCompileInputs.cache
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\obj\Release\BllTD.csproj.CopyComplete
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\obj\Release\BllTD.dll
+C:\Users\js250177\OneDrive - Teradata\Desktop\BI_anterior\WebAPI\BllTD\obj\Release\BllTD.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Release\BllTD.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Release\BllTD.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Release\BIDAL.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Release\EntitiesTD.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Release\Teradata.Client.Provider.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Release\Teradata.Net.Security.Tdgss.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Release\BIDAL.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Release\EntitiesTD.pdb
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Release\EntitiesTD.dll.config
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Release\Teradata.Client.Provider.xml
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Release\ja\Teradata.Client.Provider.resources.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\bin\Release\ja\Teradata.Net.Security.Tdgss.resources.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\obj\Release\BllTD.csprojAssemblyReference.cache
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\obj\Release\BllTD.csproj.CoreCompileInputs.cache
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\obj\Release\BllTD.csproj.CopyComplete
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\obj\Release\BllTD.dll
+D:\Operacion-Web-BI\WebAPI\WebAPI 1\WebAPI\BllTD\obj\Release\BllTD.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Release\BllTD.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Release\BllTD.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Release\BIDAL.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Release\EntitiesTD.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Release\Teradata.Client.Provider.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Release\Teradata.Net.Security.Tdgss.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Release\BIDAL.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Release\EntitiesTD.pdb
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Release\EntitiesTD.dll.config
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Release\Teradata.Client.Provider.xml
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Release\ja\Teradata.Client.Provider.resources.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\bin\Release\ja\Teradata.Net.Security.Tdgss.resources.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\obj\Release\BllTD.csproj.AssemblyReference.cache
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\obj\Release\BllTD.csproj.CoreCompileInputs.cache
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\obj\Release\BllTD.csproj.CopyComplete
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\obj\Release\BllTD.dll
+C:\GitHub\DM-Docs\Entregas\CQ00056219\06-Mantis\M_5778_BI_OPERACION_20210901\BackEnd\BllTD\obj\Release\BllTD.pdb

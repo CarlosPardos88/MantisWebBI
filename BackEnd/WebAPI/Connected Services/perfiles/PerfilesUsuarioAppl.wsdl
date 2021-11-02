@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WL5G3N0:definitions xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:WL5G3N1="http://banrep.gov.co/s3" name="PerfilesUsuarioAppl" targetNamespace="http://banrep.gov.co/s3" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/">
+  <WL5G3N0:types>
+    <xsd:schema xmlns:outMsg="http://banrep.gov.co/s3" xmlns:tns="http://banrep.gov.co/s3" xmlns:errMsg="http://banrep.gov.co/s3" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:inMsg="http://banrep.gov.co/s3" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xs:import schemaLocation="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/PerfilesUsuario?SCHEMA%2FPerfilesUsuario%2FXSD%2FschemaPeticionPerfilesUsuario" namespace="http://banrep.gov.co/s3" />
+    </xsd:schema>
+    <xsd:schema xmlns:outMsg="http://banrep.gov.co/s3" xmlns:tns="http://banrep.gov.co/s3" xmlns:errMsg="http://banrep.gov.co/s3" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:inMsg="http://banrep.gov.co/s3" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xs:import schemaLocation="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/PerfilesUsuario?SCHEMA%2FPerfilesUsuario%2FXSD%2FschemaRespuestaPerfilesUsuario" namespace="http://banrep.gov.co/s3" />
+    </xsd:schema>
+    <xsd:schema xmlns:outMsg="http://banrep.gov.co/s3" xmlns:tns="http://banrep.gov.co/s3" xmlns:errMsg="http://banrep.gov.co/s3" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:inMsg="http://banrep.gov.co/s3" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xs:import schemaLocation="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/PerfilesUsuario?SCHEMA%2FCommonsServicios%2FXSD%2FschemaJavaException" namespace="http://banrep.gov.co/s3" />
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="Input">
+    <WL5G3N0:part name="Body" element="WL5G3N1:s3" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="JavaExceptionMessage">
+    <WL5G3N0:part name="FaultDetails" element="WL5G3N1:JavaException" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="Output">
+    <WL5G3N0:part name="Body" element="WL5G3N1:s3Response" />
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="ExecutePortType">
+    <WL5G3N0:operation name="consultaPerfilesUsuarioAppl">
+      <WL5G3N0:input name="Input" message="WL5G3N1:Input" />
+      <WL5G3N0:output name="Output" message="WL5G3N1:Output" />
+      <WL5G3N0:fault name="JavaException" message="WL5G3N1:JavaExceptionMessage" />
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="ExecutePortTypeBinding" type="WL5G3N1:ExecutePortType">
+    <WL5G3N2:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <WL5G3N0:operation name="consultaPerfilesUsuarioAppl">
+      <WL5G3N2:operation soapAction="consultaPerfilesUsuarioAppl" style="document" />
+      <WL5G3N0:input name="Input">
+        <WL5G3N2:body use="literal" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="Body" />
+      </WL5G3N0:input>
+      <WL5G3N0:output name="Output">
+        <WL5G3N2:body use="literal" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" parts="Body" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="JavaException">
+        <WL5G3N2:fault use="literal" name="JavaException" namespace="" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="S3PerfilesUsuarioApplService">
+    <WL5G3N0:port name="S3PerfilesUsuarioApplServicePort" binding="WL5G3N1:ExecutePortTypeBinding">
+      <WL5G3N2:address location="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/PerfilesUsuario" />
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>
