@@ -1,0 +1,90 @@
+<h1 mat-dialog-title>Editar Nodo</h1>
+<mat-dialog-content>
+  <ng-template tdLoading="nodo.form">
+    <mat-card-content class="push-bottom-none">
+      <form #nodoForm="ngForm">
+        <div layout="row">
+          <mat-form-field flex>
+            <input matInput #Desc_NodoContableElement #Desc_NodoContableControl="ngModel" type="text" required
+              placeholder="Descripcion" name="Desc_NodoContable" minlength="3" maxlength="100"
+              [(ngModel)]="data.Desc_NodoContable" #name="ngModel">
+            <mat-hint align="start">
+              <span [hidden]="Desc_NodoContableControl.pristine" class="tc-red-600">
+                <span [hidden]="!Desc_NodoContableControl.hasError('required')">Requerido</span>
+              </span>
+            </mat-hint>
+            <mat-hint align="end">{{Desc_NodoContableElement.value.length}} / 100</mat-hint>
+          </mat-form-field>
+        </div>
+        <div layout="row">
+          <mat-form-field flex>
+            <input matInput #Id_NodoContableElement #Id_NodoContableControl="ngModel" type="number" required
+              placeholder="Id Nodo contable" name="Id_NodoContable" min="1" max="9999"
+              [disabled]="data.Id_NodoContable && data.accionEstructura ==='edit'" [(ngModel)]="data.Id_NodoContable"
+              #name="ngModel">
+            <mat-hint align="start">
+              <span [hidden]="Id_NodoContableControl.pristine" class="tc-red-600">
+                <span [hidden]="!Id_NodoContableControl.hasError('required')">Requerido: </span>
+                <span *ngIf="!Id_NodoContableControl.hasError('minlength')">Valor mínimo: 1 </span>
+                <span *ngIf="!Id_NodoContableControl.hasError('maxlength')">Valor máximo: 9999</span>
+              </span>
+            </mat-hint>
+            <mat-hint align="end">{{Id_NodoContableElement.value.length}} / 4</mat-hint>
+          </mat-form-field>
+        </div>
+        <div layout="row" *ngIf="!validarChilds()">
+          <mat-form-field flex>
+            <mat-label>Numerales SAF</mat-label>
+            <mat-select [(ngModel)]="data.Sk_RCNumeralCambiario" name="Sk_RCNumeralCambiario" required
+              #idnumeralsaf="ngModel">
+              <mat-option [value]="0">No Aplica</mat-option>
+              <mat-option *ngFor="let saf of ArrayNumeralesSAF" [value]="saf.Sk_RCNumeralCambiario">
+                {{saf.Desc_NumeralCambiario}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div layout="row" *ngIf="!validarChilds()">
+          <mat-form-field flex>
+            <mat-label>Numerales CCO</mat-label>
+            <mat-select [(ngModel)]="data.idnumeralcco" name="idnumeralcco" required #idnumeralcco="ngModel">
+              <mat-option [value]="0">No Aplica</mat-option>
+              <mat-option *ngFor="let cco of ArrayNumeralesCCO" [value]="cco.idnumeralcco">
+                {{cco.NombreNum}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div layout="row" *ngIf="validarChilds()">
+          <mat-card flex-gt-sm>
+            <mat-card-title>Formulación Vertical</mat-card-title>
+            <ng-template let-nodes let-last="last" let-index="index" ngFor [ngForOf]="data.childs">
+              <td-expansion-panel [label]="nodes.name">
+                <mat-card-content class="push-bottom-none">
+                  <div layout="row">
+                    <mat-form-field flex>
+                      <mat-label>Operación</mat-label>
+                      <mat-select name="nodes.name" [ngModel]="data.formulacion[index]?.Signo"
+                        (ngModelChange)="agregarFormula($event, nodes)" #OperacionSelect="ngModel"
+                        [ngModelOptions]="{standalone: true}">
+                        <mat-option *ngFor="let operacion of ArrayOperacion" [value]="operacion.Signo">
+                          {{operacion.Descripcion}}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </mat-card-content>
+              </td-expansion-panel>
+            </ng-template>
+          </mat-card>
+        </div>
+      </form>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+      <button mat-button [disabled]="!nodoForm.valid" color="primary" (click)="save()">Guardar</button>
+      <button mat-button (click)="onNoClick()">Cancelar</button>
+    </mat-card-actions>
+  </ng-template>
+
+</mat-dialog-content>

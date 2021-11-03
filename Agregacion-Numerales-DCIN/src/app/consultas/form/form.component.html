@@ -1,0 +1,162 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+    <button mat-icon-button td-menu-button tdLayoutToggle>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <div td-toolbar-content layout="row" layout-align="center center" flex>
+        <span>Parametrización de Estructura</span>
+        <span flex></span>
+    </div>
+    <div td-toolbar-content layout="row" layout-align="right">
+        <span style="color: white;"> Agregación de Numerales - DCIN</span>
+        <span flex></span>
+    </div>
+    <mat-card class="push-bottom-xxl" tdMediaToggle="gt-xs" [mediaClasses]="['push']">
+        <ng-template tdLoading="Consulta.form">
+            <form #consultaForm="ngForm">
+                <td-steps mode="horizontal" linear="true">
+                                    
+                    <td-step #step1 label="Estructura" sublabel="Datos Básicos"  [active]="true">
+                        <mat-card flex-gt-sm>
+                            <mat-card-title>Agregar los parámetros</mat-card-title>
+                            <mat-card-content class="push-bottom-none">
+
+                                <div layout="row">
+                                    <mat-form-field flex>
+                                      <mat-label>Estructura</mat-label>
+                                      <mat-select [(ngModel)]="Id_Estructura" name="Id_estructura" required
+                                        >
+                                        <mat-option *ngFor="let Est of ArrayEstructura" [value]="Est.Id_Estructura">
+                                          {{Est.Desc_Estructura}}
+                                        </mat-option>
+                                      </mat-select>
+                                    </mat-form-field>
+                                </div>
+
+                                <div layout="row">
+                                    <mat-form-field flex>
+                                      <mat-label>Tipo de Agregación</mat-label>
+                                      <mat-select [(ngModel)]="Id_Fuente" name="Id_Fuente" required
+                                      (ngModelChange)="onFuenteSelection()" >
+                                       
+                                        <mat-option *ngFor="let agr of ArrayAgregacion" [value]="agr.Id_Fuente">
+                                          {{agr.Desc_Fuente}}
+                                        </mat-option>
+                                      </mat-select>
+                                    </mat-form-field>
+                                </div>
+
+                                <div layout-gt-sm="column2" >
+                                    <div flex *ngIf="Id_Fuente > 1">
+                                        <mat-form-field flex>
+                                            <input #Fecha_ConsultaElement 
+                                                name="Fecha_Consulta" matInput [matDatepicker]="picker"
+                                                placeholder="Fecha de Consulta" [(ngModel)]="Fecha_Consulta"
+                                                format="dd/MM/yyyy" 
+                                                required
+                                                [max]="fecha_start" >
+                                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker></mat-datepicker>
+                                        </mat-form-field>
+                                       
+                                    </div>
+                                    <div flex *ngIf="Id_Fuente == null || Id_Fuente == 1 ">
+                                        <mat-form-field flex #fechaConsulta  >
+                                            <input #Fecha_ConsultaElement 
+                                                name="Fecha_Consulta" matInput [matDatepicker]="picker"
+                                                placeholder="Fecha de Consulta" [(ngModel)]="Fecha_Consulta"
+                                                format="dd/MM/yyyy" 
+                                                required
+                                                [max]="fecha_start"
+                                            >
+                                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker></mat-datepicker>
+                                        </mat-form-field>
+                                       
+                                    </div>
+                              
+                                </div>
+                              <div layout-gt-sm="column2" >
+                                    <div flex *ngIf="Id_Fuente == null || Id_Fuente == 1 ">
+                                        <mat-form-field flex>
+                                            <input #Fecha_InicioVigenciaElement 
+                                                name="Fecha_Inicial" matInput [matDatepicker]="picker2"
+                                                placeholder="Fecha Inicio Operación" [(ngModel)]="Fecha_Inicial"
+                                                format="dd/MM/yyyy"
+                                                required
+                                                [max]="Fecha_Consulta" 
+                                                format="dd/MM/yyyy">
+                                            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker2></mat-datepicker>
+                                        </mat-form-field>
+                                    </div>
+                                    <div flex *ngIf="Id_Fuente > 1  ">
+                                        <mat-form-field flex>
+                                            <input #Fecha_InicioVigenciaElement 
+                                                name="Fecha_Inicial" matInput [matDatepicker]="picker2"
+                                                placeholder="Fecha Inicio Operación" [(ngModel)]="Fecha_Inicial"
+                                                format="dd/MM/yyyy"
+                                                required
+                                                [max]="Fecha_Consulta" 
+                                                [matDatepickerFilter]="dateFilter" 
+                                                format="dd/MM/yyyy">
+                                            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker2></mat-datepicker>
+                                        </mat-form-field>
+                                    </div>
+
+                                    <div flex *ngIf="Id_Fuente == null || Id_Fuente == 1 ">
+                                        <mat-form-field>
+                                            <input #Fecha_FinVigenciaElement 
+                                                name="Fecha_Final" matInput [matDatepicker]="picker3"
+                                                placeholder="Fecha Fin Operación" [(ngModel)]="Fecha_Final"
+                                                 format="dd/MM/yyyy"
+                                                 [min]="Fecha_Inicial"
+                                                 [max]="Fecha_Consulta"
+                                                 required>
+                                            <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker3></mat-datepicker>
+                                        </mat-form-field>
+                                    </div>
+                                    <div flex *ngIf="Id_Fuente > 1">
+                                        <mat-form-field>
+                                            <input #Fecha_FinVigenciaElement 
+                                                name="Fecha_Final" matInput [matDatepicker]="picker3"
+                                                placeholder="Fecha Fin Operación" [(ngModel)]="Fecha_Final"
+                                                 format="dd/MM/yyyy"
+                                                 [min]="Fecha_Inicial"
+                                                 [max]="Fecha_Consulta"
+                                                 [matDatepickerFilter]="dateFilter" 
+                                                 required>
+                                            <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker3></mat-datepicker>
+                                        </mat-form-field>
+                                    </div>
+
+                                </div>
+                                <div layout="row">
+                                    <mat-form-field flex>
+                                      <mat-label>Periodicidad</mat-label>
+                                      <mat-select [(ngModel)]="Id_Periodicidad"  name="Id_Periodicidad" required
+                                        >
+                                         <mat-option  *ngFor="let Per of ArrayPeriodicidad" [value]="Per.Id_Periodicidad">
+                                          {{Per.Desc_Periodicidad}}
+                                        </mat-option>
+                                      </mat-select>
+                                    </mat-form-field>
+                                  </div>
+                                  <mat-label *ngIf="Id_Fuente > 1" >Nota: la consulta se realiza para periodos completos (ultimo día del mes a consultar)</mat-label>
+                            </mat-card-content>
+                        </mat-card>
+                        <ng-template td-step-actions>
+                            <button mat-raised-button
+                                [disabled]="!consultaForm.form.valid || !consultaForm.form.hasError" color="accent"
+                                (click)="save()">Calcular
+                            </button>
+                        </ng-template>
+                    </td-step>
+
+                </td-steps>
+            </form>
+        </ng-template>
+    </mat-card>
+</td-layout-nav>

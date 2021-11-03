@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="eb0f9565-f25b-427c-b1fe-fa19efc7700c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/DemeMenu?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioMenuPerfilWS.wsdl" MetadataType="Wsdl" ID="e6417ef9-767a-47b3-adba-12dcf75ea11a" SourceId="1" SourceUrl="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/DemeMenu?wsdl" />
+    <MetadataFile FileName="DemeMenu.xsd" MetadataType="Schema" ID="5fd39945-2196-41f4-80f6-ee8a2b92f721" SourceId="1" SourceUrl="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/DemeMenu?SCHEMA%2FDemeMenu%2FXSD%2FServicioMenuPerfilWS" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

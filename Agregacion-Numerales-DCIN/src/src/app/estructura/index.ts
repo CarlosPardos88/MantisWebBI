@@ -1,0 +1,1 @@
+export { EstructuraService, ESTRUCTURA_API, ESTRUCTURA_PROVIDER } from './services/estructura.service';

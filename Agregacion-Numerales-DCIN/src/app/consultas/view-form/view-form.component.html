@@ -1,0 +1,165 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+    <button mat-icon-button td-menu-button tdLayoutToggle>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <div td-toolbar-content layout="row" layout-align="center center" flex>
+        <span>Vista de consulta</span>
+        <span flex></span>
+    </div>
+    <div td-toolbar-content layout="row" layout-align="right">
+        <span style="color: white;"> Agregación de Numerales - DCIN</span>
+        <span flex></span>
+    </div>
+    <mat-card class="push-bottom-xxl" tdMediaToggle="gt-xs" [mediaClasses]="['push']">
+        <ng-template tdLoading="Consulta.form">
+            <form #consultaForm="ngForm">
+                <td-steps mode="horizontal" linear="true">
+
+                    <td-step #step1 label="Consulta" sublabel="Resultado" [active]="true">
+                        <mat-card flex-gt-sm>
+                            <mat-card-title>Filtros seleccionados</mat-card-title>
+                            <mat-card-content class="push-bottom-none">
+                                <div layout="row">
+                                    
+                                        <mat-form-field flex>
+                                            <input matInput #Desc_EstructuraElement #Desc_EstructuraControl="ngModel"
+                                                type="text" placeholder="Nombre" [(ngModel)]="Desc_Estructura"
+                                                name="Desc_Estructura" maxlength="100" required disabled>
+                                            <mat-hint align="start">
+                                                <span [hidden]="Desc_EstructuraControl.pristine" class="tc-red-600">
+                                                    <span
+                                                        [hidden]="!Desc_EstructuraControl.hasError('required')">Requerido</span>
+                                                </span>
+                                            </mat-hint>
+                                            
+                                        </mat-form-field>
+                                   
+                                </div>
+                               
+                                <div layout-gt-sm="row">
+                                    
+                                    <div flex>
+                                        <mat-form-field flex>
+                                            <input matInput #Desc_FuenteElement #Desc_FuenteControl="ngModel"
+                                                type="text" placeholder="Fuente" [(ngModel)]="Desc_Fuente"
+                                                name="Desc_Fuente" maxlength="100" required disabled>
+                                            <mat-hint align="start">
+                                                <span [hidden]="Desc_FuenteControl.pristine" class="tc-red-600">
+                                                    <span
+                                                        [hidden]="!Desc_FuenteControl.hasError('required')">Requerido</span>
+                                                </span>
+                                            </mat-hint>
+                                            
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+
+                                <div layout-gt-sm="column2">
+                                    <div flex>
+                                        <mat-form-field flex>
+                                            <input #Fecha_ConsultaElement #Fecha_ConsultaControl="ngModel"
+                                                name="Fecha_Consulta" matInput [matDatepicker]="picker"
+                                                placeholder="Fecha de consulta" [(ngModel)]="Fecha_Consulta"
+                                                format="dd/MM/yyyy" disabled>
+                                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker></mat-datepicker>
+                                        </mat-form-field>
+                                    </div>
+
+                                    <div flex>
+                                        <mat-form-field flex>
+                                            <input matInput #Desc_PeriodicidadElement
+                                                #Desc_PeriodicidadControl="ngModel" type="text"
+                                                placeholder="Periodicidad" [(ngModel)]="Desc_Periodicidad"
+                                                name="Desc_Periodicidad" maxlength="100" required disabled>
+                                            <mat-hint align="start">
+                                                <span [hidden]="Desc_PeriodicidadControl.pristine" class="tc-red-600">
+                                                    <span
+                                                        [hidden]="!Desc_PeriodicidadControl.hasError('required')">Requerido</span>
+                                                </span>
+                                            </mat-hint>
+                                           
+                                        </mat-form-field>
+
+                                    </div>
+
+                                </div>
+                                <div layout-gt-sm="column2">
+                                    <div flex>
+                                        <mat-form-field flex>
+                                            <input #Fecha_InicialElement #Fecha_InicialControl="ngModel"
+                                                name="Fecha_Inicial" matInput [matDatepicker]="picker2"
+                                                placeholder="Fecha Inicial" [(ngModel)]="Fecha_Inicial"
+                                                format="dd/MM/yyyy" disabled>
+                                            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker2></mat-datepicker>
+                                        </mat-form-field>
+                                    </div>
+
+                                    <div flex>
+                                        <mat-form-field flex>
+                                            <input #Fecha_FinalElement #Fecha_FinalControl="ngModel" name="Fecha_Final"
+                                                matInput [matDatepicker]="picker3" placeholder="Fecha Final"
+                                                [(ngModel)]="Fecha_Final" format="dd/MM/yyyy" disabled>
+                                            <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker3></mat-datepicker>
+                                        </mat-form-field>
+                                    </div>
+
+                                </div>
+                                <mat-label>Nota: La visualización de los resultados es de máximo  12 periodos de tiempo. al exportar se encuentra toda la información</mat-label>
+                            </mat-card-content>
+                        </mat-card>
+
+                        <div>
+                        </div>
+                        <mat-card>
+                            <mat-card-title>Resultado</mat-card-title>
+                            <table mat-table [dataSource]="dataSourceTree" class="mat-elevation-z8">
+                                <ng-container matColumnDef="IdNodo" style="color: black;" flex="20">
+                                    <th mat-header-cell *matHeaderCellDef>
+                                        <span [style.paddingLeft.px]="40"> Nombre Nodo </span>
+                                    </th>
+                                    <td mat-cell *matCellDef="let data">
+                                        <button mat-icon-button [style.visibility]="!data.expandable ? 'hidden' : ''"
+                                            [style.marginLeft.px]="data.level * 32" (click)="treeControl.toggle(data)">
+                                            <mat-icon class="mat-icon-rtl-mirror">
+                                                {{treeControl.isExpanded(data) ? 'expand_more' : 'chevron_right'}}
+                                            </mat-icon>
+                                        </button>
+
+                                        {{data.NodoNombre }}
+                                    </td>
+                                </ng-container>
+                                
+                                <ng-container *ngFor="let item of cutsNames; let i=index" matColumnDef="{{ item.cutRowDefinition }}">
+                                    <th  mat-header-cell *matHeaderCellDef> {{ item.cutname }} </th>
+                                    <td  mat-cell *matCellDef="let data"> {{ data.MapCuts[item.cutname].value }} </td>
+                                </ng-container>
+
+                                <tr mat-header-row *matHeaderRowDef="displayedColumnsTree"></tr>
+                                <tr mat-row *matRowDef="let row; columns: displayedColumnsTree;"></tr>
+                            </table>
+
+                        </mat-card>
+
+                        <ng-template td-step-actions>
+
+                            <button mat-raised-button color="primary"
+                                (click)="exportToTxt(Desc_Estructura, Fecha_Consulta)">Exportar a txt</button>
+                            <button mat-raised-button color="primary"
+                                (click)="exportToCsv(Desc_Estructura, Fecha_Consulta)">Exportar a Csv</button>
+                            <button mat-raised-button color="primary"
+                                (click)="exportToExcel(Desc_Estructura, Fecha_Consulta)">Exportar a Excel</button>
+
+                        </ng-template>
+
+
+                    </td-step>
+                </td-steps>
+            </form>
+        </ng-template>
+    </mat-card>
+
+
+</td-layout-nav>

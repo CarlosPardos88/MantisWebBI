@@ -1,0 +1,196 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+    <button mat-icon-button td-menu-button tdLayoutToggle>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div td-toolbar-content layout="row" layout-align="center center" flex>
+      <span>Parametrización de Estructura</span>
+      <span flex></span>
+    </div>
+    <mat-card class="push-bottom-xxl" tdMediaToggle="gt-xs" [mediaClasses]="['push']">
+        <ng-template tdLoading="estructura.form">
+            <form #estructuraForm="ngForm">
+                <td-steps mode="horizontal" linear="true">
+                    <td-step #step1 label="Estructura" sublabel="Datos Básicos" [state]="stateStep1"  [active]="true">
+                        <mat-card flex-gt-sm>
+                            <mat-card-title>Agregue los datos básicos</mat-card-title>
+                            <mat-card-content class="push-bottom-none">
+                
+                                <div layout="row">
+                                    <mat-form-field flex> 
+                                        <input matInput
+                                                #Desc_EstructuraElement
+                                                #Desc_EstructuraControl="ngModel"
+                                                type="text" 
+                                                placeholder="Nombre" 
+                                                [(ngModel)]="Desc_Estructura" 
+                                                name="Desc_Estructura"
+                                                maxlength="100"
+                                                required
+                                                (blur)="updateArborl()"
+                                                >
+                                        <mat-hint align="start">
+                                        <span [hidden]="Desc_EstructuraControl.pristine" class="tc-red-600">
+                                            <span [hidden]="!Desc_EstructuraControl.hasError('required')">Requerido</span>
+                                        </span>
+                                        </mat-hint>
+                                        <mat-hint align="end">{{Desc_EstructuraElement.value.length}} / 200</mat-hint>
+                                    </mat-form-field>
+                                </div>
+                                
+                                <div layout-gt-sm="column2">
+                                    <div flex>
+                                        <mat-form-field flex>
+                                            <input
+                                                #Fecha_InicioVigenciaElement 
+                                                #Fecha_InicioVigenciaControl="ngModel"
+                                                name="Fecha_InicioVigencia"
+                                                matInput [matDatepicker]="picker" 
+                                                placeholder="Fecha Inicio Vigencia"
+                                                [(ngModel)]="Fecha_InicioVigencia"
+                                                format="dd/MM/yyyy">
+                                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker></mat-datepicker>
+                                        </mat-form-field>
+                                    </div>
+                        
+                                    <div flex>
+                                        <mat-form-field>
+                                            <input
+                                                #Fecha_FinVigenciaElement 
+                                                #Fecha_FinVigenciaControl="ngModel"
+                                                name="Fecha_FinVigencia"
+                                                matInput [matDatepicker]="picker2" 
+                                                placeholder="Fecha Fin Vigencia"
+                                                [(ngModel)]="Fecha_FinVigencia"
+                                                [min]="Fecha_InicioVigencia"
+                                                format="dd/MM/yyyy"> 
+                                            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker2></mat-datepicker>
+                                        </mat-form-field> 
+                                    </div>
+                        
+                                </div>
+
+                                <div layout="row"  class="push-top">
+                                    <mat-slide-toggle
+                                    #Cb_EsDefinitivaElement
+                                    #Cb_EsDefinitivaControl
+                                    [(ngModel)]="Cb_EsDefinitiva2"
+                                    name="Cb_EsDefinitiva"
+                                    >
+                                    Es Definitiva
+                                    </mat-slide-toggle>
+                                </div>
+
+                            </mat-card-content>
+                        </mat-card>
+                        <ng-template td-step-actions>
+                            <button mat-raised-button [disabled]="!estructuraForm.form.valid" color="accent" matStepperNext
+                                    (click)="toggleCompleteStep1();step2.disabled = disabled; step2.active = true;">Siguiente
+                            </button>
+                        </ng-template>
+                    </td-step>
+
+                    <td-step #step2 label="Agregar Nodos" sublabel="Nodos y configuraciones" [state]="stateStep2"  [active]="deactive" [disabled]="enable">
+                        <div layout-gt-sm>
+                            <mat-card flex-gt-sm>
+                            <mat-card-title>Agregar Nodos</mat-card-title>
+                            <mat-card-subtitle>{{Desc_Estructura}}</mat-card-subtitle>
+                            <mat-card-content class="push-bottom-none">
+                            <form #addForm="ngForm">
+                                <div layout="row" layout-align="start center" class="pad-sm">
+                    
+                                <div layout="row" class="example-list" flex>
+                                    <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+                                        <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle matTreeNodePadding class="example-box" >
+                                            <button mat-icon-button disabled></button>
+                                            <mat-checkbox class="checklist-leaf-node"
+                                                        [ngClass]="{'drop-above': dragNodeExpandOverArea === 'above' && dragNodeExpandOverNode === node,
+                                                                    'drop-below': dragNodeExpandOverArea === 'below' && dragNodeExpandOverNode === node,
+                                                                    'drop-center': dragNodeExpandOverArea === 'center' && dragNodeExpandOverNode === node}"
+                                                        [checked]="checklistSelection.isSelected(node)"
+                                                        (change)="checklistSelection.toggle(node);"
+                                                        draggable="true"
+                                                        (dragstart)="handleDragStart($event, node);"
+                                                        (dragover)="handleDragOver($event, node);"
+                                                        (drop)="handleDrop($event, node);"
+                                                        (dragend)="handleDragEnd($event);">{{node.name}}</mat-checkbox>
+                                            <button mat-icon-button (click)="addNewItem(node)"><mat-icon>add</mat-icon></button>
+                                            <button mat-icon-button *ngIf="!isRoot(node)" (click)="openDialog(node, 'editar')"><mat-icon>edit</mat-icon></button>
+                                            <button mat-icon-button *ngIf="!isRoot(node)" (click)="deleteItem2(node)"><mat-icon>delete</mat-icon></button>
+                                        </mat-tree-node>
+                                        
+                                        <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding class="example-box" >
+                                            <button mat-icon-button matTreeNodeToggle
+                                                    [attr.aria-label]="'toggle ' + node.filename">
+                                            <mat-icon class="mat-icon-rtl-mirror">
+                                                {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                                            </mat-icon>
+                                            </button>
+                                            <mat-checkbox [ngClass]="{'drop-above': dragNodeExpandOverArea === 'above' && dragNodeExpandOverNode === node,
+                                                                    'drop-below': dragNodeExpandOverArea === 'below' && dragNodeExpandOverNode === node,
+                                                                    'drop-center': dragNodeExpandOverArea === 'center' && dragNodeExpandOverNode === node}"
+                                                        draggable="true"
+                                                        (dragstart)="handleDragStart($event, node);"
+                                                        (dragover)="handleDragOver($event, node);"
+                                                        (drop)="handleDrop($event, node);"
+                                                        (dragend)="handleDragEnd($event);"
+                                                        [checked]="descendantsAllSelected(node)"
+                                                        [indeterminate]="descendantsPartiallySelected(node)"
+                                                        (change)="ItemSelectionToggle(node)">{{node.name}}</mat-checkbox>
+                                            <button mat-icon-button (click)="addNewItem(node)"><mat-icon>add</mat-icon></button>
+                                            <button mat-icon-button *ngIf="!isRoot(node)" (click)="openDialog(node, 'editar')"><mat-icon>edit</mat-icon></button>
+                                            <button mat-icon-button *ngIf="!isRoot(node)" (click)="deleteItem2(node)"><mat-icon>delete</mat-icon></button>
+                                        </mat-tree-node>
+                                    </mat-tree>
+                                    <span #emptyItem></span>
+                                </div>                          
+                    
+                                </div>
+                            </form>
+                            </mat-card-content>
+                            </mat-card>
+                            
+                        </div>
+                        <ng-template td-step-actions>
+                            <button mat-raised-button color="primary" 
+                            (click)="toggleCompleteStep2(); step1.active = true;">Anterior
+                            </button>
+                            <button mat-raised-button [disabled]="!estructuraForm.form.valid" color="accent" 
+                                    (click)="toggleCompleteStep2();step3.disabled = disabled; step3.active = true; configurarGrafica();">Siguiente
+                            </button>
+                        </ng-template>
+                    </td-step>
+
+                    <td-step #step3 label="Resumen" sublabel="Resumén de la Estructura" [state]="stateStep3" [disabled]="enable">
+                        <td-chart [style.height.px]="800">
+                            <td-chart-series
+                              td-tree
+                              [top]="'10%'"
+                              [left]="'5%'"
+                              [bottom]="'10%'"
+                              [right]="'20%'"
+                              [data]='data'
+                              [initialTreeDepth]="2"
+                              [symbolSize]="10"
+                              [leaves]="{ label: { padding: [2.5, 5], fontSize: 9, distance: 5, position: 'right' }}"
+                              [label]="{ padding: [2.5, 5], borderRadius: 10, fontSize: 9, distance: 10, position: 'top' }"
+                            ></td-chart-series>
+                           </td-chart>  
+
+                        <ng-template td-step-actions>
+                            <button mat-raised-button color="primary" 
+                            (click)="toggleCompleteStep3(); step2.active = true;">Anterior
+                            </button>
+                            <button mat-raised-button [disabled]="!estructuraForm.form.valid || !estructuraForm.form.hasError" color="accent" 
+                            (click)="save()">Guardar
+                            </button> 
+                            <button mat-button (click)="goBack()" >Salir sin Guardar</button>
+                        </ng-template>
+                    </td-step>
+
+                </td-steps>
+            </form>
+        </ng-template>
+    </mat-card>
+</td-layout-nav> 

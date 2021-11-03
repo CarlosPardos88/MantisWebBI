@@ -1,0 +1,139 @@
+<td-layout-nav logo="assets:logobank" navigationRoute="/">
+    <button mat-icon-button td-menu-button tdLayoutToggle>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <div td-toolbar-content layout="row" layout-align="center center" flex>
+        <span style="color: white;">Administración de consultas</span>
+        <span flex></span>
+    </div>
+    <div td-toolbar-content layout="row" layout-align="right">
+        <span style="color: white;"> Agregación de Numerales - DCIN</span>
+        <span flex></span>
+    </div>
+    <mat-progress-spinner [mode]="'indeterminate'" *ngIf="isLoading" style="margin: auto;">
+    </mat-progress-spinner>
+    <mat-card class="push-bottom-xxl" tdMediaToggle="gt-xs" [mediaClasses]="['push']">
+        <div class="pad" *ngIf="!isLoading && filteredConsultas?.length === 0" layout="row"
+            layout-align="center center">
+            <h3>No existen consultas para mostrar.</h3>
+        </div>
+        <div [hidden]="isLoading">
+            <div class="example-container mat-elevation-z8">
+                <mat-table matTableFilter [exampleEntity]="filterEntity" [filterType]="filterType"
+                    [dataSource]="dataSource" matSort>
+                    <ng-container matColumnDef="Desc_Estructura">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="40">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Estructura"
+                                        [(ngModel)]="filterEntity.Desc_Estructura">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="40"> {{row.Desc_Estructura}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Fecha_Consulta">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Fecha Consulta"
+                                        [(ngModel)]="filterEntity.Fecha_Consulta">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Fecha_Consulta | date:'yyyy-MM-dd'}}
+                        </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Desc_Fuente">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Fuente"
+                                        [(ngModel)]="filterEntity.Desc_Fuente">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Desc_Fuente}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Fecha_Inicial">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Fecha Inicial"
+                                        [(ngModel)]="filterEntity.Fecha_Inicial">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Fecha_Inicial | date:'yyyy-MM-dd'}}
+                        </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Fecha_Final">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Fecha Final"
+                                        [(ngModel)]="filterEntity.Fecha_Final">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Fecha_Final | date:'yyyy-MM-dd'}}
+                        </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Desc_Periodicidad">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Periodicidad"
+                                        [(ngModel)]="filterEntity.Desc_Periodicidad">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Desc_Periodicidad}} </mat-cell>
+                    </ng-container>
+                   
+
+                    <ng-container matColumnDef="Nombre_UsuarioCreacion">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;" flex="20">
+                            <b>
+                                <mat-form-field>
+                                    <input matInput placeholder="Nombre usuario creación"
+                                        [(ngModel)]="filterEntity.Nombre_UsuarioCreacion">
+                                </mat-form-field>
+                            </b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="20"> {{row.Nombre_UsuarioCreacion}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Ver">
+                        <mat-header-cell *matHeaderCellDef style="color: black;" flex="10"><b>Ver Resultados</b>
+                        </mat-header-cell>
+                        <mat-cell *matCellDef="let row" flex="10">
+                            <button mat-icon-button color="blue"
+                                [routerLink]="[row.Id_Estructura, row.Sk_Consulta,  'View']">
+                                <mat-icon class="mat-18">visibility</mat-icon>
+                            </button>
+                        </mat-cell>
+                    </ng-container>
+
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;">
+                    </mat-row>
+                </mat-table>
+            </div>
+        </div>
+        <div [hidden]="isLoading">
+            <mat-paginator [pageSizeOptions]="[10, 20, 30, 50]">
+            </mat-paginator>
+        </div>
+    </mat-card>
+    
+    <!-- </ng-template> -->
+</td-layout-nav>
+<a mat-fab color="accent" class="mat-fab-bottom-right fixed z-3" [routerLink]="['add']">
+    <mat-icon>add</mat-icon>
+</a>

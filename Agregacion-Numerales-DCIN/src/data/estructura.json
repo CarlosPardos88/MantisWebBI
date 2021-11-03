@@ -1,0 +1,24 @@
+[
+    {
+        "Id_Estructura": 1,
+        "Desc_Estructura": "prueba",
+        "Fecha_InicioVigencia": "2020-01-01",
+        "Fecha_FinVigencia": "2020-01-01",
+        "Cb_EsDefinitiva": "S",
+        "Nombre_UsuarioCreacion": "admin",
+        "Fecha_Creacion": "2020-01-01",
+        "Cb_Eliminado": null,
+        "Nombre_UsuarioEliminacion": null
+    },
+    {
+        "Id_Estructura": 2,
+        "Desc_Estructura": "prueba2",
+        "Fecha_InicioVigencia": "2020-01-01",
+        "Fecha_FinVigencia": "2020-01-01",
+        "Cb_EsDefinitiva": "N",
+        "Nombre_UsuarioCreacion": "admin",
+        "Fecha_Creacion": "2020-01-01",
+        "Cb_Eliminado": null,
+        "Nombre_UsuarioEliminacion": null
+    }
+]

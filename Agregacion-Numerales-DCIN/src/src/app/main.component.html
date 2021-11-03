@@ -1,0 +1,42 @@
+<td-layout #layout>
+    <td-navigation-drawer logo="assets:logobank" sidenavTitle="{{perfil}}" name="{{user}}" >
+      <mat-nav-list>
+        <ng-template let-item let-last="last" ngFor [ngForOf]="menus">
+          <a *ngIf="item.Childs.length == 0" mat-list-item [routerLink]="'/'+[item.Path]" (click)="layout.close()"><mat-icon>{{item.Text}}</mat-icon>{{item.Name}}</a>
+          
+          <div *ngIf="item.Childs.length > 0">
+            <a mat-list-item [matMenuTriggerFor]="submenus"><mat-icon>{{item.Text}}</mat-icon>{{item.Name}}</a>
+            <mat-menu #submenus="matMenu" flex >
+              <ng-template let-item2 let-last="last" ngFor [ngForOf]="item.Childs">
+                <a *ngIf="item2.Childs.length === 0" mat-menu-item [routerLink]="'/'+[item.Path]" (click)="layout.close()">
+                  <mat-icon>{{item2.Text}}</mat-icon>{{item2.Name}}
+                </a>
+
+                <div *ngIf="item2.Childs.length > 0">
+                  <a mat-menu-item [matMenuTriggerFor]="submenus2" >
+                    <mat-icon>{{item2.Text}}</mat-icon>{{item2.Name}}
+                  </a>
+                  <mat-menu #submenus2="matMenu" flex>
+                    <ng-template let-item3 let-last="last" ngFor [ngForOf]="item2.Childs">
+                      <a mat-menu-item [routerLink]="'/'+[item3.Path]" (click)="layout.close()">
+                        <mat-icon>{{item3.Text}}</mat-icon>{{item3.Name}}
+                      </a>
+                    </ng-template>
+                  </mat-menu>
+                </div>
+
+              </ng-template>
+            </mat-menu>
+          </div>
+          
+          
+
+        </ng-template>
+      </mat-nav-list>
+      <mat-nav-list td-navigation-drawer-menu>
+        <a mat-list-item (click)="logout()"><mat-icon>exit_to_app</mat-icon>Salir</a>
+      </mat-nav-list>
+    </td-navigation-drawer>
+    <router-outlet></router-outlet>
+  </td-layout>
+  

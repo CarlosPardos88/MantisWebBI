@@ -1,0 +1,64 @@
+<div layout="column" layout-fill>
+    <mat-toolbar color="primary" class="bgc-blue-900">
+      <mat-toolbar-row>
+        <span>Login</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <div class="mat-content" layout-padding flex>
+      <div layout-gt-xs="row" layout-align-gt-xs="center start" class="margin">
+        <div flex-gt-xs="50">
+          <mat-card tdMediaToggle="gt-xs" [mediaClasses]="['push-top-lg']">
+            <mat-card-title><span style="padding-left: 35%;"><img src="assets/icons/logobank.svg" width="150"></span>
+            </mat-card-title>
+            <mat-card-subtitle><b>Agregación numerales WEB</b></mat-card-subtitle>
+            <mat-divider>
+            </mat-divider>
+            <mat-card-content>
+                            <form #f="ngForm" [formGroup]="loginForm" (ngSubmit)="submitLogin(f)"  novalidate="novalidate">
+                              <div class="container">
+                                    <div class="row">
+                                      <div class="col col-sg-3">
+                                        <span style="font-weight: bold;color:black" >Usuario:</span>
+                                      </div>
+                                      <div  class="col col-sg-3">
+                                        <input type="text" formControlName="usuario"  
+                                          style="padding: 12px 20px;margin: 8px 0; box-sizing: border-box;width:300px;font-size:16px" 
+                                          maxlength="50" required placeholder="INGRESAR USUARIO">
+                                        <div *ngIf="loginForm.controls['usuario'].invalid && (loginForm.controls['usuario'].dirty || loginForm.controls['usuario'].touched)" class="alert alert-danger">
+                                          <div *ngIf="loginForm.controls['usuario'].errors.required">
+                                              El usuario es obligatorio!
+                                           </div>
+                                         </div>                      
+                                      </div>
+                                     
+                                      <div  class="col col-sg-3">
+                                        <span style="font-weight: bold;color:black" >Contraseña:</span>
+              
+                                      </div>
+                                      <div  class="col col-sg-3">
+                                        <input type="password"  autocomplete="off" formControlName="pwd"  
+                                          style="padding: 12px 20px;margin: 8px 0; box-sizing: border-box;width:300px;font-size:16px" 
+                                          maxlength="50" required>
+                                          <div *ngIf="loginForm.controls['pwd'].invalid && (loginForm.controls['pwd'].dirty || loginForm.controls['pwd'].touched)" class="alert alert-danger">
+                                            <div *ngIf="loginForm.controls['pwd'].errors.required">
+                                                El usuario es obligatorio!
+                                             </div>
+                                           </div>                  
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col col-sg-12">
+                                        <button  type="submit" style="border-radius:6px ; background-color:cornflowerblue; border:darkcyan;color:blanchedalmond;  padding: 15px 32px;  text-align: center;  text-decoration:chocolate;  display: inline-block;font-size:14px;  margin: 4px 2px;  cursor: pointer;" >INICIAR</button>
+                                      </div>
+                                    </div>
+                              </div>
+                            </form>
+                                
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+

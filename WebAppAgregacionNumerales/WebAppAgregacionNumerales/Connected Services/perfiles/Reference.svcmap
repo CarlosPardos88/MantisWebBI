@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="61c86364-6005-454c-9d36-0033d61904fc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.ComponentModel.BindingList`1" Category="List" />
+      <CollectionMapping TypeName="System.Collections.Generic.SortedDictionary`2" Category="Dictionary" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/PerfilesUsuario?WSDL" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PerfilesUsuario.xsd" MetadataType="Schema" ID="bc44bbd6-9289-471d-874e-f38e67a35203" SourceId="1" SourceUrl="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/PerfilesUsuario?SCHEMA%2FCommonsServicios%2FXSD%2FschemaJavaException" />
+    <MetadataFile FileName="PerfilesUsuarioAppl.wsdl" MetadataType="Wsdl" ID="610ea9db-0034-4fa1-9641-884b66c65fc4" SourceId="1" SourceUrl="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/PerfilesUsuario?WSDL" />
+    <MetadataFile FileName="PerfilesUsuario1.xsd" MetadataType="Schema" ID="754df438-38f0-480d-9fab-dc827974b8cb" SourceId="1" SourceUrl="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/PerfilesUsuario?SCHEMA%2FPerfilesUsuario%2FXSD%2FschemaRespuestaPerfilesUsuario" />
+    <MetadataFile FileName="PerfilesUsuario2.xsd" MetadataType="Schema" ID="962d3208-ea21-4ea0-9a7b-a172e927abec" SourceId="1" SourceUrl="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/PerfilesUsuario?SCHEMA%2FPerfilesUsuario%2FXSD%2FschemaPeticionPerfilesUsuario" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
