@@ -1,1 +1,0 @@
-export { AprobacionesdemandaService, IAprobacionDem, APROBACIONESDEM_API, APROBACIONDEM_PROVIDER } from './services/aprobacionesdemanda.service';

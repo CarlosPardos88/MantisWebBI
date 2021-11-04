@@ -1,1 +1,0 @@
-export { AreasService, IArea, AREAS_API, AREA_PROVIDER } from './services/areas.service';

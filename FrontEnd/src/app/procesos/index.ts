@@ -1,1 +1,0 @@
-export { ProcesoService, IProceso, PROCESOS_API, PROCESO_PROVIDER } from './services/procesos.service';

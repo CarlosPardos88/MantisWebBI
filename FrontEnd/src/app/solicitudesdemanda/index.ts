@@ -1,1 +1,0 @@
-export { SolicitudesdemandaService, ISolicitudDem, SOLICITUDESDEM_API, SOLICITUDDEM_PROVIDER } from './services/solicitudesdemanda.service';

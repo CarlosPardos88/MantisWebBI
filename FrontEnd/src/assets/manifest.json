@@ -1,9 +1,0 @@
-{
-    "name": "Banco de la República",
-    "short_name": "Covalent QS",
-    "start_url": "/",
-    "icons": [],
-    "theme_color": "#003e6c",
-    "background_color": "#003e6c",
-    "display": "standalone"
-}
