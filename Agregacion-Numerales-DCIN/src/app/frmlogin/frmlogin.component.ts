@@ -77,11 +77,11 @@ export class FrmloginComponent implements OnInit {
       }
       else if(form.value.usuario == '')
       {
-        alert('Por favor digite el nombre del usuario!')
+        this._dialogService.openAlert({ message: 'Por favor digite el nombre del usuario!', closeButton: 'Aceptar' });
       }
       else if(form.value.pwd == '')
       {
-        alert('Por favor digite la contraseña!')
+        this._dialogService.openAlert({ message: 'Por favor digite la contraseña!', closeButton: 'Aceptar' });
       }
       else if (form.value.usuario != '' && form.value.pwd != ''){
         this.usarios = {
@@ -90,7 +90,6 @@ export class FrmloginComponent implements OnInit {
          };
         this.srvAutenticaUser.postAutenticar(this.usarios)
         .subscribe(data=> {
-         
          
           if(data == "Autenticado")
           {
@@ -101,7 +100,8 @@ export class FrmloginComponent implements OnInit {
           }
           else
           {
-            alert("Error interno en el servidor " + data)
+            this._dialogService.openAlert({ message: 'Nombre de usuario o contraseña no válido. Vuelva a introducir la información', closeButton: 'Aceptar' });
+
           }
           
        });
