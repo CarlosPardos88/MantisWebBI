@@ -48,6 +48,8 @@ export class MainComponent implements OnInit{
     }
   }
 
+ 
+
   logout(): void {
     sessionStorage.removeItem('Menus');
     sessionStorage.removeItem('User');

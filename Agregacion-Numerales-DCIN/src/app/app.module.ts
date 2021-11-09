@@ -59,7 +59,8 @@ import { NUMERALES_API, NUMERALES_PROVIDER} from  './services/numeralcambiario.s
 import { ErrorComponent } from './error/error.component';
 import { FrmloginComponent } from './frmlogin/frmlogin.component';
 
-
+//bn-ng-idle service-logout inactivity
+import { BnNgIdleService } from 'bn-ng-idle'; 
 
 const httpInterceptorProviders: Type<ITdHttpInterceptor>[] = [
   RequestInterceptor,
@@ -149,8 +150,10 @@ export function getAPI(): string {
     {
       provide: NUMERALES_API, useFactory: getAPI,
     }, 
-    NUMERALES_PROVIDER
+    NUMERALES_PROVIDER,
+    [BnNgIdleService],
   ],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }

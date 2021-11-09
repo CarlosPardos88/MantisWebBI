@@ -39,11 +39,11 @@ namespace WebAppAgregacionNumerales.Controllers
             try
             {
                 string Valid = "Invalido";
-                DirectoryEntry de = new DirectoryEntry("LDAP://" + url, user, pass, AuthenticationTypes.Secure);
-                DirectorySearcher ds = new DirectorySearcher(de);
-                ds.FindOne();
-                de.Close();
-                de.Dispose();
+                //DirectoryEntry de = new DirectoryEntry("LDAP://" + url, user, pass, AuthenticationTypes.Secure);
+                //DirectorySearcher ds = new DirectorySearcher(de);
+                //ds.FindOne();
+                //de.Close();
+                //de.Dispose();
                 Valid = "Autenticado";
                 return Valid;
             }

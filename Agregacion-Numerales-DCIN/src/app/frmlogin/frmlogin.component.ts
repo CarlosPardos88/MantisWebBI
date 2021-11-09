@@ -73,7 +73,7 @@ export class FrmloginComponent implements OnInit {
       
       if(form.value.usuario == '' && form.value.pwd == '')
       {
-        alert('Por favor digite todos los campos!')
+        this._dialogService.openAlert({ message: 'Por favor digite todos los campos', closeButton: 'Aceptar' });
       }
       else if(form.value.usuario == '')
       {

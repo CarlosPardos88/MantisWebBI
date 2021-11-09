@@ -32,6 +32,11 @@ import { CovalentStepsModule } from '@covalent/core/steps';
 import { CovalentSearchModule } from '@covalent/core/search';
 import { CovalentBreadcrumbsModule } from '@covalent/core/breadcrumbs';
 
+
+//logout_inactivity
+import { NgIdleKeepaliveModule } from '@ng-idle/keepalive';
+import { MomentModule } from 'angular2-moment';
+
 //echarts
 import { CovalentBaseEchartsModule } from '@covalent/echarts/base';
 
@@ -66,6 +71,9 @@ export function getAPI(): string {
     ErrorComponent,
   ],
   imports: [
+    //logout_inactivity
+    NgIdleKeepaliveModule.forRoot(),
+    MomentModule,
     // angular modules
     CommonModule,
     BrowserModule,
