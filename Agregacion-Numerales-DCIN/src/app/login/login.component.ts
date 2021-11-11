@@ -97,7 +97,7 @@ export class LoginComponent {
     }, (error: Error) => {
 
       this._loadingService.register();
-      this._dialogService.openAlert({ message: 'Usuario sin acceso', closeButton: 'Aceptar' });
+      this._dialogService.openAlert({ message: 'Nombre de usuario o contraseña no válido. Vuelva a introducir la información', closeButton: 'Aceptar' });
       this._router.navigate(['error']);
       this._loadingService.resolve();
       setTimeout(() => {

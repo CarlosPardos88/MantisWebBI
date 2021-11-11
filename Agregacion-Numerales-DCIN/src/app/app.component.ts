@@ -40,7 +40,7 @@ export class AppComponent {
             sessionStorage.removeItem('Menus');
             sessionStorage.removeItem('User');
             sessionStorage.clear();
-            this._router.navigate(['/error']);  
+            this._router.navigate(['/frmlogin']);  
         }
       });
     }

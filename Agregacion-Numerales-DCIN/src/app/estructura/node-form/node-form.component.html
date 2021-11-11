@@ -43,7 +43,7 @@
               #idnumeralsaf="ngModel">
               <mat-option [value]="0">No Aplica</mat-option>
               <mat-option *ngFor="let saf of ArrayNumeralesSAF" [value]="saf.Sk_RCNumeralCambiario">
-                {{saf.Desc_NumeralCambiario}}
+                {{saf.Sk_RCNumeralCambiario + "-" + saf.Desc_NumeralCambiario}}
               </mat-option>
             </mat-select>
           </mat-form-field>
@@ -54,7 +54,7 @@
             <mat-select [(ngModel)]="data.idnumeralcco" name="idnumeralcco" required #idnumeralcco="ngModel">
               <mat-option [value]="'0'">No Aplica</mat-option>
              <mat-option *ngFor="let cco of ArrayNumeralesSAF" [value]="cco.Sk_RCNumeralCambiario">
-                {{cco.Desc_NumeralCambiario}}
+                {{cco.Sk_RCNumeralCambiario + "-" + cco.Desc_NumeralCambiario}}
               </mat-option>
             </mat-select>
           </mat-form-field>
