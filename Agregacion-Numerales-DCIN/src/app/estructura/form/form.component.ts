@@ -950,8 +950,19 @@ catch (error) {
   }
 
   goBack(): void {
-    this._router.navigate(['/estructura']);
-  }
+
+      this._dialogService
+        .openConfirm({
+          message: '¿Está seguro que desea salir sin guardar?',
+          acceptButton: 'Aceptar'
+        })
+        .afterClosed().toPromise().then((confirm: boolean) => {
+          if (confirm) {
+            this._router.navigate(['/estructura']);
+          }
+        });
+    }
+    
 
   toggleCompleteStep1(): void {
     if (this.action == 'add' || this.dataSource.data.length < 2) {
