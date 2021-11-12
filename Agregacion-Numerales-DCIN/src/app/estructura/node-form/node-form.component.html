@@ -7,7 +7,7 @@
           <mat-form-field flex>
             <input matInput #Desc_NodoContableElement #Desc_NodoContableControl="ngModel" type="text" required
               placeholder="Descripcion" name="Desc_NodoContable" minlength="3" maxlength="100"
-              pattern="^[a-zA-zÀ-ÿ-Z0-9 _.,]*$" [(ngModel)]="data.Desc_NodoContable" #name="ngModel">
+              pattern="^[a-zA-zÀ-ÿ-Z0-9-()-¿?-/ _.,]*$" [(ngModel)]="data.Desc_NodoContable" #name="ngModel">
 
             <mat-hint align="start">
               <span [hidden]="Desc_NodoContableControl.pristine" class="tc-red-600">
